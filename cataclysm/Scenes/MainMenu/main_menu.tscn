@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://8gl5l4os0usv"]
+[gd_scene load_steps=3 format=3 uid="uid://8gl5l4os0usv"]
 
 [ext_resource type="Texture2D" uid="uid://ctwr5a0hn67s1" path="res://Assets/fieldpixelart.png" id="1_uqdog"]
+[ext_resource type="Script" uid="uid://8oftv55j3d3r" path="res://Scenes/MainMenu/main_menu.gd" id="1_v763k"]
 
 [node name="Main_Menu" type="Control"]
 layout_mode = 3
@@ -11,6 +12,7 @@ offset_left = 4.0
 offset_right = 4.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_v763k")
 metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -73,4 +75,13 @@ layout_mode = 2
 custom_minimum_size = Vector2(120, 0)
 layout_mode = 2
 text = "Quit"
+icon_alignment = 1
+
+[node name="Seperator3" type="Control" parent="Fieldpixelart/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="settingButton" type="Button" parent="Fieldpixelart/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(120, 0)
+layout_mode = 2
+text = "Settings"
 icon_alignment = 1

@@ -1,11 +1,7 @@
 ~ start
-Nathan: [[Hi|Hello|Howdy]], this is some dialogue.
-Nathan: Here are some choices.
-- First one
-	Nathan: You picked the first one.
-- Second one
-	Nathan: You picked the second one.
-- Start again => start
+Nate: [[GO AWAY|GET OUT|LEAVE]], YOU DISGRACEFUL BUG.
+- What did I do?
+	Nate: You're a glitch messing with the games code. 
+- 
 - End the conversation => END
-Nathan: For more information see the online documentation.
 => END
