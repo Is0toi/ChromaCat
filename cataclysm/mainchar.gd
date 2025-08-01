@@ -208,8 +208,13 @@ func _on_area_2d_body_entered(body):
 
 func _on_area_2d_body_exited(body):
 	if body.is_in_group("RigidBody"):
+<<<<<<< HEAD
 		body.collision_layer = 3  
 		body.collision_mask = 3 
+=======
+		body.collision_layer = 3
+		body.collision_mask = 3
+>>>>>>> 1ca3e079d4e4ad6e2a482f9e8113d114e8acc350
 
 func _on_teleport_cooldown_timeout():
 	teleport_cooldown = false

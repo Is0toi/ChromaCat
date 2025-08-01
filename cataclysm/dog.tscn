@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://c7x8csgodlbdn"]
+[gd_scene load_steps=9 format=3 uid="uid://ocxfbrpwidkb"]
 
 [ext_resource type="Texture2D" uid="uid://4p0rirfjewtr" path="res://Assets/pixil-frame-0 (15).png" id="1_c5eso"]
+[ext_resource type="Script" uid="uid://uuet0t047ary" path="res://dog.gd" id="1_kb3ao"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kb3ao"]
 atlas = ExtResource("1_c5eso")
@@ -36,12 +37,28 @@ animations = [{
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6vfhn"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ptela"]
+size = Vector2(21, 21)
+
 [node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_kb3ao")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_jurjn")
 animation = &"walk"
+<<<<<<< HEAD
 frame_progress = 0.353857
+=======
+>>>>>>> 1ca3e079d4e4ad6e2a482f9e8113d114e8acc350
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_6vfhn")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_mask = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_ptela")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
