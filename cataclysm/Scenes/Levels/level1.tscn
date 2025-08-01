@@ -84,3 +84,8 @@ z_index = -2
 position = Vector2(-87, -225)
 scale = Vector2(0.58125, 0.748958)
 texture = ExtResource("5_c0r4e")
+
+[connection signal="body_entered" from="TileMapLayer/Area2D" to="TileMapLayer/Area2D" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@27290" to="TileMapLayer/@Area2D@27290" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@27291" to="TileMapLayer/@Area2D@27291" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@27292" to="TileMapLayer/@Area2D@27292" method="_on_body_entered"]
