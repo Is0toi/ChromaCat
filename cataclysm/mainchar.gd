@@ -38,15 +38,13 @@ var jumpRelease: bool
 var is_phasing: bool = false
 var phase_timer: Timer
 
-
-
 func _ready():
 	_update_data()
 	add_to_group("player")
 	
 	phase_timer = Timer.new()
 	phase_timer.one_shot = true
-	phase_timer.wait_time = 8.0
+	phase_timer.wait_time = 3.0
 	phase_timer.timeout.connect(_on_phase_timeout)
 	add_child(phase_timer)
 
@@ -129,18 +127,16 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("phase") and not is_phasing:
 		_start_phasing()
 
-
-
 func _start_phasing():
 	is_phasing = true
-	PlayerCollider.disabled = true
-	PlayerSprite.modulate.a = 0.5  # Make player semi-transparent
+	collision_mask = 1 << 1  
+	PlayerSprite.modulate.a = 0.5 
 	phase_timer.start()
 	print("Phasing started")
 
 func _on_phase_timeout():
 	is_phasing = false
-	PlayerCollider.disabled = false
+	collision_mask = 0xFFFFFFFF
 	PlayerSprite.modulate.a = 1.0  # Restore visibility
 	print("Phasing ended")
 
@@ -159,3 +155,14 @@ func _start_jump_buffer_timer():
 	await get_tree().create_timer(jumpBuffering).timeout
 	jumpWasPressed = false
 	jumpBufferTimerRunning = false
+
+#box collisions
+func _on_area_2d_body_entered(body):
+	if body.is_in_group("RigidBody"):
+		body.collision_layer = 1
+		body.collision_mask = 1
+
+func _on_area_2d_body_exited(body):
+	if body.is_in_group("RigidBody"):
+		body.collision_layer = 3
+		body.collision_mask = 3

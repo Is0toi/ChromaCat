@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://br4bq57vhiakg"]
+[gd_scene load_steps=13 format=3 uid="uid://br4bq57vhiakg"]
 
 [ext_resource type="Texture2D" uid="uid://4p0rirfjewtr" path="res://Assets/pixil-frame-0 (15).png" id="1_s4adt"]
 [ext_resource type="Script" uid="uid://l4tl3pnrjrku" path="res://mainchar.gd" id="1_ubb7a"]
@@ -79,7 +79,11 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ikggu"]
 size = Vector2(9, 17)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ubb7a"]
+size = Vector2(11, 10)
+
 [node name="CharacterBody2D" type="CharacterBody2D" node_paths=PackedStringArray("PlayerSprite", "PlayerCollider")]
+collision_layer = 5
 collision_mask = 3
 script = ExtResource("1_ubb7a")
 PlayerSprite = NodePath("AnimatedSprite2D")
@@ -93,3 +97,14 @@ autoplay = "idle"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, 1.5)
 shape = SubResource("RectangleShape2D_ikggu")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 5
+collision_mask = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-0.5, 6)
+shape = SubResource("RectangleShape2D_ubb7a")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

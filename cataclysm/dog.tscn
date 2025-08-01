@@ -1,0 +1,47 @@
+[gd_scene load_steps=7 format=3 uid="uid://c7x8csgodlbdn"]
+
+[ext_resource type="Texture2D" uid="uid://4p0rirfjewtr" path="res://Assets/pixil-frame-0 (15).png" id="1_c5eso"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kb3ao"]
+atlas = ExtResource("1_c5eso")
+region = Rect2(0, 192, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ptela"]
+atlas = ExtResource("1_c5eso")
+region = Rect2(32, 192, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ngebd"]
+atlas = ExtResource("1_c5eso")
+region = Rect2(64, 192, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jurjn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kb3ao")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ptela")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ngebd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ptela")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6vfhn"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_jurjn")
+animation = &"walk"
+frame_progress = 0.516899
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_6vfhn")

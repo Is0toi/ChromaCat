@@ -24,11 +24,8 @@ texture_region_size = Vector2i(32, 32)
 2:1/0 = 0
 2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 3:1/0 = 0
-3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 4:1/0 = 0
-4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 5:1/0 = 0
-5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 6:1/0 = 0
 6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 7:1/0 = 0
@@ -87,14 +84,3 @@ z_index = -2
 position = Vector2(-87, -225)
 scale = Vector2(0.58125, 0.748958)
 texture = ExtResource("5_c0r4e")
-
-[connection signal="body_entered" from="TileMapLayer/Area2D" to="TileMapLayer/Area2D" method="_on_body_entered"]
-<<<<<<< HEAD
-[connection signal="body_entered" from="TileMapLayer/@Area2D@32011" to="TileMapLayer/@Area2D@32011" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@32012" to="TileMapLayer/@Area2D@32012" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@32013" to="TileMapLayer/@Area2D@32013" method="_on_body_entered"]
-=======
-[connection signal="body_entered" from="TileMapLayer/@Area2D@27883" to="TileMapLayer/@Area2D@27883" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@27884" to="TileMapLayer/@Area2D@27884" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@27885" to="TileMapLayer/@Area2D@27885" method="_on_body_entered"]
->>>>>>> 83996797618f6a3f08fefc4d306df87d8ee4ab87
