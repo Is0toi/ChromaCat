@@ -1,4 +1,6 @@
-res://Scenes/MainMenu/main_menu.tscn
+res://water.tscn
+res://water.gd
 res://Scenes/Levels/level1.tscn
 res://mainchar.gd
+res://Scenes/MainMenu/main_menu.tscn
 res://mainchar.tscn

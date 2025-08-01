@@ -1,8 +1,11 @@
+Node2D
+AnimatedSprite2D
+CollisionShape2D
+Sprite2D
+Area2D
 TileMapLayer
 TileMap
 Camera2D
-CollisionShape2D
-AnimatedSprite2D
 AnimatableBody2D
 CharacterBody2D
 Label
@@ -10,5 +13,3 @@ Button
 VBoxContainer
 HBoxContainer
 Control
-TextureRect
-Area2D

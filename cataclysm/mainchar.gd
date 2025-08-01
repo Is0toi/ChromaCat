@@ -35,8 +35,11 @@ var rightHold: bool
 var jumpTap: bool
 var jumpRelease: bool
 
+
+
 func _ready():
 	_update_data()
+	add_to_group("player")
 
 func _update_data():
 	acceleration = maxSpeed / max(timeToReachMaxSpeed, 0.01)
