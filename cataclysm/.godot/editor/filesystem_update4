@@ -4,3 +4,6 @@ res://Scenes/character.tscn
 res://Scenes/MainMenu/main_menu.tscn
 res://Scripts/character.gd
 res://Scripts/npc_static.gd
+res://Scripts/MainMenu/Main_menu.gd
+res://Scripts/Levels/level1.tscn
+res://Scenes/Levels/level1.tscn
