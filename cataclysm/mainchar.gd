@@ -203,13 +203,13 @@ func _start_jump_buffer_timer():
 #box collisions
 func _on_area_2d_body_entered(body):
 	if body.is_in_group("RigidBody"):
-		body.collision_layer = 1
-		body.collision_mask = 1
+		body.collision_layer = 1 
+		body.collision_mask = 1   
 
 func _on_area_2d_body_exited(body):
 	if body.is_in_group("RigidBody"):
-		body.collision_layer = 3
-		body.collision_mask = 3
+		body.collision_layer = 3  
+		body.collision_mask = 3 
 
 func _on_teleport_cooldown_timeout():
 	teleport_cooldown = false

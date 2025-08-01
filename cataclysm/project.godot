@@ -27,6 +27,10 @@ project/assembly_name="Cataclysm"
 
 enabled=PackedStringArray()
 
+[global_group]
+
+RigidBody=""
+
 [input]
 
 left={
