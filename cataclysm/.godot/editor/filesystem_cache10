@@ -1,12 +1,13 @@
 afef6734802ee6c19677a3e11de0f0e6
-::res://::1754071413
+::res://::1754077751
+door.tscn::PackedScene::2323927398933923612::1754077720::0::1::::<><><>0<>0<><>::uid://cd4p044srixju::::res://Scripts/door.gd
 icon.png::CompressedTexture2D/CompressedTexture2D::3733296356309817567::1754025699::1754025699::1::::<><><>0<>0<>3b9946cab232cc1e6f481b58c6d140fe<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
 main.dialogue::Resource/Resource::1086079457313010144::1754025699::1754025699::1::::<><><>0<>0<>7a669611b3653f821bd09b367840f7e1<>res://.godot/imported/main.dialogue-988eadfaf2647f90e4f9e66fdf16fcb0.tres::uid://dbs4435dsf3ry::::res://addons/dialogue_manager/dialogue_resource.gd
-mainchar.gd::GDScript::833118995921228644::1754068038::0::1::::PlatformerController2D<>CharacterBody2D<><>0<>0<><>::
-mainchar.tscn::PackedScene::3639588896200688554::1754071146::0::1::::<><><>0<>0<><>::uid://4p0rirfjewtr::::res://Assets/pixil-frame-0 (15).png<>uid://l4tl3pnrjrku::::res://mainchar.gd
+mainchar.gd::GDScript::833118995921228644::1754072969::0::1::::PlatformerController2D<>CharacterBody2D<><>0<>0<><>::
+mainchar.tscn::PackedScene::3639588896200688554::1754077720::0::1::::<><><>0<>0<><>::uid://4p0rirfjewtr::::res://Assets/pixil-frame-0 (15).png<>uid://l4tl3pnrjrku::::res://mainchar.gd
 README.md::TextFile/TextFile::-1::1754025699::0::1::::<><><>0<>0<><>::
 wakatime_logo.jpg::CompressedTexture2D/CompressedTexture2D::5799924920301101447::1754025699::1754025699::1::::<><><>0<>0<>c2eb997917a99440146547c5332fed89<>res://.godot/imported/wakatime_logo.jpg-a50f628e445fd6bef17dff1651d611bc.ctex::
-water.tscn::PackedScene::47570202870456813::1754071399::0::1::::<><><>0<>0<><>::
+water.tscn::PackedScene::47570202870456813::1754077720::0::1::::<><><>0<>0<><>::uid://b52wfcumtmp5d::::res://Scripts/water.gd<>uid://cgbsuyiw2aary::::res://Assets/pixil-frame-0 (14).png
 ::res://addons/::1754025734
 ::res://addons/dialogue_manager/::1754025734
 constants.gd::GDScript/GDScript::4240262336831424009::1754025699::0::1::::DMConstants<>RefCounted<><>0<>0<><>::
@@ -89,23 +90,28 @@ heartbeat.gd::GDScript/GDScript::1549341780690425635::1754025699::0::1::::<>RefC
 plugin.cfg::TextFile/TextFile::-1::1754025699::0::1::::<><><>0<>0<><>::
 plugin.gd::GDScript/GDScript::3498012903955011638::1754025699::0::1::::<>RefCounted<><>0<>0<><>::
 wakatime.gd::GDScript/GDScript::3800037937620873622::1754025699::0::1::::<>EditorPlugin<><>0<>1<><>::
-::res://Assets/::1754028533
+::res://Assets/::1754073775
 fieldpixelart.png::CompressedTexture2D/CompressedTexture2D::6152931508749096038::1754025699::1754025699::1::::<><><>0<>0<>ef58a9ae52f3e271c89e1030da0be556<>res://.godot/imported/fieldpixelart.png-359367fe0e80efceb87b0443b895286c.ctex::
 pixil-frame-0 (12).png::CompressedTexture2D/CompressedTexture2D::901599168702015571::1754027885::1754027885::1::::<><><>0<>0<>34284e84547cf498d52f1d61981c8b14<>res://.godot/imported/pixil-frame-0 (12).png-80257551405ac53354543e8bd762ec16.ctex::
 pixil-frame-0 (13).png::CompressedTexture2D/CompressedTexture2D::6891741258838151624::1754027885::1754027885::1::::<><><>0<>0<>edfa50c4cc6e8fed4a6bdd3e7b6c68a7<>res://.godot/imported/pixil-frame-0 (13).png-2108df264426e44d2c73ef8e487da12e.ctex::
 pixil-frame-0 (14).png::CompressedTexture2D/CompressedTexture2D::5197168702670850250::1754027885::1754027885::1::::<><><>0<>0<>785ee16bb663372833fbefa95b6ef4e8<>res://.godot/imported/pixil-frame-0 (14).png-fb16bd9bcff8550f32ccaedfd2ccd9b1.ctex::
 pixil-frame-0 (15).png::CompressedTexture2D/CompressedTexture2D::2067990861817244287::1754028528::1754028529::1::::<><><>0<>0<>1b75f52776abb2efe2bcf18437fd87cf<>res://.godot/imported/pixil-frame-0 (15).png-e8076c993d1abb242589105f97b9011d.ctex::
+::res://Assets/Fonts/::1754073775
+editundo.ttf::FontFile/FontFile::4533512874258794408::1754073769::1754073769::1::::<><><>0<>0<>e07ad811d46b46141822dab37fb4e9fe<>res://.godot/imported/editundo.ttf-6b24612bdd10a8677a6f2696f70d4011.fontdata::
 ::res://fine_tuning_gpt2/::1754030966
-::res://Scenes/::1754071399
+::res://Scenes/::1754077724
 game.tscn::PackedScene/PackedScene::3600260958706979164::1754065344::0::1::::<><><>0<>0<><>::uid://bhmm2ixfw10id::::res://Scenes/character.tscn
-::res://Scenes/Levels/::1754071399
-level1.tscn::PackedScene::7876259397550761696::1754071396::0::1::::<><><>0<>0<><>::uid://br4bq57vhiakg::::res://mainchar.tscn<>uid://cgbsuyiw2aary::::res://Assets/pixil-frame-0 (14).png
-::res://Scenes/MainMenu/::1754071145
-main_menu.tscn::PackedScene::2329340190534341297::1754071145::0::1::::<><><>0<>0<><>::uid://ctwr5a0hn67s1::::res://Assets/fieldpixelart.png
-::res://Scripts/::1754025825
+::res://Scenes/Levels/::1754077727
+level1.tscn::PackedScene::7876259397550761696::1754077720::0::1::::<><><>0<>0<><>::uid://br4bq57vhiakg::::res://mainchar.tscn<>uid://cgbsuyiw2aary::::res://Assets/pixil-frame-0 (14).png<>uid://xbqejsm8wvd::::res://water.tscn<>uid://b5uckawjsg8m3::::res://Assets/Fonts/editundo.ttf<>uid://8dy0k55bp50k::::res://door.tscn
+level2.tscn::PackedScene::4281927008448841225::1754077727::0::1::::<><><>0<>0<><>::uid://br4bq57vhiakg::::res://mainchar.tscn<>uid://b5uckawjsg8m3::::res://Assets/Fonts/editundo.ttf<>uid://8dy0k55bp50k::::res://door.tscn<>uid://cgbsuyiw2aary::::res://Assets/pixil-frame-0 (14).png<>uid://xbqejsm8wvd::::res://water.tscn
+::res://Scenes/MainMenu/::1754077720
+main_menu.tscn::PackedScene::2329340190534341297::1754077720::0::1::::<><><>0<>0<><>::uid://ctwr5a0hn67s1::::res://Assets/fieldpixelart.png
+::res://Scripts/::1754076792
 character.gd::GDScript/GDScript::5318535796325004940::1754025699::0::1::::Character<>CharacterBody2D<><>0<>0<><>::
+door.gd::GDScript::5044231821724531058::1754076792::0::1::::<>Area2D<><>0<>0<><>::
 npc_static.gd::GDScript/GDScript::4294709970714171179::1754025699::0::1::::<>Area2D<><>0<>0<><>::
 star.gd::GDScript/GDScript::2455965546681090223::1754025699::0::1::::<>Area2D<><>0<>0<><>::
+water.gd::GDScript::4549169031517967307::1754072923::0::1::::<>Area2D<><>0<>0<><>::
 ::res://Scripts/MainMenu/::1754025719
 Main_menu.gd::GDScript/GDScript::2613340223547632303::1754025699::0::1::::<>Control<><>0<>0<><>::
 ::res://Scripts/Settings/::1754025719

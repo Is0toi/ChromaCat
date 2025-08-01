@@ -1,6 +1,7 @@
-res://water.tscn
-res://water.gd
-res://Scenes/Levels/level1.tscn
-res://mainchar.gd
+res://Scenes/Levels/level2.tscn
 res://Scenes/MainMenu/main_menu.tscn
+res://Scenes/Levels/level1.tscn
 res://mainchar.tscn
+res://water.tscn
+res://door.tscn
+res://Scenes/Levels/camera_2d.gd
