@@ -1,4 +1,3 @@
-res://Scenes/Levels/level1.tscn
 res://Scenes/MainMenu/main_menu.tscn
-res://Scenes/game.tscn
-res://mainchar.tscn
+res://Scenes/Levels/level1.tscn
+res://mainchar.gd

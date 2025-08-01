@@ -36,6 +36,7 @@ texture_region_size = Vector2i(32, 32)
 9:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 0:2/0 = 0
 0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+0:2/0/physics_layer_1/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 1:2/0 = 0
 2:2/0 = 0
 3:2/0 = 0
@@ -55,6 +56,8 @@ texture_region_size = Vector2i(32, 32)
 [sub_resource type="TileSet" id="TileSet_1ukdm"]
 tile_size = Vector2i(32, 32)
 physics_layer_0/collision_layer = 1
+physics_layer_1/collision_layer = 0
+physics_layer_1/collision_mask = 0
 sources/0 = SubResource("TileSetAtlasSource_16p8j")
 
 [node name="Level1" type="Node2D"]
@@ -66,7 +69,7 @@ tile_set = SubResource("TileSet_1ukdm")
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_7u4ml")]
 position = Vector2(-178, -16)
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(0, 24)
-offset = Vector2(0, -100)
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(0, 1)
 zoom = Vector2(3, 3)
+position_smoothing_enabled = true

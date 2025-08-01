@@ -81,5 +81,5 @@ autoplay = "new_animation"
 frame_progress = 0.276945
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.25, 1.25)
+position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_f50pn")
