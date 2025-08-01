@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://brj81ioduwhhc"]
 
-[ext_resource type="PackedScene" uid="uid://dmwaoqjp6iwfu" path="res://Scenes/character.tscn" id="1_ebmjs"]
+[ext_resource type="PackedScene" path="res://Scenes/character.tscn" id="1_ebmjs"]
 [ext_resource type="PackedScene" uid="uid://dnd1c2hog3pqo" path="res://Scenes/npc_static.tscn" id="2_qxrlw"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ebmjs"]

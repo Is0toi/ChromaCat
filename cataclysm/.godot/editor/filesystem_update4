@@ -1,10 +1,8 @@
 res://Scenes/game.tscn
-<<<<<<< HEAD
 res://Scenes/character.tscn
 res://Scenes/npc_static.tscn
 res://Scripts/npc_static.gd
 res://Dialogue/main.txt
-<<<<<<< Updated upstream
 res://addons/dialogue_manager/constants.gd
 res://addons/dialogue_manager/dialogue_label.gd
 res://addons/dialogue_manager/dialogue_line.gd
@@ -57,15 +55,3 @@ res://addons/dialogue_manager/utilities/builtins.gd
 res://addons/dialogue_manager/utilities/dialogue_cache.gd
 res://addons/dialogue_manager/views/main_view.gd
 res://addons/dialogue_manager/views/main_view.tscn
-=======
->>>>>>> Stashed changes
-=======
-res://addons/wakatime/api_key_prompt.tscn
-res://Scenes/character.tscn
-res://Scenes/MainMenu/main_menu.tscn
-res://Scripts/character.gd
-res://Scripts/npc_static.gd
-res://Scripts/MainMenu/Main_menu.gd
-res://Scripts/Levels/level1.tscn
-res://Scenes/Levels/level1.tscn
->>>>>>> 2ba85ec694489fe6ec96904acbeb23956106048c
