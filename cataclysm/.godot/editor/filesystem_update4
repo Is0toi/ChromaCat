@@ -5,3 +5,5 @@ res://Scenes/Levels/level1.tscn
 res://mainchar.gd
 res://Scenes/npc_static.tscn
 res://Scenes/Levels/level3.tscn
+res://dog.gd
+res://dog.tscn
