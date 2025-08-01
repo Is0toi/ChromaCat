@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://xbqejsm8wvd"]
 
-[ext_resource type="Script" uid="uid://b52wfcumtmp5d" path="res://water.gd" id="1_7wcun"]
+[ext_resource type="Script" uid="uid://b52wfcumtmp5d" path="res://Scripts/water.gd" id="1_7wcun"]
 [ext_resource type="Texture2D" uid="uid://cgbsuyiw2aary" path="res://Assets/pixil-frame-0 (14).png" id="1_qi1wl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7wcun"]
