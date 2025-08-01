@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://dnd1c2hog3pqo"]
+[gd_scene load_steps=13 format=3 uid="uid://dnd1c2hog3pqo"]
 
 [ext_resource type="Texture2D" uid="uid://dnb13d2b4sg5k" path="res://Assets/assetscat.png" id="1_ghk2c"]
 
@@ -29,6 +29,10 @@ func _process(_delta):
 		label.visible = true
 		label.text = \"Hi there! I'm an NPC.\"
 "
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ghk2c"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gxe72"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_glpr6"]
 atlas = ExtResource("1_ghk2c")
@@ -98,19 +102,22 @@ animations = [{
 [node name="NpcStatic" type="Area2D"]
 script = SubResource("GDScript_bfnwp")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ghk2c")
+one_way_collision_margin = 12.0
 
 [node name="Label" type="Label" parent="."]
 offset_right = 40.0
 offset_bottom = 23.0
+text = "yo?"
 
 [node name="Timer" type="Timer" parent="."]
 
 [node name="InteractionZone" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionZone"]
+shape = SubResource("CircleShape2D_gxe72")
+one_way_collision_margin = 14.3
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_gxe72")

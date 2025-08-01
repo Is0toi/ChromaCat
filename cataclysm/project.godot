@@ -15,9 +15,21 @@ run/main_scene="uid://8gl5l4os0usv"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
+
 [dotnet]
 
 project/assembly_name="Cataclysm"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
+
+[internationalization]
+
+locale/translations_pot_files=PackedStringArray("res://main.dialogue")
 
 [rendering]
 
