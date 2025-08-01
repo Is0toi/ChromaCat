@@ -1,14 +1,4 @@
 res://Scenes/game.tscn
-<<<<<<< HEAD
-res://addons/wakatime/api_key_prompt.tscn
-res://Scenes/character.tscn
-res://Scenes/MainMenu/main_menu.tscn
-res://Scripts/character.gd
-res://Scripts/npc_static.gd
-res://Scripts/MainMenu/Main_menu.gd
-res://Scripts/Levels/level1.tscn
-res://Scenes/Levels/level1.tscn
-=======
 res://Scenes/character.tscn
 res://Scenes/npc_static.tscn
 res://Scripts/npc_static.gd
@@ -67,7 +57,4 @@ res://addons/dialogue_manager/views/main_view.gd
 res://addons/dialogue_manager/views/main_view.tscn
 res://Scenes/Levels/level1.tscn
 res://mainchar.gd
->>>>>>> be51d3b43836b9c3b90ee24b00bbbe96c6d510b7
 res://mainchar.tscn
-res://water.tscn
-res://Scenes/MainMenu/main_menu.gd

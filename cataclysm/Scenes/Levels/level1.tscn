@@ -74,11 +74,8 @@ position = Vector2(-178, -16)
 position = Vector2(0, 1)
 zoom = Vector2(3, 3)
 position_smoothing_enabled = true
-<<<<<<< HEAD
-=======
 
 [connection signal="body_entered" from="TileMapLayer/Area2D" to="TileMapLayer/Area2D" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@39350" to="TileMapLayer/@Area2D@39350" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@39351" to="TileMapLayer/@Area2D@39351" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@39352" to="TileMapLayer/@Area2D@39352" method="_on_body_entered"]
->>>>>>> be51d3b43836b9c3b90ee24b00bbbe96c6d510b7
+[connection signal="body_entered" from="TileMapLayer/@Area2D@39818" to="TileMapLayer/@Area2D@39818" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@39819" to="TileMapLayer/@Area2D@39819" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@39820" to="TileMapLayer/@Area2D@39820" method="_on_body_entered"]
