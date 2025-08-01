@@ -1,12 +1,5 @@
-<<<<<<< HEAD
-res://Scenes/Levels/level1.tscn
 res://mainchar.tscn
-res://water.tscn
-=======
-res://mainchar.tscn
-res://Scenes/MainMenu/main_menu.tscn
-res://water.tscn
-res://door.tscn
 res://Scenes/Levels/level2.tscn
+res://Scenes/MainMenu/main_menu.tscn
 res://Scenes/Levels/level1.tscn
->>>>>>> 83996797618f6a3f08fefc4d306df87d8ee4ab87
+res://mainchar.gd
