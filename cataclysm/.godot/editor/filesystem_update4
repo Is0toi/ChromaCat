@@ -1,1 +1,9 @@
+<<<<<<< HEAD
 res://dog.tscn
+=======
+res://mainchar.tscn
+res://Scenes/Levels/level2.tscn
+res://Scenes/MainMenu/main_menu.tscn
+res://Scenes/Levels/level1.tscn
+res://mainchar.gd
+>>>>>>> 8af0e5673aad61fac06d9c4f7d2cf1030ffad91f

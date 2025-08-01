@@ -34,10 +34,21 @@ var leftHold: bool
 var rightHold: bool
 var jumpTap: bool
 var jumpRelease: bool
-
+# For noclip
 var is_phasing: bool = false
 var phase_timer: Timer
 
+<<<<<<< HEAD
+=======
+# For teleporting
+var teleport_origin: Vector2
+var teleport_return_timer: Timer
+
+var teleport_cooldown := false
+var teleport_cooldown_timer: Timer
+
+
+>>>>>>> 8af0e5673aad61fac06d9c4f7d2cf1030ffad91f
 func _ready():
 	_update_data()
 	add_to_group("player")
@@ -47,6 +58,19 @@ func _ready():
 	phase_timer.wait_time = 3.0
 	phase_timer.timeout.connect(_on_phase_timeout)
 	add_child(phase_timer)
+
+	teleport_return_timer = Timer.new()
+	teleport_return_timer.one_shot = true
+	teleport_return_timer.wait_time = 1.5
+	teleport_return_timer.timeout.connect(_on_teleport_return_timeout)
+	add_child(teleport_return_timer)
+
+	teleport_cooldown_timer = Timer.new()
+	teleport_cooldown_timer.one_shot = true
+	teleport_cooldown_timer.wait_time = 2.0
+	teleport_cooldown_timer.timeout.connect(_on_teleport_cooldown_timeout)
+	add_child(teleport_cooldown_timer)
+
 
 func _update_data():
 	acceleration = maxSpeed / max(timeToReachMaxSpeed, 0.01)
@@ -126,7 +150,34 @@ func _physics_process(delta):
 	
 	if Input.is_action_just_pressed("phase") and not is_phasing:
 		_start_phasing()
+	
+	if Input.is_action_just_pressed("teleport") and not teleport_cooldown:
+		_teleport_to_cursor()
 
+<<<<<<< HEAD
+=======
+func _teleport_to_cursor():
+	# logic for if theres a wall
+	var target_posiiton = get_global_mouse_position()
+	var collision = move_and_collide(target_posiiton - global_position, true)
+
+	if collision:
+		print("Teleport blocked: collision with wall")
+		return
+	
+	# if possible
+	teleport_origin = global_position # save curr pos
+	global_position = get_global_mouse_position() # teleport
+	teleport_return_timer.start() # teleport back timer
+
+	# cooldown
+	teleport_cooldown = true
+	teleport_cooldown_timer.start()
+
+func _on_teleport_return_timeout():
+	global_position = teleport_origin  # return to saved pos
+
+>>>>>>> 8af0e5673aad61fac06d9c4f7d2cf1030ffad91f
 func _start_phasing():
 	is_phasing = true
 	collision_mask = 1 << 1  
@@ -156,6 +207,7 @@ func _start_jump_buffer_timer():
 	jumpWasPressed = false
 	jumpBufferTimerRunning = false
 
+<<<<<<< HEAD
 #box collisions
 func _on_area_2d_body_entered(body):
 	if body.is_in_group("RigidBody"):
@@ -166,3 +218,7 @@ func _on_area_2d_body_exited(body):
 	if body.is_in_group("RigidBody"):
 		body.collision_layer = 3
 		body.collision_mask = 3
+=======
+func _on_teleport_cooldown_timeout():
+	teleport_cooldown = false
+>>>>>>> 8af0e5673aad61fac06d9c4f7d2cf1030ffad91f
