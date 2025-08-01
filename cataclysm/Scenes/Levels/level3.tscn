@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=4 uid="uid://dqbsa7s0b4ixt"]
+[gd_scene load_steps=11 format=4 uid="uid://cycm17s34ktsg"]
 
 [ext_resource type="PackedScene" uid="uid://br4bq57vhiakg" path="res://mainchar.tscn" id="1_ov3rk"]
 [ext_resource type="FontFile" uid="uid://b5uckawjsg8m3" path="res://Assets/Fonts/editundo.ttf" id="2_x0tam"]
@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cgbsuyiw2aary" path="res://Assets/pixil-frame-0 (14).png" id="4_wlbe4"]
 [ext_resource type="PackedScene" uid="uid://xbqejsm8wvd" path="res://water.tscn" id="5_i6bqf"]
 [ext_resource type="Texture2D" uid="uid://b0wud3pjajnja" path="res://Assets/8bit-pixel-graphic-blue-sky-background-with-clouds-vector.jpg" id="6_n80jh"]
-[ext_resource type="PackedScene" uid="uid://c0n7b3x0tfpgm" path="res://box.tscn" id="6_x0tam"]
+[ext_resource type="PackedScene" path="res://box.tscn" id="6_x0tam"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q21to"]
 texture = ExtResource("4_wlbe4")
