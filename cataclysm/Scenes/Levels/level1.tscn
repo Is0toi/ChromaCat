@@ -2,13 +2,12 @@
 
 [ext_resource type="PackedScene" uid="uid://br4bq57vhiakg" path="res://mainchar.tscn" id="1_7u4ml"]
 [ext_resource type="Texture2D" uid="uid://cgbsuyiw2aary" path="res://Assets/pixil-frame-0 (14).png" id="2_16p8j"]
-<<<<<<< HEAD
+
 [ext_resource type="PackedScene" uid="uid://xbqejsm8wvd" path="res://water.tscn" id="3_1ukdm"]
 [ext_resource type="FontFile" uid="uid://b5uckawjsg8m3" path="res://Assets/Fonts/editundo.ttf" id="4_0xrym"]
 [ext_resource type="PackedScene" uid="uid://8dy0k55bp50k" path="res://door.tscn" id="5_c0r4e"]
 =======
 [ext_resource type="PackedScene" path="res://water.tscn" id="3_1ukdm"]
->>>>>>> 1d4f9ebbdd6d27966f10bc42061b69b1354c2010
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c0r4e"]
 texture = ExtResource("2_16p8j")
