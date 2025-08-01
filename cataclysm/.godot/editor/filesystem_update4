@@ -2,3 +2,5 @@ res://Scenes/game.tscn
 res://addons/wakatime/api_key_prompt.tscn
 res://Scenes/character.tscn
 res://Scenes/MainMenu/main_menu.tscn
+res://Scripts/character.gd
+res://Scripts/npc_static.gd

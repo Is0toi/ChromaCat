@@ -1,0 +1,118 @@
+[gd_scene load_steps=11 format=3 uid="uid://dnd1c2hog3pqo"]
+
+[ext_resource type="Texture2D" uid="uid://dnb13d2b4sg5k" path="res://Assets/assetscat.png" id="1_ghk2c"]
+
+[sub_resource type="GDScript" id="GDScript_bfnwp"]
+script/source = "extends Area2D
+
+@onready var interaction_zone = $InteractionZone
+@onready var label = $Label
+
+var player_in_range = false
+
+func _ready():
+	label.visible = false
+	interaction_zone.body_entered.connect(_on_body_entered)
+	interaction_zone.body_exited.connect(_on_body_exited)
+
+func _on_body_entered(body):
+	if body is Character:
+		player_in_range = true
+
+func _on_body_exited(body):
+	if body is Character:
+		player_in_range = false
+		label.visible = false
+
+func _process(_delta):
+	if player_in_range and Input.is_action_just_pressed(\"interact\"):
+		label.visible = true
+		label.text = \"Hi there! I'm an NPC.\"
+"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_glpr6"]
+atlas = ExtResource("1_ghk2c")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pjt0s"]
+atlas = ExtResource("1_ghk2c")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wa5vi"]
+atlas = ExtResource("1_ghk2c")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dd465"]
+atlas = ExtResource("1_ghk2c")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lhvu3"]
+atlas = ExtResource("1_ghk2c")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4sjlk"]
+atlas = ExtResource("1_ghk2c")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qp52p"]
+atlas = ExtResource("1_ghk2c")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gxe72"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_glpr6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pjt0s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wa5vi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pjt0s")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dd465")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lhvu3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4sjlk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qp52p")
+}],
+"loop": true,
+"name": &"new_animation_1",
+"speed": 5.0
+}]
+
+[node name="NpcStatic" type="Area2D"]
+script = SubResource("GDScript_bfnwp")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="InteractionZone" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionZone"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_gxe72")
+animation = &"new_animation"
+autoplay = "new_animation"
