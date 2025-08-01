@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://br4bq57vhiakg"]
+[gd_scene load_steps=12 format=3 uid="uid://br4bq57vhiakg"]
 
 [ext_resource type="Texture2D" uid="uid://4p0rirfjewtr" path="res://Assets/pixil-frame-0 (15).png" id="1_s4adt"]
 [ext_resource type="Script" uid="uid://l4tl3pnrjrku" path="res://mainchar.gd" id="1_ubb7a"]
@@ -14,6 +14,22 @@ region = Rect2(32, 160, 32, 32)
 [sub_resource type="AtlasTexture" id="AtlasTexture_o8ovp"]
 atlas = ExtResource("1_s4adt")
 region = Rect2(64, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4jena"]
+atlas = ExtResource("1_s4adt")
+region = Rect2(224, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_br20p"]
+atlas = ExtResource("1_s4adt")
+region = Rect2(96, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ikggu"]
+atlas = ExtResource("1_s4adt")
+region = Rect2(128, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jo4fy"]
+atlas = ExtResource("1_s4adt")
+region = Rect2(160, 160, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_br20p"]
 animations = [{
@@ -31,19 +47,46 @@ animations = [{
 "texture": SubResource("AtlasTexture_3sqm7")
 }],
 "loop": true,
-"name": &"default",
+"name": &"idle",
 "speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4jena")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_br20p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ikggu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jo4fy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ikggu")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ikggu"]
 size = Vector2(9, 17)
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="CharacterBody2D" type="CharacterBody2D" node_paths=PackedStringArray("PlayerSprite")]
 script = ExtResource("1_ubb7a")
+PlayerSprite = NodePath("AnimatedSprite2D")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_br20p")
-autoplay = "default"
+animation = &"jump"
+autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, 1.5)

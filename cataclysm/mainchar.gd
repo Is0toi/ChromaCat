@@ -49,6 +49,7 @@ func _update_data():
 		coyoteTime = 0
 
 func _physics_process(delta):
+	# Input state
 	leftHold = Input.is_action_pressed("left")
 	rightHold = Input.is_action_pressed("right")
 	jumpTap = Input.is_action_just_pressed("jump")
@@ -97,6 +98,25 @@ func _physics_process(delta):
 		_jump()
 
 	move_and_slide()
+
+	# Flip the sprite
+	if velocity.x > 0:
+		PlayerSprite.flip_h = false
+	elif velocity.x < 0:
+		PlayerSprite.flip_h = true
+
+	# Play animations
+	if is_on_floor():
+		if velocity.x == 0:
+			PlayerSprite.play("idle")
+		else:
+			PlayerSprite.play("walk")
+	else:
+		PlayerSprite.play("jump")
+
+
+
+
 
 func _jump():
 	if jumpCount > 0:
