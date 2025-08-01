@@ -1,6 +1,11 @@
+Label
 Button
 VBoxContainer
 HBoxContainer
-Label
 Control
 TextureRect
+CollisionShape2D
+Area2D
+Timer
+Sprite2D
+Node
