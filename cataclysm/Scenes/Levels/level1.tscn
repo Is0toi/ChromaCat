@@ -84,7 +84,7 @@ position = Vector2(203, 1)
 
 [node name="8Bit-pixel-graphic-blue-sky-background-with-clouds-vector" type="Sprite2D" parent="."]
 z_index = -2
-position = Vector2(-89, -246)
+position = Vector2(-87, -225)
 scale = Vector2(0.58125, 0.748958)
 texture = ExtResource("5_c0r4e")
 
