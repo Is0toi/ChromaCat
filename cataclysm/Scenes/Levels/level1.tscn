@@ -77,7 +77,7 @@ zoom = Vector2(3, 3)
 position_smoothing_enabled = true
 
 [node name="Area2D" parent="." instance=ExtResource("4_0xrym")]
-position = Vector2(249, -3)
+position = Vector2(203, 1)
 
 [connection signal="body_entered" from="TileMapLayer/Area2D" to="TileMapLayer/Area2D" method="_on_body_entered"]
 [connection signal="body_entered" from="TileMapLayer/@Area2D@25341" to="TileMapLayer/@Area2D@25341" method="_on_body_entered"]
