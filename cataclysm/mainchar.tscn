@@ -88,6 +88,18 @@ collision_mask = 3
 script = ExtResource("1_ubb7a")
 PlayerSprite = NodePath("AnimatedSprite2D")
 PlayerCollider = NodePath("CollisionShape2D")
+maxSpeed = null
+timeToReachMaxSpeed = null
+timeToReachZeroSpeed = null
+directionalSnap = null
+jumpHeight = null
+jumps = null
+gravityScale = null
+terminalVelocity = null
+shortHop = null
+jumpVariable = null
+coyoteTime = null
+jumpBuffering = null
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_br20p")
