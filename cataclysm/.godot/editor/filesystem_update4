@@ -6,3 +6,4 @@ res://Scenes/MainMenu/main_menu.tscn
 res://Scenes/Levels/level3.tscn
 res://box.tscn
 res://Scenes/Levels/level2.tscn
+res://box.gd

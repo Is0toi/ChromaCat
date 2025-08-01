@@ -71,18 +71,6 @@ sources/2 = SubResource("TileSetScenesCollectionSource_d15yg")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_5j5u1")]
 position = Vector2(-240, -11)
-maxSpeed = null
-timeToReachMaxSpeed = null
-timeToReachZeroSpeed = null
-directionalSnap = null
-jumpHeight = null
-jumps = null
-gravityScale = null
-terminalVelocity = null
-shortHop = null
-jumpVariable = null
-coyoteTime = null
-jumpBuffering = null
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 position = Vector2(0, 1)
