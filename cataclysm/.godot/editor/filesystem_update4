@@ -1,1 +1,5 @@
 res://Scenes/game.tscn
+res://Scripts/npc_static.gd
+res://Scenes/character.tscn
+res://Scenes/npc_static.tscn
+res://Scripts/character.gd
