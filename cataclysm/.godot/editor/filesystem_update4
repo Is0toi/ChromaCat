@@ -3,6 +3,7 @@ res://Scenes/character.tscn
 res://Scenes/npc_static.tscn
 res://Scripts/npc_static.gd
 res://Dialogue/main.txt
+<<<<<<< Updated upstream
 res://addons/dialogue_manager/constants.gd
 res://addons/dialogue_manager/dialogue_label.gd
 res://addons/dialogue_manager/dialogue_line.gd
@@ -55,3 +56,5 @@ res://addons/dialogue_manager/utilities/builtins.gd
 res://addons/dialogue_manager/utilities/dialogue_cache.gd
 res://addons/dialogue_manager/views/main_view.gd
 res://addons/dialogue_manager/views/main_view.tscn
+=======
+>>>>>>> Stashed changes
