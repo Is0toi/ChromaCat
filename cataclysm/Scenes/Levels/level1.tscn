@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://br4bq57vhiakg" path="res://mainchar.tscn" id="1_7u4ml"]
 [ext_resource type="Texture2D" uid="uid://cgbsuyiw2aary" path="res://Assets/pixil-frame-0 (14).png" id="2_16p8j"]
-[ext_resource type="PackedScene" uid="uid://xbqejsm8wvd" path="res://water.tscn" id="3_1ukdm"]
+[ext_resource type="PackedScene" path="res://water.tscn" id="3_1ukdm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_16p8j"]
 texture = ExtResource("2_16p8j")
@@ -74,3 +74,11 @@ position = Vector2(-178, -16)
 position = Vector2(0, 1)
 zoom = Vector2(3, 3)
 position_smoothing_enabled = true
+<<<<<<< HEAD
+=======
+
+[connection signal="body_entered" from="TileMapLayer/Area2D" to="TileMapLayer/Area2D" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@39350" to="TileMapLayer/@Area2D@39350" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@39351" to="TileMapLayer/@Area2D@39351" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@39352" to="TileMapLayer/@Area2D@39352" method="_on_body_entered"]
+>>>>>>> be51d3b43836b9c3b90ee24b00bbbe96c6d510b7

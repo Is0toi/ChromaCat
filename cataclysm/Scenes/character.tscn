@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 [gd_scene load_steps=12 format=3 uid="uid://b0fkbbwdaqnf2"]
 
 [ext_resource type="Texture2D" path="res://Assets/assetscat.png" id="1_f50pn"]
 [ext_resource type="Script" path="res://Scripts/Characters/character.gd" id="1_pjt0s"]
+=======
+[gd_scene load_steps=12 format=3 uid="uid://cekmvgw7cu87y"]
+
+[ext_resource type="Texture2D" path="res://Assets/assetscat.png" id="1_f50pn"]
+[ext_resource type="Script" uid="uid://owc02kyphra3" path="res://Scripts/character.gd" id="1_pjt0s"]
+>>>>>>> be51d3b43836b9c3b90ee24b00bbbe96c6d510b7
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_glpr6"]
 atlas = ExtResource("1_f50pn")
@@ -81,5 +88,9 @@ autoplay = "new_animation"
 frame_progress = 0.276945
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+<<<<<<< HEAD
 position = Vector2(0.25, 1.25)
+=======
+position = Vector2(0, 1)
+>>>>>>> be51d3b43836b9c3b90ee24b00bbbe96c6d510b7
 shape = SubResource("RectangleShape2D_f50pn")
