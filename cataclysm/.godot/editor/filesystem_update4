@@ -10,3 +10,5 @@ res://mainchar.gd
 res://Scripts/door.gd
 res://mainchar.tscn
 res://Scenes/Levels/level4.tscn
+res://dog.gd
+res://Scripts/water.gd
