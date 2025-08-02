@@ -1,9 +1,9 @@
-res://dog.tscn
-res://mainchar.gd
-res://mainchar.tscn
-res://Scenes/Levels/level1.tscn
-res://Scenes/MainMenu/main_menu.tscn
 res://Scenes/Levels/level3.tscn
-res://box.tscn
+res://Scenes/MainMenu/main_menu.tscn
+res://mainchar.tscn
 res://Scenes/Levels/level2.tscn
-res://box.gd
+res://Scenes/Levels/level1.tscn
+res://dog.tscn
+res://Interactables/box.tscn
+res://Interactables/box.gd
+res://mainchar.gd
