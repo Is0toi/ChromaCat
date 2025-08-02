@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=4 uid="uid://b2agyhls8h77b"]
+[gd_scene load_steps=10 format=4 uid="uid://p16kbgo2ljxl"]
 
 [ext_resource type="PackedScene" uid="uid://br4bq57vhiakg" path="res://mainchar.tscn" id="1_5j5u1"]
 [ext_resource type="FontFile" uid="uid://b5uckawjsg8m3" path="res://Assets/Fonts/editundo.ttf" id="2_tnuy3"]
@@ -77,14 +77,15 @@ position = Vector2(0, 1)
 zoom = Vector2(3, 3)
 position_smoothing_enabled = true
 
-[node name="Label" type="Label" parent="."]
+[node name="Instructions" type="Label" parent="."]
 z_index = -1
 offset_left = -261.0
 offset_top = -74.0
 offset_right = -25.0
 offset_bottom = -51.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_tnuy3")
-text = "Press U to phase through wall"
+text = "Press I to phase through wall"
 metadata/_edit_use_anchors_ = true
 
 [node name="Area2D" parent="." instance=ExtResource("3_d15yg")]

@@ -77,13 +77,4 @@ layout_mode = 2
 text = "Quit"
 icon_alignment = 1
 
-[node name="Seperator3" type="Control" parent="Fieldpixelart/HBoxContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="settingButton" type="Button" parent="Fieldpixelart/HBoxContainer/VBoxContainer"]
-custom_minimum_size = Vector2(120, 0)
-layout_mode = 2
-text = "Settings"
-icon_alignment = 1
-
 [connection signal="pressed" from="Fieldpixelart/HBoxContainer/VBoxContainer/startButton" to="." method="_on_start_button_pressed"]
