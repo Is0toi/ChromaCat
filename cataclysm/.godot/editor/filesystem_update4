@@ -1,5 +1,8 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 res://Scenes/MainMenu/main_menu.tscn
 >>>>>>> Stashed changes
 res://mainchar.tscn
@@ -11,6 +14,9 @@ res://box.tscn
 =======
 res://dog.tscn
 res://Interactables/box.tscn
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 res://Scenes/Levels/level3.tscn
 res://mainchar.gd
