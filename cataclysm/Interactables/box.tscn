@@ -1,19 +1,23 @@
-[gd_scene load_steps=5 format=3 uid="uid://cshgnoffvbsxv"]
+[gd_scene load_steps=6 format=3 uid="uid://c0n7b3x0tfpgm"]
 
-[ext_resource type="Texture2D" uid="uid://cgbsuyiw2aary" path="res://Assets/pixil-frame-0 (14).png" id="1_ie20d"]
+[ext_resource type="Texture2D" uid="uid://cgbsuyiw2aary" path="res://Assets/pixil-frame-0 (14).png" id="1_g2tbl"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ie20d"]
-size = Vector2(28, 28)
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_g2tbl"]
+friction = 0.02
+bounce = 0.1
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_6x0xl"]
-atlas = ExtResource("1_ie20d")
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oq5cr"]
+size = Vector2(30, 28.75)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bqn3j"]
+atlas = ExtResource("1_g2tbl")
 region = Rect2(288, 64, 32, 32)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_grcc1"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_3n43a"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_6x0xl")
+"texture": SubResource("AtlasTexture_bqn3j")
 }],
 "loop": true,
 "name": &"default",
@@ -21,19 +25,21 @@ animations = [{
 }]
 
 [node name="RigidBody2D" type="RigidBody2D"]
-collision_layer = 6
+process_physics_priority = 2
+collision_layer = 4
 collision_mask = 4
-mass = 2.062
-center_of_mass_mode = 1
-center_of_mass = Vector2(0, -20.2)
+mass = 4.0
+physics_material_override = SubResource("PhysicsMaterial_g2tbl")
 can_sleep = false
-linear_damp = 5.631
-angular_damp = 7.141
+lock_rotation = true
+linear_damp_mode = 1
+linear_damp = 6.651
+angular_damp = 3.06
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 2)
-shape = SubResource("RectangleShape2D_ie20d")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["RigidBody"]]
+position = Vector2(0, 1.625)
+shape = SubResource("RectangleShape2D_oq5cr")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_grcc1")
+sprite_frames = SubResource("SpriteFrames_3n43a")
 autoplay = "default"

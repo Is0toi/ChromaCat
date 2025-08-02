@@ -6,8 +6,8 @@ class_name PlatformerController2D
 
 @export_category("Movement")
 @export_range(50, 500) var maxSpeed: float = 200.0
-@export_range(0, 4) var timeToReachMaxSpeed: float = 0.2
-@export_range(0, 4) var timeToReachZeroSpeed: float = 0.2
+@export_range(0, 4) var timeToReachMaxSpeed: float = 0.1
+@export_range(0, 4) var timeToReachZeroSpeed: float = 0.1
 @export var directionalSnap: bool = false
 
 @export_category("Jumping")
@@ -44,10 +44,13 @@ var teleport_return_timer: Timer
 
 var teleport_cooldown := false
 var teleport_cooldown_timer: Timer
+
+
 var freeze_cooldown := false
 var freeze_cooldown_timer: Timer
 
-var push_force = 60.0
+var push_force = 40.0
+
 
 func _ready():
 	_update_data()
@@ -71,11 +74,13 @@ func _ready():
 	teleport_cooldown_timer.timeout.connect(_on_teleport_cooldown_timeout)
 	add_child(teleport_cooldown_timer)
 
+	
 	freeze_cooldown_timer = Timer.new()
 	freeze_cooldown_timer.one_shot = true
 	freeze_cooldown_timer.wait_time = 9.0
 	freeze_cooldown_timer.timeout.connect(_on_freeze_cooldown_timeout)
 	add_child(freeze_cooldown_timer)
+
 
 
 func _update_data():
@@ -162,30 +167,34 @@ func _physics_process(delta):
 	
 	if Input.is_action_just_pressed("teleport") and not teleport_cooldown:
 		_teleport_to_cursor()
-
+		
 	if Input.is_action_just_pressed("freeze_enemies") and not freeze_cooldown:
 		_freeze_enemies()
 
 func _teleport_to_cursor():
-	# logic for if theres a wall
-	var target_posiiton = get_global_mouse_position()
-	var collision = move_and_collide(target_posiiton - global_position, true)
-
-	if collision:
-		print("Teleport blocked: collision with wall")
+	if teleport_cooldown:
+		print("Teleport on cooldown!")
 		return
-	
-	# if possible
-	teleport_origin = global_position # save curr pos
-	global_position = get_global_mouse_position() # teleport
-	teleport_return_timer.start() # teleport back timer
 
-	# cooldown
+	var target_position = get_global_mouse_position()
+	var original_position = global_position
+
+	#test if destination is valid 
+	global_position = target_position
+	if test_move(global_transform, Vector2.ZERO):
+		global_position = original_position  # Revert if blocked
+		print("Teleport blocked: destination inside wall")
+		return
+
+	teleport_origin = original_position 
+	teleport_return_timer.start()       
+
 	teleport_cooldown = true
 	teleport_cooldown_timer.start()
 
 func _on_teleport_return_timeout():
 	global_position = teleport_origin  # return to saved pos
+
 
 func _on_freeze_cooldown_timeout():
 	freeze_cooldown = false	
@@ -200,6 +209,8 @@ func _start_phasing():
 func _on_phase_timeout():
 	is_phasing = false
 	collision_mask = 0xFFFFFFFF
+	PlayerSprite.modulate.a = 1.0 
+
 	PlayerSprite.modulate.a = 1.0  # Restore visibility
 	print("Phasing ended")
 
@@ -233,6 +244,8 @@ func _on_area_2d_body_exited(body):
 
 func _on_teleport_cooldown_timeout():
 	teleport_cooldown = false
+
+
 func _freeze_enemies():
 	for dog in get_tree().get_nodes_in_group("enemy"):
 		dog.set_physics_process(false)
@@ -243,4 +256,4 @@ func _freeze_enemies():
 	await get_tree().create_timer(3.0).timeout
 
 	for dog in get_tree().get_nodes_in_group("enemy"):
-		dog.set_physics_process(true) 
+		dog.set_physics_process(true)

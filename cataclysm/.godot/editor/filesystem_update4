@@ -1,22 +1,12 @@
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-res://Scenes/MainMenu/main_menu.tscn
->>>>>>> Stashed changes
-res://mainchar.tscn
+res://feather.tscn
+res://feather.gd
+res://Interactables/feather.tscn
 res://Scenes/Levels/level1.tscn
-<<<<<<< Updated upstream
+res://Scenes/Levels/level3.tscn
 res://Scenes/MainMenu/main_menu.tscn
 res://Scenes/game.tscn
-res://box.tscn
-=======
-res://dog.tscn
 res://Interactables/box.tscn
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-res://Scenes/Levels/level3.tscn
+res://mainchar.tscn
+res://water.tscn
+res://Scripts/feather.gd
 res://mainchar.gd

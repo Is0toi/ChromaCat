@@ -1,26 +1,11 @@
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-CharacterBody2D
 AnimatedSprite2D
->>>>>>> Stashed changes
 CollisionShape2D
-AnimatedSprite2D
+Area2D
+CharacterBody2D
 AnimatableBody2D
 CharacterBody2D
 Label
-Area2D
-Area2D
 RigidBody2D
-Area2D
 Camera2D
 TileMapLayer
 TileMap
