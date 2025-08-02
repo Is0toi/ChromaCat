@@ -12,3 +12,6 @@ res://mainchar.tscn
 res://Scenes/Levels/level4.tscn
 res://dog.gd
 res://Scripts/water.gd
+res://water.tscn
+res://Scenes/lvl1helper.tscn
+res://Scenes/lvl_1_helper.gd

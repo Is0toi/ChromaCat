@@ -1,10 +1,6 @@
 ~ start
-Nate: [[Hi!|Hello!|Howdy!|Salutations!|Yo!]]  
-- Who are you?
-	~ explain
-	Nate: I give hints to help you pass levels.
-Nate: Talk to me if you get stuck at any point!
-- What? => explain
+Sign: I give hints to help you pass levels.
+Sign: Read me if you get stuck at any point!
 - Okay!
-	Nate: Good Luck!
+	Sign: Good Luck!
 => END

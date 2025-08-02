@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-[gd_scene load_steps=12 format=4 uid="uid://dyrxv8fvpc0hh"]
-=======
-[gd_scene load_steps=13 format=4 uid="uid://cgo22ro3inyql"]
->>>>>>> 48ee2314aef29790737c1437185da7708819af23
+[gd_scene load_steps=13 format=4 uid="uid://dyrxv8fvpc0hh"]
 
 [ext_resource type="PackedScene" uid="uid://br4bq57vhiakg" path="res://mainchar.tscn" id="1_lpiby"]
 [ext_resource type="FontFile" uid="uid://b5uckawjsg8m3" path="res://Assets/Fonts/editundo.ttf" id="2_6xlxm"]
@@ -129,12 +125,3 @@ z_index = -2
 position = Vector2(-87, -225)
 scale = Vector2(0.58125, 0.748958)
 texture = ExtResource("8_ndqic")
-<<<<<<< HEAD
-=======
-
-[connection signal="body_entered" from="TileMapLayer/Area2D" to="TileMapLayer/Area2D" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@74869" to="TileMapLayer/@Area2D@74869" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@74870" to="TileMapLayer/@Area2D@74870" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@74871" to="TileMapLayer/@Area2D@74871" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@74872" to="TileMapLayer/@Area2D@74872" method="_on_body_entered"]
->>>>>>> 48ee2314aef29790737c1437185da7708819af23

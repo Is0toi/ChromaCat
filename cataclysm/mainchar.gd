@@ -54,13 +54,7 @@ var glitch_mode := false
 
 func _on_teleport_cooldown_timeout():
 	teleport_cooldown = false
-<<<<<<< HEAD
 
-
-=======
-# Glitch mode (plays glitched animations when abilities are active)
-var glitch_mode := false
->>>>>>> 48ee2314aef29790737c1437185da7708819af23
 
 func _ready():
 	_update_data()
@@ -171,18 +165,15 @@ func _physics_process(delta):
 		PlayerSprite.play("glitch_jump" if glitch_mode else "jump")
 	
 	# Ability inputs
-	if Input.is_action_just_pressed("phase") and not is_phasing:
+	if Input.is_action_just_pressed("phase") and not is_phasing and not teleport_cooldown:
 		_start_phasing()
 	
-	if Input.is_action_just_pressed("teleport") and not teleport_cooldown:
+	if Input.is_action_just_pressed("teleport") and not teleport_cooldown and not is_phasing:
 		_teleport_to_cursor()
 		
 	if Input.is_action_just_pressed("freeze_enemies") and not freeze_cooldown:
 		_freeze_enemies()
-		
-	if Input.is_action_just_pressed("debug"):
-		print("ability active?", is_ability_active())
-	
+			
 	if Input.is_action_just_pressed("reset"):
 		get_tree().reload_current_scene()
 
@@ -264,10 +255,7 @@ func _start_jump_buffer_timer():
 func _on_freeze_cooldown_timeout():
 	freeze_cooldown = false	
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 48ee2314aef29790737c1437185da7708819af23
 # Box collisions
 func _on_area_2d_body_entered(body):
 	if body.is_in_group("RigidBody"):
@@ -279,17 +267,6 @@ func _on_area_2d_body_exited(body):
 	if body.is_in_group("RigidBody"):
 		body.collision_layer = 3  
 		body.collision_mask = 3 
-
-<<<<<<< HEAD
-=======
-	freeze_cooldown = true
-	freeze_cooldown_timer.start()
-			
-	await get_tree().create_timer(3.0).timeout
-
-	for dog in get_tree().get_nodes_in_group("enemy"):
-		dog.set_physics_process(true)
->>>>>>> 48ee2314aef29790737c1437185da7708819af23
 
 func is_ability_active() -> bool:
 	return teleport_return_timer.time_left > 0
