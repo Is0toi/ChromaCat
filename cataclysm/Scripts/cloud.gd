@@ -10,14 +10,10 @@ var is_frozen := false
 
 func _ready():
 	start_position = global_position
-	$AnimatedSprite2D.play("walk")
+	$AnimatedSprite2D.play("float")
 	
 func _physics_process(delta):
 	position.x += direction * speed * delta
 	if abs(position.x - start_position.x) >= move_distance:
 		direction *= -1
 		$AnimatedSprite2D.flip_h = direction < 0
-
-func _on_area_2d_body_entered(body):
-		if body.is_in_group("player"):
-			get_tree().reload_current_scene()

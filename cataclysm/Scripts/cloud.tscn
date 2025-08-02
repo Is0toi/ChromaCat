@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://c88gmo5o554ff"]
+
+[ext_resource type="Script" uid="uid://cxtaig6rkx7dv" path="res://Scripts/cloud.gd" id="1_rjktq"]
+[ext_resource type="Texture2D" uid="uid://cgbsuyiw2aary" path="res://Assets/pixil-frame-0 (14).png" id="2_jxwhj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xqc5t"]
+atlas = ExtResource("2_jxwhj")
+region = Rect2(224, 64, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6rekj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xqc5t")
+}],
+"loop": true,
+"name": &"float",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vxoho"]
+size = Vector2(30, 5.5)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_rjktq")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_6rekj")
+animation = &"float"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4)
+shape = SubResource("RectangleShape2D_vxoho")
