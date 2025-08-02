@@ -45,6 +45,8 @@ var teleport_return_timer: Timer
 var teleport_cooldown := false
 var teleport_cooldown_timer: Timer
 
+var push_force = 60.0
+
 func _ready():
 	_update_data()
 	add_to_group("player")
@@ -128,7 +130,10 @@ func _physics_process(delta):
 		_jump()
 
 	move_and_slide()
-
+	for i in get_slide_collision_count():
+		var c = get_slide_collision(i)
+		if c.get_collider() is RigidBody2D:
+			c.get_collider().apply_central_impulse(-c.get_normal() * push_force)
 	# Flip the sprite
 	if velocity.x > 0:
 		PlayerSprite.flip_h = false
@@ -203,18 +208,15 @@ func _start_jump_buffer_timer():
 #box collisions
 func _on_area_2d_body_entered(body):
 	if body.is_in_group("RigidBody"):
+		print("cat on box")
 		body.collision_layer = 1 
 		body.collision_mask = 1   
 
 func _on_area_2d_body_exited(body):
 	if body.is_in_group("RigidBody"):
-<<<<<<< HEAD
 		body.collision_layer = 3  
 		body.collision_mask = 3 
-=======
-		body.collision_layer = 3
-		body.collision_mask = 3
->>>>>>> 1ca3e079d4e4ad6e2a482f9e8113d114e8acc350
+
 
 func _on_teleport_cooldown_timeout():
 	teleport_cooldown = false

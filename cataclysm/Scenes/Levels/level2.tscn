@@ -6,7 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://cgbsuyiw2aary" path="res://Assets/pixil-frame-0 (14).png" id="4_hrj3c"]
 [ext_resource type="PackedScene" uid="uid://xbqejsm8wvd" path="res://water.tscn" id="5_16px4"]
 [ext_resource type="Texture2D" uid="uid://b0wud3pjajnja" path="res://Assets/8bit-pixel-graphic-blue-sky-background-with-clouds-vector.jpg" id="6_tnuy3"]
-[ext_resource type="PackedScene" uid="uid://ocxfbrpwidkb" path="res://dog.tscn" id="7_d15yg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tnuy3"]
 texture = ExtResource("4_hrj3c")
@@ -85,7 +84,7 @@ offset_top = -74.0
 offset_right = -25.0
 offset_bottom = -51.0
 theme_override_fonts/font = ExtResource("2_tnuy3")
-text = "Press I to phase through wall"
+text = "Press U to phase through wall"
 metadata/_edit_use_anchors_ = true
 
 [node name="Area2D" parent="." instance=ExtResource("3_d15yg")]
@@ -105,6 +104,3 @@ z_index = -2
 position = Vector2(-87, -225)
 scale = Vector2(0.58125, 0.748958)
 texture = ExtResource("6_tnuy3")
-
-[node name="CharacterBody2D2" parent="." instance=ExtResource("7_d15yg")]
-position = Vector2(119, -14)

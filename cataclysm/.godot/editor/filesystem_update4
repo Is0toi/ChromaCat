@@ -1,10 +1,16 @@
+<<<<<<< HEAD
+=======
+res://Scenes/Levels/level3.tscn
+res://Scenes/MainMenu/main_menu.tscn
+>>>>>>> 32d2d2ebffe6eea3e1347fee1418ee08fc2a0318
 res://mainchar.tscn
 res://Scenes/Levels/level2.tscn
-res://Scenes/MainMenu/main_menu.tscn
 res://Scenes/Levels/level1.tscn
-res://mainchar.gd
-res://Scenes/npc_static.tscn
-res://Scenes/Levels/level3.tscn
-res://dog.gd
 res://dog.tscn
+<<<<<<< HEAD
 res://box.tscn
+=======
+res://Interactables/box.tscn
+res://Interactables/box.gd
+res://mainchar.gd
+>>>>>>> 32d2d2ebffe6eea3e1347fee1418ee08fc2a0318

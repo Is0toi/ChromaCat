@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://xbqejsm8wvd" path="res://water.tscn" id="3_1ukdm"]
 [ext_resource type="PackedScene" uid="uid://8dy0k55bp50k" path="res://door.tscn" id="4_0xrym"]
 [ext_resource type="Texture2D" uid="uid://b0wud3pjajnja" path="res://Assets/8bit-pixel-graphic-blue-sky-background-with-clouds-vector.jpg" id="5_c0r4e"]
-[ext_resource type="PackedScene" uid="uid://ocxfbrpwidkb" path="res://dog.tscn" id="6_m0h5h"]
+[ext_resource type="PackedScene" uid="uid://c7x8csgodlbdn" path="res://dog.tscn" id="6_m0h5h"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_16p8j"]
 texture = ExtResource("2_16p8j")
@@ -92,4 +92,4 @@ scale = Vector2(0.58125, 0.748958)
 texture = ExtResource("5_c0r4e")
 
 [node name="CharacterBody2D2" parent="." instance=ExtResource("6_m0h5h")]
-position = Vector2(-337, -14)
+position = Vector2(-304, -16)
