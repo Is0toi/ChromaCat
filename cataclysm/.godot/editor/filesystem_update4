@@ -1,0 +1,4 @@
+res://mainchar.gd
+res://mainchar.tscn
+res://Interactables/door.tscn
+res://Scenes/Levels/level1.tscn
