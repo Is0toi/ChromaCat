@@ -50,12 +50,11 @@ var freeze_cooldown := false
 var freeze_cooldown_timer: Timer
 
 var push_force = 40.0
-var glitch_mode := false
 
 func _on_teleport_cooldown_timeout():
 	teleport_cooldown = false
-
 # Glitch mode (plays glitched animations when abilities are active)
+var glitch_mode := false
 
 func _ready():
 	_update_data()
@@ -166,20 +165,14 @@ func _physics_process(delta):
 		PlayerSprite.play("glitch_jump" if glitch_mode else "jump")
 	
 	# Ability inputs
-	if Input.is_action_just_pressed("phase") and not is_phasing and not teleport_cooldown:
+	if Input.is_action_just_pressed("phase") and not is_phasing:
 		_start_phasing()
 	
-	if Input.is_action_just_pressed("teleport") and not teleport_cooldown and not is_phasing:
+	if Input.is_action_just_pressed("teleport") and not teleport_cooldown:
 		_teleport_to_cursor()
 		
 	if Input.is_action_just_pressed("freeze_enemies") and not freeze_cooldown:
 		_freeze_enemies()
-<<<<<<< HEAD
-			
-	if Input.is_action_just_pressed("reset"):
-		get_tree().reload_current_scene()
-=======
->>>>>>> 361f0f3e192e75a8d6af9df7aa084aa4ee79e6a6
 
 func _teleport_to_cursor():
 	if teleport_cooldown:
@@ -278,7 +271,6 @@ func _on_area_2d_body_exited(body):
 
 	for dog in get_tree().get_nodes_in_group("enemy"):
 		dog.set_physics_process(true)
-
 
 func is_ability_active() -> bool:
 	return teleport_return_timer.time_left > 0

@@ -26,8 +26,8 @@ animations = [{
 
 [node name="RigidBody2D" type="RigidBody2D"]
 process_physics_priority = 2
-collision_layer = 12
-collision_mask = 12
+collision_layer = 4
+collision_mask = 4
 mass = 4.0
 physics_material_override = SubResource("PhysicsMaterial_g2tbl")
 can_sleep = false
