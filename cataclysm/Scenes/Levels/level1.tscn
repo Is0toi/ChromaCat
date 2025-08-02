@@ -9,7 +9,11 @@
 [ext_resource type="FontFile" uid="uid://b5uckawjsg8m3" path="res://Assets/Fonts/editundo.ttf" id="7_20uw2"]
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [ext_resource type="PackedScene" uid="uid://c7rk5ampxf3wi" path="res://Scenes/npc.tscn" id="8_i36j2"]
+=======
+[ext_resource type="PackedScene" uid="uid://bsevm1juniak0" path="res://Scenes/npc.tscn" id="8_i36j2"]
+>>>>>>> Stashed changes
 =======
 [ext_resource type="PackedScene" uid="uid://bsevm1juniak0" path="res://Scenes/npc.tscn" id="8_i36j2"]
 >>>>>>> Stashed changes
@@ -156,6 +160,7 @@ texture = ExtResource("5_c0r4e")
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [node name="CharacterBody2D" parent="." instance=ExtResource("8_i36j2")]
 position = Vector2(-150, -13)
 
@@ -166,6 +171,8 @@ position = Vector2(-150, -13)
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 [node name="Npc" parent="." instance=ExtResource("8_i36j2")]
 position = Vector2(-349, -12)
 
@@ -174,6 +181,9 @@ position = Vector2(-349, -12)
 [connection signal="body_entered" from="TileMapLayer/@Area2D@140336" to="TileMapLayer/@Area2D@140336" method="_on_body_entered"]
 [connection signal="body_entered" from="TileMapLayer/@Area2D@140337" to="TileMapLayer/@Area2D@140337" method="_on_body_entered"]
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes

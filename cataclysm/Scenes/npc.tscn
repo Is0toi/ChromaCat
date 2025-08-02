@@ -1,8 +1,14 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [gd_scene load_steps=10 format=3 uid="uid://c7rk5ampxf3wi"]
 
 [ext_resource type="Script" uid="uid://c5wj5rike2mj2" path="res://Scenes/npc.gd" id="1_xxsvc"]
+=======
+[gd_scene load_steps=10 format=3 uid="uid://bsevm1juniak0"]
+
+[ext_resource type="Script" uid="uid://cqm2a30sssug1" path="res://Scenes/npc.gd" id="1_xxsvc"]
+>>>>>>> Stashed changes
 =======
 [gd_scene load_steps=10 format=3 uid="uid://bsevm1juniak0"]
 
