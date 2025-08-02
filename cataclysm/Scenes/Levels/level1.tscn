@@ -112,13 +112,15 @@ theme_override_fonts/font = ExtResource("7_20uw2")
 text = "Hold (Space) to jump over water"
 
 [node name="Warning" type="Label" parent="."]
-offset_left = 128.0
-offset_top = -96.0
-offset_right = 301.0
-offset_bottom = -73.0
+offset_left = 121.0
+offset_top = -109.0
+offset_right = 323.0
+offset_bottom = -58.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("7_20uw2")
-text = "Watch out for the dog!"
+text = "Watch out for the dog!
+He will set you back but, 
+you can jump ontop of it"
 
 [node name="Sky2" type="Sprite2D" parent="."]
 z_index = -2
@@ -145,6 +147,12 @@ scale = Vector2(0.58125, 0.748958)
 texture = ExtResource("5_c0r4e")
 
 [connection signal="body_entered" from="TileMapLayer/Area2D" to="TileMapLayer/Area2D" method="_on_body_entered"]
+<<<<<<< HEAD
 [connection signal="body_entered" from="TileMapLayer/@Area2D@66832" to="TileMapLayer/@Area2D@66832" method="_on_body_entered"]
 [connection signal="body_entered" from="TileMapLayer/@Area2D@66833" to="TileMapLayer/@Area2D@66833" method="_on_body_entered"]
 [connection signal="body_entered" from="TileMapLayer/@Area2D@66834" to="TileMapLayer/@Area2D@66834" method="_on_body_entered"]
+=======
+[connection signal="body_entered" from="TileMapLayer/@Area2D@230464" to="TileMapLayer/@Area2D@230464" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@230465" to="TileMapLayer/@Area2D@230465" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@230466" to="TileMapLayer/@Area2D@230466" method="_on_body_entered"]
+>>>>>>> 20f5ff55cad03efd65e438959f27b9838064dc11

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 res://mainchar.tscn
 res://Scenes/Levels/level2.tscn
 res://Scenes/MainMenu/main_menu.tscn
@@ -10,3 +11,25 @@ res://dog.tscn
 res://box.tscn
 res://door.tscn
 res://Scripts/box2.tscn
+=======
+res://Scenes/game.tscn
+res://addons/wakatime/api_key_prompt.tscn
+res://Scenes/character.tscn
+res://Scenes/MainMenu/main_menu.tscn
+res://Scripts/character.gd
+res://Scripts/npc_static.gd
+res://Scripts/MainMenu/Main_menu.gd
+res://Scripts/Levels/level1.tscn
+res://Scenes/Levels/level1.tscn
+res://mainchar.tscn
+res://water.tscn
+res://Scenes/MainMenu/main_menu.gd
+res://Scenes/Settings/settings_menu.tscn
+res://Scenes/Settings/settings_menu.gd
+res://mainchar.gd
+res://dog.tscn
+res://door.tscn
+res://Scenes/Levels/level2.tscn
+res://Interactables/box.tscn
+res://Scenes/Levels/level3.tscn
+>>>>>>> 20f5ff55cad03efd65e438959f27b9838064dc11
