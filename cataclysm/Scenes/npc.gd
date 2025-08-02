@@ -16,5 +16,11 @@ func _on_body_exited(body):
 		player_in_range = false
 		
 func _process(delta):
+<<<<<<< Updated upstream
 	if player_in_range and Input.is_action_just_pressed("hello"):
 		DialogueManager.show_dialogue(dialogue_resource, "start")
+=======
+	if player_in_range and Input.is_action_just_pressed("interact"):
+		if dialogue_resource:
+			DialogueManager.show_dialogue(dialogue_resource, "start")
+>>>>>>> Stashed changes

@@ -1,6 +1,12 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=10 format=3 uid="uid://c7rk5ampxf3wi"]
 
 [ext_resource type="Script" uid="uid://c5wj5rike2mj2" path="res://Scenes/npc.gd" id="1_xxsvc"]
+=======
+[gd_scene load_steps=10 format=3 uid="uid://bsevm1juniak0"]
+
+[ext_resource type="Script" uid="uid://cqm2a30sssug1" path="res://Scenes/npc.gd" id="1_xxsvc"]
+>>>>>>> Stashed changes
 [ext_resource type="Texture2D" uid="uid://c5gn8bhhua74o" path="res://Assets/pixil-frame-0 (13).png" id="2_g6unj"]
 [ext_resource type="Resource" uid="uid://pqdtm5v2nexk" path="res://main.dialogue" id="2_h1ryf"]
 

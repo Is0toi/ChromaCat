@@ -7,7 +7,11 @@
 [ext_resource type="Texture2D" uid="uid://b0wud3pjajnja" path="res://Assets/8bit-pixel-graphic-blue-sky-background-with-clouds-vector.jpg" id="5_c0r4e"]
 [ext_resource type="PackedScene" uid="uid://c7x8csgodlbdn" path="res://dog.tscn" id="6_m0h5h"]
 [ext_resource type="FontFile" uid="uid://b5uckawjsg8m3" path="res://Assets/Fonts/editundo.ttf" id="7_20uw2"]
+<<<<<<< Updated upstream
 [ext_resource type="PackedScene" uid="uid://c7rk5ampxf3wi" path="res://Scenes/npc.tscn" id="8_i36j2"]
+=======
+[ext_resource type="PackedScene" uid="uid://bsevm1juniak0" path="res://Scenes/npc.tscn" id="8_i36j2"]
+>>>>>>> Stashed changes
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_16p8j"]
 texture = ExtResource("2_16p8j")
@@ -146,6 +150,7 @@ position = Vector2(1072, -144)
 scale = Vector2(0.58125, 0.748958)
 texture = ExtResource("5_c0r4e")
 
+<<<<<<< Updated upstream
 [node name="CharacterBody2D" parent="." instance=ExtResource("8_i36j2")]
 position = Vector2(-150, -13)
 
@@ -153,3 +158,12 @@ position = Vector2(-150, -13)
 [connection signal="body_entered" from="TileMapLayer/@Area2D@142477" to="TileMapLayer/@Area2D@142477" method="_on_body_entered"]
 [connection signal="body_entered" from="TileMapLayer/@Area2D@142478" to="TileMapLayer/@Area2D@142478" method="_on_body_entered"]
 [connection signal="body_entered" from="TileMapLayer/@Area2D@142479" to="TileMapLayer/@Area2D@142479" method="_on_body_entered"]
+=======
+[node name="Npc" parent="." instance=ExtResource("8_i36j2")]
+position = Vector2(-349, -12)
+
+[connection signal="body_entered" from="TileMapLayer/Area2D" to="TileMapLayer/Area2D" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@140335" to="TileMapLayer/@Area2D@140335" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@140336" to="TileMapLayer/@Area2D@140336" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@140337" to="TileMapLayer/@Area2D@140337" method="_on_body_entered"]
+>>>>>>> Stashed changes
