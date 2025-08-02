@@ -1,0 +1,55 @@
+[gd_scene load_steps=10 format=3 uid="uid://c7rk5ampxf3wi"]
+
+[ext_resource type="Script" uid="uid://c5wj5rike2mj2" path="res://Scenes/npc.gd" id="1_xxsvc"]
+[ext_resource type="Texture2D" uid="uid://c5gn8bhhua74o" path="res://Assets/pixil-frame-0 (13).png" id="2_g6unj"]
+[ext_resource type="Resource" uid="uid://pqdtm5v2nexk" path="res://main.dialogue" id="2_h1ryf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ig1v"]
+atlas = ExtResource("2_g6unj")
+region = Rect2(0, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6atyd"]
+atlas = ExtResource("2_g6unj")
+region = Rect2(32, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2xkex"]
+atlas = ExtResource("2_g6unj")
+region = Rect2(64, 128, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8gudg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1ig1v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6atyd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2xkex")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_h1ryf"]
+radius = 20.025
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xxsvc"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_xxsvc")
+dialogue_resource = ExtResource("2_h1ryf")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, 1)
+sprite_frames = SubResource("SpriteFrames_8gudg")
+
+[node name="InteractionZone" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionZone"]
+shape = SubResource("CircleShape2D_h1ryf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_xxsvc")
