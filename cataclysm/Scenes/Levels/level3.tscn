@@ -113,8 +113,4 @@ scale = Vector2(0.58125, 0.748958)
 texture = ExtResource("6_n80jh")
 
 [node name="RigidBody2D" parent="." instance=ExtResource("7_x0tam")]
-position = Vector2(-112, -16)
-mass = 0.237
-linear_damp_mode = 1
-linear_damp = 10.0
-angular_damp = 100.0
+position = Vector2(16, -16)

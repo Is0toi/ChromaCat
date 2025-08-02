@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://cshgnoffvbsxv"]
+[gd_scene load_steps=6 format=3 uid="uid://cshgnoffvbsxv"]
 
+[ext_resource type="Script" uid="uid://2rro5wphai0i" path="res://Interactables/box.gd" id="1_5wfoe"]
 [ext_resource type="Texture2D" uid="uid://cgbsuyiw2aary" path="res://Assets/pixil-frame-0 (14).png" id="1_ie20d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5wfoe"]
@@ -23,8 +24,9 @@ animations = [{
 [node name="RigidBody2D" type="RigidBody2D"]
 collision_layer = 4
 collision_mask = 4
-linear_damp = 8.672
+linear_damp = 0.02
 angular_damp = 18.874
+script = ExtResource("1_5wfoe")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 2)
