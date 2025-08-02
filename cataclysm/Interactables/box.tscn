@@ -1,9 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://cshgnoffvbsxv"]
+[gd_scene load_steps=5 format=3 uid="uid://cshgnoffvbsxv"]
 
-[ext_resource type="Script" uid="uid://2rro5wphai0i" path="res://Interactables/box.gd" id="1_5wfoe"]
 [ext_resource type="Texture2D" uid="uid://cgbsuyiw2aary" path="res://Assets/pixil-frame-0 (14).png" id="1_ie20d"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_5wfoe"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ie20d"]
 size = Vector2(28, 28)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6x0xl"]
@@ -22,15 +21,18 @@ animations = [{
 }]
 
 [node name="RigidBody2D" type="RigidBody2D"]
-collision_layer = 4
+collision_layer = 6
 collision_mask = 4
-linear_damp = 0.02
-angular_damp = 18.874
-script = ExtResource("1_5wfoe")
+mass = 2.062
+center_of_mass_mode = 1
+center_of_mass = Vector2(0, -20.2)
+can_sleep = false
+linear_damp = 5.631
+angular_damp = 7.141
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 2)
-shape = SubResource("RectangleShape2D_5wfoe")
+shape = SubResource("RectangleShape2D_ie20d")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_grcc1")
