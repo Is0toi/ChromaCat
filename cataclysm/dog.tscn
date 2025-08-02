@@ -40,16 +40,12 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ptela"]
 size = Vector2(21, 21)
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="CharacterBody2D" type="CharacterBody2D" groups=["enemy"]]
 script = ExtResource("1_kb3ao")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_jurjn")
 animation = &"walk"
-<<<<<<< Updated upstream
-frame_progress = 0.353857
-=======
->>>>>>> Stashed changes
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_6vfhn")

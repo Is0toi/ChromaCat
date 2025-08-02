@@ -145,6 +145,6 @@ scale = Vector2(0.58125, 0.748958)
 texture = ExtResource("5_c0r4e")
 
 [connection signal="body_entered" from="TileMapLayer/Area2D" to="TileMapLayer/Area2D" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@210707" to="TileMapLayer/@Area2D@210707" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@210708" to="TileMapLayer/@Area2D@210708" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@210709" to="TileMapLayer/@Area2D@210709" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@66832" to="TileMapLayer/@Area2D@66832" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@66833" to="TileMapLayer/@Area2D@66833" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@66834" to="TileMapLayer/@Area2D@66834" method="_on_body_entered"]

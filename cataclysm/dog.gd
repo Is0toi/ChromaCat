@@ -5,6 +5,8 @@ extends CharacterBody2D
 
 var direction := 1
 var start_position: Vector2
+var is_frozen := false
+
 
 func _ready():
 	start_position = global_position
@@ -15,7 +17,6 @@ func _physics_process(delta):
 	if abs(position.x - start_position.x) >= move_distance:
 		direction *= -1
 		$AnimatedSprite2D.flip_h = direction < 0
-
 
 func _on_area_2d_body_entered(body):
 		if body.is_in_group("player"):

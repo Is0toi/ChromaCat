@@ -45,6 +45,9 @@ var teleport_return_timer: Timer
 var teleport_cooldown := false
 var teleport_cooldown_timer: Timer
 
+var freeze_cooldown := false
+var freeze_cooldown_timer: Timer
+
 var push_force = 60.0
 
 func _ready():
@@ -68,6 +71,12 @@ func _ready():
 	teleport_cooldown_timer.wait_time = 2.0
 	teleport_cooldown_timer.timeout.connect(_on_teleport_cooldown_timeout)
 	add_child(teleport_cooldown_timer)
+	
+	freeze_cooldown_timer = Timer.new()
+	freeze_cooldown_timer.one_shot = true
+	freeze_cooldown_timer.wait_time = 9.0
+	freeze_cooldown_timer.timeout.connect(_on_freeze_cooldown_timeout)
+	add_child(freeze_cooldown_timer)
 
 
 func _update_data():
@@ -154,6 +163,9 @@ func _physics_process(delta):
 	
 	if Input.is_action_just_pressed("teleport") and not teleport_cooldown:
 		_teleport_to_cursor()
+		
+	if Input.is_action_just_pressed("freeze_enemies") and not freeze_cooldown:
+		_freeze_enemies()
 
 func _teleport_to_cursor():
 	# logic for if theres a wall
@@ -175,6 +187,9 @@ func _teleport_to_cursor():
 
 func _on_teleport_return_timeout():
 	global_position = teleport_origin  # return to saved pos
+
+func _on_freeze_cooldown_timeout():
+	freeze_cooldown = false	
 
 func _start_phasing():
 	is_phasing = true
@@ -207,7 +222,6 @@ func _start_jump_buffer_timer():
 
 #box collisions
 func _on_area_2d_body_entered(body):
-<<<<<<< Updated upstream
 	if body.is_in_group("RigidBody"):
 		print("cat on box")
 		body.collision_layer = 1 
@@ -218,18 +232,18 @@ func _on_area_2d_body_exited(body):
 		body.collision_layer = 3  
 		body.collision_mask = 3 
 
-=======
-	if body is RigidBody2D:
-		body.linear_velocity = Vector2.ZERO
-		body.angular_velocity = 0
-		body.sleeping = true  # Optional: puts body to sleep (freezes movement)
-		body.freeze = true    # Freezes completely (position + rotation)
-
-func _on_area_2d_body_exited(body):
-	if body is RigidBody2D:
-		body.freeze = false
-		body.sleeping = false  # Wake up again
->>>>>>> Stashed changes
-
 func _on_teleport_cooldown_timeout():
 	teleport_cooldown = false
+
+func _freeze_enemies():
+	for dog in get_tree().get_nodes_in_group("enemy"):
+		dog.set_physics_process(false)
+		
+	freeze_cooldown = true
+	freeze_cooldown_timer.start()
+			
+	await get_tree().create_timer(3.0).timeout
+
+	for dog in get_tree().get_nodes_in_group("enemy"):
+		dog.set_physics_process(true) 
+			
