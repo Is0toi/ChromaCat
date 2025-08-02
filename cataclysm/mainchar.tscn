@@ -1,7 +1,36 @@
-[gd_scene load_steps=12 format=3 uid="uid://br4bq57vhiakg"]
+[gd_scene load_steps=20 format=3 uid="uid://br4bq57vhiakg"]
 
 [ext_resource type="Texture2D" uid="uid://4p0rirfjewtr" path="res://Assets/pixil-frame-0 (15).png" id="1_s4adt"]
 [ext_resource type="Script" uid="uid://l4tl3pnrjrku" path="res://mainchar.gd" id="1_ubb7a"]
+[ext_resource type="Texture2D" uid="uid://bmhdarn3axfe3" path="res://Assets/pixil-frame-0 (16).png" id="2_3sqm7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8eeux"]
+atlas = ExtResource("2_3sqm7")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u8fbj"]
+atlas = ExtResource("2_3sqm7")
+region = Rect2(32, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_otfsf"]
+atlas = ExtResource("2_3sqm7")
+region = Rect2(64, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7126n"]
+atlas = ExtResource("2_3sqm7")
+region = Rect2(192, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kodjm"]
+atlas = ExtResource("2_3sqm7")
+region = Rect2(96, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nba1g"]
+atlas = ExtResource("2_3sqm7")
+region = Rect2(128, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_02sft"]
+atlas = ExtResource("2_3sqm7")
+region = Rect2(160, 96, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ubb7a"]
 atlas = ExtResource("1_s4adt")
@@ -33,6 +62,48 @@ region = Rect2(160, 160, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_br20p"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8eeux")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u8fbj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_otfsf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u8fbj")
+}],
+"loop": true,
+"name": &"glitch_idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7126n")
+}],
+"loop": true,
+"name": &"glitch_jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kodjm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nba1g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_02sft")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nba1g")
+}],
+"loop": true,
+"name": &"glitch_walk",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_ubb7a")
@@ -88,8 +159,8 @@ PlayerCollider = NodePath("CollisionShape2D")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_br20p")
-animation = &"jump"
-autoplay = "idle"
+animation = &"glitch_idle"
+frame_progress = 0.362956
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1.5, 2)
