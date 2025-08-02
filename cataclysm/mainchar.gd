@@ -50,14 +50,12 @@ var freeze_cooldown := false
 var freeze_cooldown_timer: Timer
 
 var push_force = 40.0
+var glitch_mode := false
 
-<<<<<<< HEAD
 func _on_teleport_cooldown_timeout():
 	teleport_cooldown = false
-=======
-# Glitch mode (plays glitched animations when abilities are active)
-var glitch_mode := false
->>>>>>> 4c9120a9dfc0536a9e1edd80725e22317fb2309e
+
+
 
 func _ready():
 	_update_data()
@@ -179,6 +177,9 @@ func _physics_process(delta):
 		
 	if Input.is_action_just_pressed("debug"):
 		print("ability active?", is_ability_active())
+	
+	if Input.is_action_just_pressed("reset"):
+		get_tree().reload_current_scene()
 
 func _teleport_to_cursor():
 	if teleport_cooldown:
@@ -258,8 +259,6 @@ func _start_jump_buffer_timer():
 func _on_freeze_cooldown_timeout():
 	freeze_cooldown = false	
 
-func _on_teleport_cooldown_timeout():
-	teleport_cooldown = false
 
 # Box collisions
 func _on_area_2d_body_entered(body):
@@ -272,21 +271,7 @@ func _on_area_2d_body_exited(body):
 	if body.is_in_group("RigidBody"):
 		body.collision_layer = 3  
 		body.collision_mask = 3 
-<<<<<<< HEAD
 
-func _freeze_enemies():
-	for dog in get_tree().get_nodes_in_group("enemy"):
-		dog.set_physics_process(false)
-		
-	freeze_cooldown = true
-	freeze_cooldown_timer.start()
-			
-	await get_tree().create_timer(3.0).timeout
-
-	for dog in get_tree().get_nodes_in_group("enemy"):
-		dog.set_physics_process(true)
 
 func is_ability_active() -> bool:
 	return teleport_return_timer.time_left > 0
-=======
->>>>>>> 4c9120a9dfc0536a9e1edd80725e22317fb2309e
