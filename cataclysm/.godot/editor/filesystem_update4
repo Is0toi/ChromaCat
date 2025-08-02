@@ -11,3 +11,6 @@ res://water.tscn
 res://Scripts/feather.gd
 res://mainchar.gd
 res://Scenes/Levels/level4.tscn
+res://Scripts/water.gd
+res://Interactables/dog.tscn
+res://dog.gd
