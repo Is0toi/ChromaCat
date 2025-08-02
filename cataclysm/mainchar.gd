@@ -217,6 +217,5 @@ func _on_area_2d_body_exited(body):
 		body.collision_layer = 3  
 		body.collision_mask = 3 
 
-
 func _on_teleport_cooldown_timeout():
 	teleport_cooldown = false

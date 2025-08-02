@@ -38,24 +38,26 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6vfhn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ptela"]
-size = Vector2(30.5, 27.5)
+size = Vector2(31, 15.5)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_kb3ao")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(2, -1)
 sprite_frames = SubResource("SpriteFrames_jurjn")
 animation = &"walk"
 frame_progress = 0.353857
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 shape = SubResource("RectangleShape2D_6vfhn")
 
 [node name="Area2D" type="Area2D" parent="."]
 collision_mask = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(-0.25, 0.25)
+position = Vector2(1, 5.25)
 shape = SubResource("RectangleShape2D_ptela")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=4 uid="uid://dqbsa7s0b4ixt"]
+[gd_scene load_steps=11 format=4 uid="uid://4mqsqaquvo42"]
 
 [ext_resource type="PackedScene" uid="uid://br4bq57vhiakg" path="res://mainchar.tscn" id="1_ov3rk"]
 [ext_resource type="FontFile" uid="uid://b5uckawjsg8m3" path="res://Assets/Fonts/editundo.ttf" id="2_x0tam"]
