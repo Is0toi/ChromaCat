@@ -10,6 +10,7 @@ res://Scenes/Levels/level1.tscn
 res://dog.tscn
 <<<<<<< HEAD
 res://box.tscn
+<<<<<<< Updated upstream
 =======
 res://Interactables/box.tscn
 res://Interactables/box.gd
@@ -35,3 +36,6 @@ res://dog.tscn
 res://door.tscn
 res://Scenes/Levels/level2.tscn
 >>>>>>> d88b9c54a276abb66ec386b1c06f87c6569068e3
+=======
+res://door.tscn
+>>>>>>> Stashed changes

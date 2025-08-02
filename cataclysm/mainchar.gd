@@ -207,6 +207,7 @@ func _start_jump_buffer_timer():
 
 #box collisions
 func _on_area_2d_body_entered(body):
+<<<<<<< Updated upstream
 	if body.is_in_group("RigidBody"):
 		print("cat on box")
 		body.collision_layer = 1 
@@ -217,6 +218,18 @@ func _on_area_2d_body_exited(body):
 		body.collision_layer = 3  
 		body.collision_mask = 3 
 
+=======
+	if body is RigidBody2D:
+		body.linear_velocity = Vector2.ZERO
+		body.angular_velocity = 0
+		body.sleeping = true  # Optional: puts body to sleep (freezes movement)
+		body.freeze = true    # Freezes completely (position + rotation)
+
+func _on_area_2d_body_exited(body):
+	if body is RigidBody2D:
+		body.freeze = false
+		body.sleeping = false  # Wake up again
+>>>>>>> Stashed changes
 
 func _on_teleport_cooldown_timeout():
 	teleport_cooldown = false
