@@ -16,3 +16,4 @@ res://mainchar.gd
 res://dog.tscn
 res://door.tscn
 res://Scenes/Levels/level2.tscn
+res://Interactables/box.tscn
