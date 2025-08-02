@@ -148,7 +148,6 @@ texture = ExtResource("5_c0r4e")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("8_i36j2")]
 position = Vector2(-298, -11)
-<<<<<<< HEAD
 
 [node name="Sign" type="Label" parent="."]
 offset_left = -371.0
@@ -158,15 +157,3 @@ offset_bottom = -1.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("7_20uw2")
 text = "Press (E) to read sign"
-
-[connection signal="body_entered" from="TileMapLayer/Area2D" to="TileMapLayer/Area2D" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@91419" to="TileMapLayer/@Area2D@91419" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@91420" to="TileMapLayer/@Area2D@91420" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@91421" to="TileMapLayer/@Area2D@91421" method="_on_body_entered"]
-=======
-
-[connection signal="body_entered" from="TileMapLayer/Area2D" to="TileMapLayer/Area2D" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@77971" to="TileMapLayer/@Area2D@77971" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@77972" to="TileMapLayer/@Area2D@77972" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@77973" to="TileMapLayer/@Area2D@77973" method="_on_body_entered"]
->>>>>>> 7e1b4807167805d0ceaf1ab99f5cf66338a00d4c

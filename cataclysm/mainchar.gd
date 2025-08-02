@@ -55,11 +55,7 @@ var glitch_mode := false
 func _on_teleport_cooldown_timeout():
 	teleport_cooldown = false
 
-<<<<<<< HEAD
-=======
 # Glitch mode (plays glitched animations when abilities are active)
-
->>>>>>> 7e1b4807167805d0ceaf1ab99f5cf66338a00d4c
 
 func _ready():
 	_update_data()
@@ -260,10 +256,6 @@ func _start_jump_buffer_timer():
 func _on_freeze_cooldown_timeout():
 	freeze_cooldown = false	
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 7e1b4807167805d0ceaf1ab99f5cf66338a00d4c
 # Box collisions
 func _on_area_2d_body_entered(body):
 	if body.is_in_group("RigidBody"):
@@ -276,9 +268,6 @@ func _on_area_2d_body_exited(body):
 		body.collision_layer = 3  
 		body.collision_mask = 3 
 
-<<<<<<< HEAD
-=======
-
 	freeze_cooldown = true
 	freeze_cooldown_timer.start()
 			
@@ -288,6 +277,5 @@ func _on_area_2d_body_exited(body):
 		dog.set_physics_process(true)
 
 
->>>>>>> 7e1b4807167805d0ceaf1ab99f5cf66338a00d4c
 func is_ability_active() -> bool:
 	return teleport_return_timer.time_left > 0

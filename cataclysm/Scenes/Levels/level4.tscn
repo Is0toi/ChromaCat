@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-[gd_scene load_steps=13 format=4 uid="uid://dyrxv8fvpc0hh"]
-=======
 [gd_scene load_steps=12 format=4 uid="uid://c5jomfe20kj2r"]
->>>>>>> 7e1b4807167805d0ceaf1ab99f5cf66338a00d4c
 
 [ext_resource type="PackedScene" uid="uid://br4bq57vhiakg" path="res://mainchar.tscn" id="1_lpiby"]
 [ext_resource type="FontFile" uid="uid://b5uckawjsg8m3" path="res://Assets/Fonts/editundo.ttf" id="2_6xlxm"]
@@ -123,3 +119,18 @@ z_index = -2
 position = Vector2(-87, -225)
 scale = Vector2(0.58125, 0.748958)
 texture = ExtResource("8_ndqic")
+
+[node name="Instructions R" type="Label" parent="."]
+offset_left = -272.0
+offset_top = -104.0
+offset_right = 44.0
+offset_bottom = -81.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_6xlxm")
+text = "PRESS R TO RESET IF NEEDED, besides that,"
+
+[connection signal="body_entered" from="TileMapLayer/Area2D" to="TileMapLayer/Area2D" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@56456" to="TileMapLayer/@Area2D@56456" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@56457" to="TileMapLayer/@Area2D@56457" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@56458" to="TileMapLayer/@Area2D@56458" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@56459" to="TileMapLayer/@Area2D@56459" method="_on_body_entered"]
