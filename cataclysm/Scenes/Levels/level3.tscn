@@ -1,5 +1,4 @@
-[gd_scene load_steps=11 format=4 uid="uid://4mqsqaquvo42"]
-
+[gd_scene load_steps=12 format=4 uid="uid://4mqsqaquvo42"]
 
 [ext_resource type="PackedScene" uid="uid://br4bq57vhiakg" path="res://mainchar.tscn" id="1_ov3rk"]
 [ext_resource type="FontFile" uid="uid://b5uckawjsg8m3" path="res://Assets/Fonts/editundo.ttf" id="2_x0tam"]
@@ -69,6 +68,10 @@ physics_layer_1/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_q21to")
 sources/2 = SubResource("TileSetScenesCollectionSource_nqbrd")
 
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_x0tam"]
+friction = 0.0
+bounce = 0.1
+
 [node name="Level3" type="Node2D"]
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_ov3rk")]
@@ -114,4 +117,11 @@ scale = Vector2(0.58125, 0.748958)
 texture = ExtResource("6_n80jh")
 
 [node name="RigidBody2D" parent="." instance=ExtResource("7_x0tam")]
-position = Vector2(16, -16)
+process_physics_priority = 2
+position = Vector2(-112, -16)
+mass = 0.726
+physics_material_override = SubResource("PhysicsMaterial_x0tam")
+can_sleep = false
+linear_damp_mode = 1
+linear_damp = 13.571
+angular_damp = 100.0
