@@ -127,7 +127,7 @@ scale = Vector2(0.58125, 0.748958)
 texture = ExtResource("8_ndqic")
 
 [connection signal="body_entered" from="TileMapLayer/Area2D" to="TileMapLayer/Area2D" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@71044" to="TileMapLayer/@Area2D@71044" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@71045" to="TileMapLayer/@Area2D@71045" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@71046" to="TileMapLayer/@Area2D@71046" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@71047" to="TileMapLayer/@Area2D@71047" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@74869" to="TileMapLayer/@Area2D@74869" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@74870" to="TileMapLayer/@Area2D@74870" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@74871" to="TileMapLayer/@Area2D@74871" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@74872" to="TileMapLayer/@Area2D@74872" method="_on_body_entered"]

@@ -14,3 +14,6 @@ res://Scenes/Levels/level4.tscn
 res://Scripts/water.gd
 res://Interactables/dog.tscn
 res://dog.gd
+res://Scripts/door.gd
+res://Scenes/Levels/level2.tscn
+res://Scenes/npc.tscn

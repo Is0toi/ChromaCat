@@ -2,6 +2,10 @@ extends Area2D
 
 func _on_body_entered(body):
 	if body.is_in_group("player"):
+		if body.is_ability_active():
+			print("can't pass when ability active")
+			return
+
 		var current_path = get_tree().current_scene.scene_file_path
 		var next_path = current_path.replace(
 			str(_get_level_number(current_path)),
