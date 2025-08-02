@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://csdrp302b0dxw" path="res://Interactables/feather.tscn" id="7_vfl4p"]
 [ext_resource type="PackedScene" uid="uid://c0n7b3x0tfpgm" path="res://Interactables/box.tscn" id="7_x0tam"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q21to"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vfl4p"]
 texture = ExtResource("4_wlbe4")
 texture_region_size = Vector2i(32, 32)
 1:0/0 = 0
@@ -64,7 +64,7 @@ texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 
-[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_nqbrd"]
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_wlbe4"]
 scenes/1/scene = ExtResource("5_i6bqf")
 scenes/2/scene = ExtResource("7_x0tam")
 scenes/5/scene = ExtResource("7_vfl4p")
@@ -75,8 +75,8 @@ physics_layer_0/collision_layer = 6
 physics_layer_0/collision_mask = 6
 physics_layer_1/collision_layer = 5
 physics_layer_1/collision_mask = 5
-sources/0 = SubResource("TileSetAtlasSource_q21to")
-sources/2 = SubResource("TileSetScenesCollectionSource_nqbrd")
+sources/0 = SubResource("TileSetAtlasSource_vfl4p")
+sources/2 = SubResource("TileSetScenesCollectionSource_wlbe4")
 
 [node name="Level3" type="Node2D"]
 
@@ -105,6 +105,7 @@ metadata/_edit_use_anchors_ = true
 [node name="Area2D" parent="." instance=ExtResource("3_vfl4p")]
 unique_name_in_owner = true
 position = Vector2(204, -13)
+collision_layer = 1
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 unique_name_in_owner = true
@@ -122,5 +123,3 @@ z_index = -2
 position = Vector2(-87, -225)
 scale = Vector2(0.58125, 0.748958)
 texture = ExtResource("6_n80jh")
-
-[connection signal="body_entered" from="TileMapLayer/Area2D" to="TileMapLayer/Area2D" method="_on_body_entered"]
