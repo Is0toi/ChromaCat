@@ -44,21 +44,6 @@ var teleport_return_timer: Timer
 
 var teleport_cooldown := false
 var teleport_cooldown_timer: Timer
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-
-=======
->>>>>>> e5b6daa3a0655eacc7c3e3718c1a4afb26181c08
-var freeze_cooldown := false
-var freeze_cooldown_timer: Timer
-
-var push_force = 60.0
-<<<<<<< HEAD
-
-=======
->>>>>>> e5b6daa3a0655eacc7c3e3718c1a4afb26181c08
-=======
 
 
 var freeze_cooldown := false
@@ -66,7 +51,6 @@ var freeze_cooldown_timer: Timer
 
 var push_force = 40.0
 
->>>>>>> 3655364a2933ef25166524cd02e879dddcc176a4
 
 func _ready():
 	_update_data()
@@ -90,23 +74,12 @@ func _ready():
 	teleport_cooldown_timer.timeout.connect(_on_teleport_cooldown_timeout)
 	add_child(teleport_cooldown_timer)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 	
-=======
->>>>>>> e5b6daa3a0655eacc7c3e3718c1a4afb26181c08
-=======
-	
->>>>>>> 3655364a2933ef25166524cd02e879dddcc176a4
 	freeze_cooldown_timer = Timer.new()
 	freeze_cooldown_timer.one_shot = true
 	freeze_cooldown_timer.wait_time = 9.0
 	freeze_cooldown_timer.timeout.connect(_on_freeze_cooldown_timeout)
 	add_child(freeze_cooldown_timer)
-<<<<<<< HEAD
-
-=======
->>>>>>> e5b6daa3a0655eacc7c3e3718c1a4afb26181c08
 
 
 
@@ -194,15 +167,7 @@ func _physics_process(delta):
 	
 	if Input.is_action_just_pressed("teleport") and not teleport_cooldown:
 		_teleport_to_cursor()
-<<<<<<< HEAD
-<<<<<<< HEAD
 		
-=======
-
->>>>>>> e5b6daa3a0655eacc7c3e3718c1a4afb26181c08
-=======
-		
->>>>>>> 3655364a2933ef25166524cd02e879dddcc176a4
 	if Input.is_action_just_pressed("freeze_enemies") and not freeze_cooldown:
 		_freeze_enemies()
 
@@ -230,14 +195,7 @@ func _teleport_to_cursor():
 func _on_teleport_return_timeout():
 	global_position = teleport_origin  # return to saved pos
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> e5b6daa3a0655eacc7c3e3718c1a4afb26181c08
-=======
-
->>>>>>> 3655364a2933ef25166524cd02e879dddcc176a4
 func _on_freeze_cooldown_timeout():
 	freeze_cooldown = false	
 
@@ -251,16 +209,8 @@ func _start_phasing():
 func _on_phase_timeout():
 	is_phasing = false
 	collision_mask = 0xFFFFFFFF
-<<<<<<< HEAD
-<<<<<<< HEAD
 	PlayerSprite.modulate.a = 1.0 
 
-=======
->>>>>>> e5b6daa3a0655eacc7c3e3718c1a4afb26181c08
-=======
-	PlayerSprite.modulate.a = 1.0 
-
->>>>>>> 3655364a2933ef25166524cd02e879dddcc176a4
 	PlayerSprite.modulate.a = 1.0  # Restore visibility
 	print("Phasing ended")
 
@@ -294,16 +244,8 @@ func _on_area_2d_body_exited(body):
 
 func _on_teleport_cooldown_timeout():
 	teleport_cooldown = false
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 
-=======
->>>>>>> e5b6daa3a0655eacc7c3e3718c1a4afb26181c08
-=======
-
-
->>>>>>> 3655364a2933ef25166524cd02e879dddcc176a4
 func _freeze_enemies():
 	for dog in get_tree().get_nodes_in_group("enemy"):
 		dog.set_physics_process(false)

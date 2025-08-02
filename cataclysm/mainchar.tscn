@@ -81,15 +81,7 @@ size = Vector2(23, 14)
 
 [node name="CharacterBody2D2" type="CharacterBody2D" node_paths=PackedStringArray("PlayerSprite", "PlayerCollider")]
 collision_mask = 7
-<<<<<<< HEAD
-<<<<<<< HEAD
 safe_margin = 0.32
-=======
-safe_margin = 0.3
->>>>>>> e5b6daa3a0655eacc7c3e3718c1a4afb26181c08
-=======
-safe_margin = 0.32
->>>>>>> 3655364a2933ef25166524cd02e879dddcc176a4
 script = ExtResource("1_ubb7a")
 PlayerSprite = NodePath("AnimatedSprite2D")
 PlayerCollider = NodePath("CollisionShape2D")
