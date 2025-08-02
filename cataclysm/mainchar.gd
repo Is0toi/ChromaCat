@@ -34,6 +34,7 @@ var leftHold: bool
 var rightHold: bool
 var jumpTap: bool
 var jumpRelease: bool
+
 # For noclip
 var is_phasing: bool = false
 var phase_timer: Timer
@@ -41,18 +42,22 @@ var phase_timer: Timer
 # For teleporting
 var teleport_origin: Vector2
 var teleport_return_timer: Timer
-
 var teleport_cooldown := false
 var teleport_cooldown_timer: Timer
 
-
+# For freezing enemies
 var freeze_cooldown := false
 var freeze_cooldown_timer: Timer
 
 var push_force = 40.0
 
+<<<<<<< HEAD
 func _on_teleport_cooldown_timeout():
 	teleport_cooldown = false
+=======
+# Glitch mode (plays glitched animations when abilities are active)
+var glitch_mode := false
+>>>>>>> 4c9120a9dfc0536a9e1edd80725e22317fb2309e
 
 func _ready():
 	_update_data()
@@ -76,14 +81,11 @@ func _ready():
 	teleport_cooldown_timer.timeout.connect(_on_teleport_cooldown_timeout)
 	add_child(teleport_cooldown_timer)
 
-	
 	freeze_cooldown_timer = Timer.new()
 	freeze_cooldown_timer.one_shot = true
 	freeze_cooldown_timer.wait_time = 9.0
 	freeze_cooldown_timer.timeout.connect(_on_freeze_cooldown_timeout)
 	add_child(freeze_cooldown_timer)
-
-
 
 func _update_data():
 	acceleration = maxSpeed / max(timeToReachMaxSpeed, 0.01)
@@ -149,21 +151,23 @@ func _physics_process(delta):
 		var c = get_slide_collision(i)
 		if c.get_collider() is RigidBody2D:
 			c.get_collider().apply_central_impulse(-c.get_normal() * push_force)
+
 	# Flip the sprite
 	if velocity.x > 0:
 		PlayerSprite.flip_h = false
 	elif velocity.x < 0:
 		PlayerSprite.flip_h = true
 
-	# Play animations
+	# Play animations (checks glitch_mode)
 	if is_on_floor():
 		if velocity.x == 0:
-			PlayerSprite.play("idle")
+			PlayerSprite.play("glitch_idle" if glitch_mode else "idle")
 		else:
-			PlayerSprite.play("walk")
+			PlayerSprite.play("glitch_walk" if glitch_mode else "walk")
 	else:
-		PlayerSprite.play("jump")
+		PlayerSprite.play("glitch_jump" if glitch_mode else "jump")
 	
+	# Ability inputs
 	if Input.is_action_just_pressed("phase") and not is_phasing:
 		_start_phasing()
 	
@@ -184,7 +188,7 @@ func _teleport_to_cursor():
 	var target_position = get_global_mouse_position()
 	var original_position = global_position
 
-	#test if destination is valid 
+	# Test if destination is valid 
 	global_position = target_position
 	if test_move(global_transform, Vector2.ZERO):
 		global_position = original_position  # Revert if blocked
@@ -197,15 +201,17 @@ func _teleport_to_cursor():
 	teleport_cooldown = true
 	teleport_cooldown_timer.start()
 
+	# Enable glitch mode during teleport
+	glitch_mode = true
+	await teleport_return_timer.timeout
+	glitch_mode = false
+
 func _on_teleport_return_timeout():
-	global_position = teleport_origin  # return to saved pos
-
-
-func _on_freeze_cooldown_timeout():
-	freeze_cooldown = false	
+	global_position = teleport_origin  # Return to saved position
 
 func _start_phasing():
 	is_phasing = true
+	glitch_mode = true  # Enable glitch animations
 	collision_mask = 1 << 1  
 	PlayerSprite.modulate.a = 0.5 
 	phase_timer.start()
@@ -213,11 +219,25 @@ func _start_phasing():
 
 func _on_phase_timeout():
 	is_phasing = false
+	glitch_mode = false  # Disable glitch animations
 	collision_mask = 0xFFFFFFFF
 	PlayerSprite.modulate.a = 1.0 
-
-	PlayerSprite.modulate.a = 1.0  # Restore visibility
 	print("Phasing ended")
+
+func _freeze_enemies():
+	glitch_mode = true  # Enable glitch animations
+	for dog in get_tree().get_nodes_in_group("enemy"):
+		dog.set_physics_process(false)
+		
+	freeze_cooldown = true
+	freeze_cooldown_timer.start()
+			
+	await get_tree().create_timer(3.0).timeout
+
+	for dog in get_tree().get_nodes_in_group("enemy"):
+		dog.set_physics_process(true)
+	
+	glitch_mode = false  # Disable glitch animations
 
 func _jump():
 	if jumpCount > 0:
@@ -235,7 +255,13 @@ func _start_jump_buffer_timer():
 	jumpWasPressed = false
 	jumpBufferTimerRunning = false
 
-#box collisions
+func _on_freeze_cooldown_timeout():
+	freeze_cooldown = false	
+
+func _on_teleport_cooldown_timeout():
+	teleport_cooldown = false
+
+# Box collisions
 func _on_area_2d_body_entered(body):
 	if body.is_in_group("RigidBody"):
 		print("cat on box")
@@ -246,6 +272,7 @@ func _on_area_2d_body_exited(body):
 	if body.is_in_group("RigidBody"):
 		body.collision_layer = 3  
 		body.collision_mask = 3 
+<<<<<<< HEAD
 
 func _freeze_enemies():
 	for dog in get_tree().get_nodes_in_group("enemy"):
@@ -261,3 +288,5 @@ func _freeze_enemies():
 
 func is_ability_active() -> bool:
 	return teleport_return_timer.time_left > 0
+=======
+>>>>>>> 4c9120a9dfc0536a9e1edd80725e22317fb2309e

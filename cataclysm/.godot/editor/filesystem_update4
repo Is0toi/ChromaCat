@@ -7,4 +7,8 @@ res://Scenes/npc.gd
 res://Scenes/npc_static.tscn
 res://Test.tscn
 res://mainchar.gd
+<<<<<<< HEAD
 res://Scripts/door.gd
+=======
+res://Scenes/Levels/level4.tscn
+>>>>>>> 4c9120a9dfc0536a9e1edd80725e22317fb2309e
