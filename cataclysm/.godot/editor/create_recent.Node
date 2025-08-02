@@ -1,25 +1,12 @@
-<<<<<<< HEAD
-Label
 CollisionShape2D
-<<<<<<< Updated upstream
-Area2D
-=======
->>>>>>> 32d2d2ebffe6eea3e1347fee1418ee08fc2a0318
 AnimatedSprite2D
-CollisionShape2D
-=======
+AnimatableBody2D
 CharacterBody2D
-AnimatedSprite2D
+Label
 Area2D
->>>>>>> Stashed changes
+Area2D
 RigidBody2D
 Area2D
-CharacterBody2D
 Camera2D
 TileMapLayer
 TileMap
-Marker2D
-Node2D
-Sprite2D
-AnimatableBody2D
-Button

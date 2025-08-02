@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-[gd_scene load_steps=10 format=4 uid="uid://dnous7181ormu"]
-=======
-[gd_scene load_steps=10 format=4 uid="uid://p16kbgo2ljxl"]
->>>>>>> 20f5ff55cad03efd65e438959f27b9838064dc11
+[gd_scene load_steps=11 format=4 uid="uid://dnous7181ormu"]
 
 [ext_resource type="PackedScene" uid="uid://br4bq57vhiakg" path="res://mainchar.tscn" id="1_5j5u1"]
 [ext_resource type="FontFile" uid="uid://b5uckawjsg8m3" path="res://Assets/Fonts/editundo.ttf" id="2_tnuy3"]
@@ -10,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cgbsuyiw2aary" path="res://Assets/pixil-frame-0 (14).png" id="4_hrj3c"]
 [ext_resource type="PackedScene" uid="uid://xbqejsm8wvd" path="res://water.tscn" id="5_16px4"]
 [ext_resource type="Texture2D" uid="uid://b0wud3pjajnja" path="res://Assets/8bit-pixel-graphic-blue-sky-background-with-clouds-vector.jpg" id="6_tnuy3"]
+[ext_resource type="PackedScene" uid="uid://c88gmo5o554ff" path="res://Scripts/cloud.tscn" id="7_d15yg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tnuy3"]
 texture = ExtResource("4_hrj3c")
@@ -109,3 +106,6 @@ z_index = -2
 position = Vector2(-87, -225)
 scale = Vector2(0.58125, 0.748958)
 texture = ExtResource("6_tnuy3")
+
+[node name="CharacterBody2D2" parent="." instance=ExtResource("7_d15yg")]
+position = Vector2(-101, -152)

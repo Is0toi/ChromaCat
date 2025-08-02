@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-[gd_scene load_steps=11 format=4 uid="uid://cycm17s34ktsg"]
-=======
 [gd_scene load_steps=11 format=4 uid="uid://4mqsqaquvo42"]
->>>>>>> 20f5ff55cad03efd65e438959f27b9838064dc11
+
 
 [ext_resource type="PackedScene" uid="uid://br4bq57vhiakg" path="res://mainchar.tscn" id="1_ov3rk"]
 [ext_resource type="FontFile" uid="uid://b5uckawjsg8m3" path="res://Assets/Fonts/editundo.ttf" id="2_x0tam"]

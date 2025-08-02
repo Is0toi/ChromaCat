@@ -246,4 +246,3 @@ func _freeze_enemies():
 
 	for dog in get_tree().get_nodes_in_group("enemy"):
 		dog.set_physics_process(true) 
-			
