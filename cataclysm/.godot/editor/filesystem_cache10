@@ -1,5 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 ::res://::1754114542
 box.tscn::PackedScene/PackedScene::6556345606048016204::1754111220::0::1::::<><><>0<>0<><>::uid://cgbsuyiw2aary::::res://Assets/pixil-frame-0 (14).png
@@ -12,6 +13,8 @@ main.dialogue::Resource/Resource::1086079457313010144::1754078283::1754114637::1
 mainchar.gd::GDScript::833118995921228644::1754111434::0::1::::PlatformerController2D<>CharacterBody2D<><>0<>0<><>::
 mainchar.tscn::PackedScene::3639588896200688554::1754114542::0::1::::<><><>0<>0<><>::uid://4p0rirfjewtr::::res://Assets/pixil-frame-0 (15).png<>uid://l4tl3pnrjrku::::res://mainchar.gd
 =======
+=======
+>>>>>>> Stashed changes
 ::res://::1754108248
 box.tscn::PackedScene/PackedScene::6556345606048016204::1754104119::0::1::::<><><>0<>0<><>::uid://cgbsuyiw2aary::::res://Assets/pixil-frame-0 (14).png
 dog.gd::GDScript/GDScript::1445342569508037258::1754104083::0::1::::<>CharacterBody2D<><>0<>0<><>::
@@ -22,6 +25,9 @@ icon.svg::CompressedTexture2D/CompressedTexture2D::987775935465999014::175407808
 main.dialogue::Resource/Resource::1086079457313010144::1754078283::1754108253::1::::<><><>0<>0<>7a669611b3653f821bd09b367840f7e1<>res://.godot/imported/main.dialogue-988eadfaf2647f90e4f9e66fdf16fcb0.tres::uid://dbs4435dsf3ry::::res://addons/dialogue_manager/dialogue_resource.gd
 mainchar.gd::GDScript/GDScript::833118995921228644::1754102278::0::1::::PlatformerController2D<>CharacterBody2D<><>0<>0<><>::
 mainchar.tscn::PackedScene/PackedScene::3639588896200688554::1754104118::0::1::::<><><>0<>0<><>::uid://4p0rirfjewtr::::res://Assets/pixil-frame-0 (15).png<>uid://l4tl3pnrjrku::::res://mainchar.gd
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 README.md::TextFile/TextFile::-1::1754004346::0::1::::<><><>0<>0<><>::
 Test.tscn::PackedScene/PackedScene::8099162704508995467::1754078117::0::1::::<><><>0<>0<><>::uid://ocqr4kaowgws::::res://icon.svg
@@ -120,6 +126,7 @@ editundo.ttf::FontFile/FontFile::4533512874258794408::1754081723::1754081789::1:
 godotwaka2.png::CompressedTexture2D/CompressedTexture2D::3769533361674229716::1754078088::1754078118::1::::<><><>0<>0<>06d720a0569c4d6de293959484cdbf73<>res://.godot/imported/godotwaka2.png-7d3d010fb4adc0d433467ab1cc4754ed.ctex::
 godotwaka.png::CompressedTexture2D/CompressedTexture2D::5138541672068609768::1754078088::1754078118::1::::<><><>0<>0<>73267b588e662106c939bc3eb2264721<>res://.godot/imported/godotwaka.png-ef0518417b4f997d237759e5551dd05d.ctex::
 icon.jpg::CompressedTexture2D/CompressedTexture2D::5308080678894289288::1754078088::1754078117::1::::<><><>0<>0<>9cc756ab6ffa927cae60e9618eb6dc7c<>res://.godot/imported/icon.jpg-64f68b30ea939aa8019167e67dffb2db.ctex::
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 ::res://Interactables/::1754111220
 box.gd::GDScript::-1::1754111220::0::1::::<>RigidBody2D<><>0<>0<><>::
@@ -365,6 +372,8 @@ star.gd::GDScript/GDScript::2455965546681090223::1754025699::0::1::::<>Area2D<><
 water.gd::GDScript/GDScript::4549169031517967307::1754072923::0::1::::<>Area2D<><>0<>0<><>::
 >>>>>>> e5b6daa3a0655eacc7c3e3718c1a4afb26181c08
 =======
+=======
+>>>>>>> Stashed changes
 ::res://Interactables/::1754097412
 box.tscn::PackedScene/PackedScene::6051079457732791075::1754097412::0::1::::<><><>0<>0<><>::uid://cgbsuyiw2aary::::res://Assets/pixil-frame-0 (14).png
 ::res://Scenes/::1754104119
@@ -388,4 +397,7 @@ npc.tscn::PackedScene/PackedScene::6764796078703901473::1754107746::0::1::::<><>
 npc_static.gd::GDScript/GDScript::4294709970714171179::1754024883::0::1::::<>Area2D<><>0<>0<><>::
 star.gd::GDScript/GDScript::2455965546681090223::1754024874::0::1::::<>Area2D<><>0<>0<><>::
 water.gd::GDScript/GDScript::4549169031517967307::1754081723::0::1::::<>Area2D<><>0<>0<><>::
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes

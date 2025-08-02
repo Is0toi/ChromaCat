@@ -17,6 +17,7 @@ res://Scripts/npc.tscn
 res://Scenes/npc.gd
 res://Scenes/npc.tscn
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
 res://Scenes/Levels/level1.tscn
 res://Scenes/MainMenu/main_menu.tscn
@@ -27,5 +28,7 @@ res://mainchar.gd
 res://Interactables/box.gd
 res://Interactables/box.tscn
 >>>>>>> e5b6daa3a0655eacc7c3e3718c1a4afb26181c08
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
