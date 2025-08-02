@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cgbsuyiw2aary" path="res://Assets/pixil-frame-0 (14).png" id="4_hrj3c"]
 [ext_resource type="PackedScene" uid="uid://xbqejsm8wvd" path="res://water.tscn" id="5_16px4"]
 [ext_resource type="Texture2D" uid="uid://b0wud3pjajnja" path="res://Assets/8bit-pixel-graphic-blue-sky-background-with-clouds-vector.jpg" id="6_tnuy3"]
-[ext_resource type="PackedScene" uid="uid://c88gmo5o554ff" path="res://Scripts/cloud.tscn" id="7_d15yg"]
+[ext_resource type="PackedScene" path="res://Scripts/cloud.tscn" id="7_d15yg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tnuy3"]
 texture = ExtResource("4_hrj3c")

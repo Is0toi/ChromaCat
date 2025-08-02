@@ -1,16 +1,11 @@
-<<<<<<< HEAD
-[gd_scene load_steps=12 format=4 uid="uid://dyrxv8fvpc0hh"]
-=======
-[gd_scene load_steps=13 format=4 uid="uid://cgo22ro3inyql"]
->>>>>>> 48ee2314aef29790737c1437185da7708819af23
+[gd_scene load_steps=12 format=4 uid="uid://c5jomfe20kj2r"]
 
 [ext_resource type="PackedScene" uid="uid://br4bq57vhiakg" path="res://mainchar.tscn" id="1_lpiby"]
 [ext_resource type="FontFile" uid="uid://b5uckawjsg8m3" path="res://Assets/Fonts/editundo.ttf" id="2_6xlxm"]
-[ext_resource type="PackedScene" uid="uid://8dy0k55bp50k" path="res://Interactables/door.tscn" id="3_7npjx"]
 [ext_resource type="Texture2D" uid="uid://cgbsuyiw2aary" path="res://Assets/pixil-frame-0 (14).png" id="4_kee65"]
 [ext_resource type="PackedScene" uid="uid://xbqejsm8wvd" path="res://water.tscn" id="5_lmqgw"]
 [ext_resource type="PackedScene" uid="uid://c0n7b3x0tfpgm" path="res://Interactables/box.tscn" id="6_c346c"]
-[ext_resource type="PackedScene" uid="uid://c7x8csgodlbdn" path="res://Interactables/dog.tscn" id="7_6xlxm"]
+[ext_resource type="PackedScene" uid="uid://cpnar8ns2p1vl" path="res://dog.tscn" id="7_6xlxm"]
 [ext_resource type="PackedScene" uid="uid://csdrp302b0dxw" path="res://Interactables/feather.tscn" id="7_46s4o"]
 [ext_resource type="Texture2D" uid="uid://b0wud3pjajnja" path="res://Assets/8bit-pixel-graphic-blue-sky-background-with-clouds-vector.jpg" id="8_ndqic"]
 
@@ -108,11 +103,6 @@ theme_override_fonts/font = ExtResource("2_6xlxm")
 text = "You're on your own now!"
 metadata/_edit_use_anchors_ = true
 
-[node name="Area2D" parent="." instance=ExtResource("3_7npjx")]
-unique_name_in_owner = true
-position = Vector2(204, -13)
-collision_layer = 1
-
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 unique_name_in_owner = true
 scale = Vector2(1, 0.991956)
@@ -129,12 +119,3 @@ z_index = -2
 position = Vector2(-87, -225)
 scale = Vector2(0.58125, 0.748958)
 texture = ExtResource("8_ndqic")
-<<<<<<< HEAD
-=======
-
-[connection signal="body_entered" from="TileMapLayer/Area2D" to="TileMapLayer/Area2D" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@74869" to="TileMapLayer/@Area2D@74869" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@74870" to="TileMapLayer/@Area2D@74870" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@74871" to="TileMapLayer/@Area2D@74871" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@74872" to="TileMapLayer/@Area2D@74872" method="_on_body_entered"]
->>>>>>> 48ee2314aef29790737c1437185da7708819af23

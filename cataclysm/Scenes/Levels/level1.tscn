@@ -148,11 +148,8 @@ texture = ExtResource("5_c0r4e")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("8_i36j2")]
 position = Vector2(-298, -11)
-<<<<<<< HEAD
 
 [connection signal="body_entered" from="TileMapLayer/Area2D" to="TileMapLayer/Area2D" method="_on_body_entered"]
 [connection signal="body_entered" from="TileMapLayer/@Area2D@77971" to="TileMapLayer/@Area2D@77971" method="_on_body_entered"]
 [connection signal="body_entered" from="TileMapLayer/@Area2D@77972" to="TileMapLayer/@Area2D@77972" method="_on_body_entered"]
 [connection signal="body_entered" from="TileMapLayer/@Area2D@77973" to="TileMapLayer/@Area2D@77973" method="_on_body_entered"]
-=======
->>>>>>> 48ee2314aef29790737c1437185da7708819af23
