@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -13,11 +14,17 @@
 =======
 >>>>>>> Stashed changes
 CharacterBody2D
+=======
+>>>>>>> 3655364a2933ef25166524cd02e879dddcc176a4
 AnimatedSprite2D
->>>>>>> Stashed changes
 CollisionShape2D
 Area2D
+<<<<<<< HEAD
 AnimatedSprite2D
+=======
+CharacterBody2D
+AnimatableBody2D
+>>>>>>> 3655364a2933ef25166524cd02e879dddcc176a4
 CharacterBody2D
 =======
 CollisionShape2D

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 res://mainchar.tscn
 <<<<<<< HEAD
 res://Scenes/Levels/level2.tscn
@@ -21,14 +22,17 @@ res://Scenes/npc.tscn
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 =======
+=======
+res://feather.tscn
+res://feather.gd
+res://Interactables/feather.tscn
+>>>>>>> 3655364a2933ef25166524cd02e879dddcc176a4
 res://Scenes/Levels/level1.tscn
+res://Scenes/Levels/level3.tscn
 res://Scenes/MainMenu/main_menu.tscn
 res://Scenes/game.tscn
-res://box.tscn
-res://Scenes/Levels/level3.tscn
-res://mainchar.gd
-res://Interactables/box.gd
 res://Interactables/box.tscn
+<<<<<<< HEAD
 >>>>>>> e5b6daa3a0655eacc7c3e3718c1a4afb26181c08
 =======
 >>>>>>> Stashed changes
@@ -38,3 +42,9 @@ res://Interactables/box.tscn
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+=======
+res://mainchar.tscn
+res://water.tscn
+res://Scripts/feather.gd
+res://mainchar.gd
+>>>>>>> 3655364a2933ef25166524cd02e879dddcc176a4
