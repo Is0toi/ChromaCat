@@ -6,3 +6,5 @@ res://Scenes/Levels/level4.tscn
 res://Interactables/button.tscn
 res://Interactables/button.gd
 res://Interactables/box.tscn
+res://Scripts/character.gd
+res://music.tscn
