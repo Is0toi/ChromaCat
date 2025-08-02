@@ -1,7 +1,16 @@
+<<<<<<< Updated upstream
+=======
+res://Scenes/MainMenu/main_menu.tscn
+>>>>>>> Stashed changes
 res://mainchar.tscn
 res://Scenes/Levels/level1.tscn
+<<<<<<< Updated upstream
 res://Scenes/MainMenu/main_menu.tscn
 res://Scenes/game.tscn
 res://box.tscn
+=======
+res://dog.tscn
+res://Interactables/box.tscn
+>>>>>>> Stashed changes
 res://Scenes/Levels/level3.tscn
 res://mainchar.gd
