@@ -44,19 +44,11 @@ var teleport_return_timer: Timer
 
 var teleport_cooldown := false
 var teleport_cooldown_timer: Timer
-
-<<<<<<< Updated upstream
-
 var freeze_cooldown := false
 var freeze_cooldown_timer: Timer
 
 var push_force = 60.0
 
-
-=======
-var push_force = 60.0
-
->>>>>>> Stashed changes
 func _ready():
 	_update_data()
 	add_to_group("player")
@@ -79,17 +71,12 @@ func _ready():
 	teleport_cooldown_timer.timeout.connect(_on_teleport_cooldown_timeout)
 	add_child(teleport_cooldown_timer)
 
-<<<<<<< Updated upstream
-	
 	freeze_cooldown_timer = Timer.new()
 	freeze_cooldown_timer.one_shot = true
 	freeze_cooldown_timer.wait_time = 9.0
 	freeze_cooldown_timer.timeout.connect(_on_freeze_cooldown_timeout)
 	add_child(freeze_cooldown_timer)
 
-
-=======
->>>>>>> Stashed changes
 
 func _update_data():
 	acceleration = maxSpeed / max(timeToReachMaxSpeed, 0.01)
@@ -175,12 +162,9 @@ func _physics_process(delta):
 	
 	if Input.is_action_just_pressed("teleport") and not teleport_cooldown:
 		_teleport_to_cursor()
-<<<<<<< Updated upstream
-		
+
 	if Input.is_action_just_pressed("freeze_enemies") and not freeze_cooldown:
 		_freeze_enemies()
-=======
->>>>>>> Stashed changes
 
 func _teleport_to_cursor():
 	# logic for if theres a wall
@@ -203,13 +187,9 @@ func _teleport_to_cursor():
 func _on_teleport_return_timeout():
 	global_position = teleport_origin  # return to saved pos
 
-<<<<<<< Updated upstream
-
 func _on_freeze_cooldown_timeout():
 	freeze_cooldown = false	
 
-=======
->>>>>>> Stashed changes
 func _start_phasing():
 	is_phasing = true
 	collision_mask = 1 << 1  
@@ -220,11 +200,6 @@ func _start_phasing():
 func _on_phase_timeout():
 	is_phasing = false
 	collision_mask = 0xFFFFFFFF
-<<<<<<< Updated upstream
-	PlayerSprite.modulate.a = 1.0 
-
-=======
->>>>>>> Stashed changes
 	PlayerSprite.modulate.a = 1.0  # Restore visibility
 	print("Phasing ended")
 
@@ -258,9 +233,6 @@ func _on_area_2d_body_exited(body):
 
 func _on_teleport_cooldown_timeout():
 	teleport_cooldown = false
-<<<<<<< Updated upstream
-
-
 func _freeze_enemies():
 	for dog in get_tree().get_nodes_in_group("enemy"):
 		dog.set_physics_process(false)
@@ -272,5 +244,3 @@ func _freeze_enemies():
 
 	for dog in get_tree().get_nodes_in_group("enemy"):
 		dog.set_physics_process(true) 
-=======
->>>>>>> Stashed changes
