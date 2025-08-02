@@ -4,6 +4,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
 =======
 >>>>>>> Stashed changes
@@ -18,6 +19,12 @@ CollisionShape2D
 Area2D
 AnimatedSprite2D
 CharacterBody2D
+=======
+CollisionShape2D
+Area2D
+AnimatedSprite2D
+CharacterBody2D
+>>>>>>> Stashed changes
 =======
 CollisionShape2D
 Area2D

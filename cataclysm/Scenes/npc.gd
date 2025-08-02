@@ -19,8 +19,14 @@ func _process(delta):
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	if player_in_range and Input.is_action_just_pressed("hello"):
 		DialogueManager.show_dialogue(dialogue_resource, "start")
+=======
+	if player_in_range and Input.is_action_just_pressed("interact"):
+		if dialogue_resource:
+			DialogueManager.show_dialogue(dialogue_resource, "start")
+>>>>>>> Stashed changes
 =======
 	if player_in_range and Input.is_action_just_pressed("interact"):
 		if dialogue_resource:

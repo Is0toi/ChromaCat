@@ -10,7 +10,11 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [ext_resource type="PackedScene" uid="uid://c7rk5ampxf3wi" path="res://Scenes/npc.tscn" id="8_i36j2"]
+=======
+[ext_resource type="PackedScene" uid="uid://bsevm1juniak0" path="res://Scenes/npc.tscn" id="8_i36j2"]
+>>>>>>> Stashed changes
 =======
 [ext_resource type="PackedScene" uid="uid://bsevm1juniak0" path="res://Scenes/npc.tscn" id="8_i36j2"]
 >>>>>>> Stashed changes
@@ -161,6 +165,7 @@ texture = ExtResource("5_c0r4e")
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [node name="CharacterBody2D" parent="." instance=ExtResource("8_i36j2")]
 position = Vector2(-150, -13)
 
@@ -169,6 +174,8 @@ position = Vector2(-150, -13)
 [connection signal="body_entered" from="TileMapLayer/@Area2D@142478" to="TileMapLayer/@Area2D@142478" method="_on_body_entered"]
 [connection signal="body_entered" from="TileMapLayer/@Area2D@142479" to="TileMapLayer/@Area2D@142479" method="_on_body_entered"]
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -182,6 +189,9 @@ position = Vector2(-349, -12)
 [connection signal="body_entered" from="TileMapLayer/@Area2D@140337" to="TileMapLayer/@Area2D@140337" method="_on_body_entered"]
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
