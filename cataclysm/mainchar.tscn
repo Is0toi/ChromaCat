@@ -77,11 +77,15 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ikggu"]
-size = Vector2(23, 14)
+size = Vector2(23, 16)
 
 [node name="CharacterBody2D2" type="CharacterBody2D" node_paths=PackedStringArray("PlayerSprite", "PlayerCollider")]
 collision_mask = 7
+<<<<<<< HEAD
 safe_margin = 0.32
+=======
+safe_margin = 0.3
+>>>>>>> e5b6daa3a0655eacc7c3e3718c1a4afb26181c08
 script = ExtResource("1_ubb7a")
 PlayerSprite = NodePath("AnimatedSprite2D")
 PlayerCollider = NodePath("CollisionShape2D")
@@ -92,5 +96,5 @@ animation = &"jump"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1.5, 2)
+position = Vector2(1.5, 1)
 shape = SubResource("RectangleShape2D_ikggu")

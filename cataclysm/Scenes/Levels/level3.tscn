@@ -69,8 +69,13 @@ sources/0 = SubResource("TileSetAtlasSource_q21to")
 sources/2 = SubResource("TileSetScenesCollectionSource_nqbrd")
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_x0tam"]
+<<<<<<< HEAD
 friction = 0.07
 bounce = 0.1
+=======
+friction = 0.05
+bounce = 0.05
+>>>>>>> e5b6daa3a0655eacc7c3e3718c1a4afb26181c08
 
 [node name="Level3" type="Node2D"]
 
@@ -117,14 +122,21 @@ scale = Vector2(0.58125, 0.748958)
 texture = ExtResource("6_n80jh")
 
 [node name="RigidBody2D" parent="." instance=ExtResource("7_x0tam")]
+<<<<<<< HEAD
 process_physics_priority = 2
+=======
+>>>>>>> e5b6daa3a0655eacc7c3e3718c1a4afb26181c08
 position = Vector2(-176, -24)
 collision_layer = 4
 mass = 4.0
 physics_material_override = SubResource("PhysicsMaterial_x0tam")
 center_of_mass_mode = 0
 center_of_mass = Vector2(0, 0)
+<<<<<<< HEAD
 lock_rotation = true
 linear_damp_mode = 1
 linear_damp = 6.651
+=======
+linear_damp = 9.712
+>>>>>>> e5b6daa3a0655eacc7c3e3718c1a4afb26181c08
 angular_damp = 3.06
