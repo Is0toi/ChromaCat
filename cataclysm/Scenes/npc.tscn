@@ -1,32 +1,8 @@
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-[gd_scene load_steps=10 format=3 uid="uid://c7rk5ampxf3wi"]
-
-[ext_resource type="Script" uid="uid://c5wj5rike2mj2" path="res://Scenes/npc.gd" id="1_xxsvc"]
-=======
 [gd_scene load_steps=10 format=3 uid="uid://bsevm1juniak0"]
 
-[ext_resource type="Script" uid="uid://cqm2a30sssug1" path="res://Scenes/npc.gd" id="1_xxsvc"]
->>>>>>> Stashed changes
-=======
-[gd_scene load_steps=10 format=3 uid="uid://bsevm1juniak0"]
-
-[ext_resource type="Script" uid="uid://cqm2a30sssug1" path="res://Scenes/npc.gd" id="1_xxsvc"]
->>>>>>> Stashed changes
-=======
-[gd_scene load_steps=10 format=3 uid="uid://bsevm1juniak0"]
-
-[ext_resource type="Script" uid="uid://cqm2a30sssug1" path="res://Scenes/npc.gd" id="1_xxsvc"]
->>>>>>> Stashed changes
-=======
-[gd_scene load_steps=10 format=3 uid="uid://bsevm1juniak0"]
-
-[ext_resource type="Script" uid="uid://cqm2a30sssug1" path="res://Scenes/npc.gd" id="1_xxsvc"]
->>>>>>> Stashed changes
+[ext_resource type="Script" path="res://Scenes/npc.gd" id="1_xxsvc"]
 [ext_resource type="Texture2D" uid="uid://c5gn8bhhua74o" path="res://Assets/pixil-frame-0 (13).png" id="2_g6unj"]
-[ext_resource type="Resource" uid="uid://pqdtm5v2nexk" path="res://main.dialogue" id="2_h1ryf"]
+[ext_resource type="Resource" uid="uid://bjfqkx4xw37k3" path="res://test.dialogue" id="2_h1ryf"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1ig1v"]
 atlas = ExtResource("2_g6unj")
@@ -61,6 +37,7 @@ animations = [{
 radius = 20.025
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xxsvc"]
+size = Vector2(6, 17.25)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_xxsvc")
@@ -69,6 +46,7 @@ dialogue_resource = ExtResource("2_h1ryf")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, 1)
 sprite_frames = SubResource("SpriteFrames_8gudg")
+speed_scale = 0.5
 
 [node name="InteractionZone" type="Area2D" parent="."]
 
@@ -76,4 +54,5 @@ sprite_frames = SubResource("SpriteFrames_8gudg")
 shape = SubResource("CircleShape2D_h1ryf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_xxsvc")

@@ -1,50 +1,10 @@
-<<<<<<< HEAD
-res://mainchar.tscn
-<<<<<<< HEAD
+res://Scenes/MainMenu/main_menu.tscn
+res://Scenes/Levels/level3.tscn
 res://Scenes/Levels/level2.tscn
-res://Scenes/MainMenu/main_menu.tscn
 res://Scenes/Levels/level1.tscn
-res://mainchar.gd
-res://Scenes/npc_static.tscn
-res://Scenes/Levels/level3.tscn
-res://dog.gd
-res://dog.tscn
-res://box.tscn
-res://door.tscn
-res://Scripts/box2.tscn
-res://Scripts/cloud.tscn
-res://Scripts/cloud.gd
-res://Scripts/npc.tscn
-res://Scenes/npc.gd
 res://Scenes/npc.tscn
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
-res://feather.tscn
-res://feather.gd
-res://Interactables/feather.tscn
->>>>>>> 3655364a2933ef25166524cd02e879dddcc176a4
-res://Scenes/Levels/level1.tscn
-res://Scenes/Levels/level3.tscn
-res://Scenes/MainMenu/main_menu.tscn
-res://Scenes/game.tscn
-res://Interactables/box.tscn
-<<<<<<< HEAD
->>>>>>> e5b6daa3a0655eacc7c3e3718c1a4afb26181c08
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
-res://mainchar.tscn
-res://water.tscn
-res://Scripts/feather.gd
+res://Scenes/npc.gd
+res://Scenes/npc_static.tscn
+res://Test.tscn
 res://mainchar.gd
->>>>>>> 3655364a2933ef25166524cd02e879dddcc176a4
+res://Scripts/door.gd

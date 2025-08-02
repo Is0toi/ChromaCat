@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=4 uid="uid://dkhk3u27s0tg7"]
+[gd_scene load_steps=12 format=4 uid="uid://dkhk3u27s0tg7"]
 
 [ext_resource type="PackedScene" uid="uid://br4bq57vhiakg" path="res://mainchar.tscn" id="1_7u4ml"]
 [ext_resource type="Texture2D" uid="uid://cgbsuyiw2aary" path="res://Assets/pixil-frame-0 (14).png" id="2_16p8j"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://b0wud3pjajnja" path="res://Assets/8bit-pixel-graphic-blue-sky-background-with-clouds-vector.jpg" id="5_c0r4e"]
 [ext_resource type="PackedScene" uid="uid://c7x8csgodlbdn" path="res://Interactables/dog.tscn" id="6_m0h5h"]
 [ext_resource type="FontFile" uid="uid://b5uckawjsg8m3" path="res://Assets/Fonts/editundo.ttf" id="7_20uw2"]
+[ext_resource type="PackedScene" uid="uid://bsevm1juniak0" path="res://Scenes/npc.tscn" id="8_i36j2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_16p8j"]
 texture = ExtResource("2_16p8j")
@@ -99,7 +100,7 @@ scale = Vector2(0.768968, 0.999479)
 texture = ExtResource("5_c0r4e")
 
 [node name="Dog" parent="." instance=ExtResource("6_m0h5h")]
-position = Vector2(112, -16)
+position = Vector2(112, -12)
 
 [node name="Instructions" type="Label" parent="."]
 offset_left = -192.0
@@ -144,3 +145,11 @@ z_index = -2
 position = Vector2(1072, -144)
 scale = Vector2(0.58125, 0.748958)
 texture = ExtResource("5_c0r4e")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("8_i36j2")]
+position = Vector2(-298, -11)
+
+[connection signal="body_entered" from="TileMapLayer/Area2D" to="TileMapLayer/Area2D" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@64931" to="TileMapLayer/@Area2D@64931" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@64932" to="TileMapLayer/@Area2D@64932" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@64933" to="TileMapLayer/@Area2D@64933" method="_on_body_entered"]

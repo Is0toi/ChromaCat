@@ -51,6 +51,8 @@ var freeze_cooldown_timer: Timer
 
 var push_force = 40.0
 
+func _on_teleport_cooldown_timeout():
+	teleport_cooldown = false
 
 func _ready():
 	_update_data()
@@ -170,6 +172,9 @@ func _physics_process(delta):
 		
 	if Input.is_action_just_pressed("freeze_enemies") and not freeze_cooldown:
 		_freeze_enemies()
+		
+	if Input.is_action_just_pressed("debug"):
+		print("ability active?", is_ability_active())
 
 func _teleport_to_cursor():
 	if teleport_cooldown:
@@ -242,10 +247,6 @@ func _on_area_2d_body_exited(body):
 		body.collision_layer = 3  
 		body.collision_mask = 3 
 
-func _on_teleport_cooldown_timeout():
-	teleport_cooldown = false
-
-
 func _freeze_enemies():
 	for dog in get_tree().get_nodes_in_group("enemy"):
 		dog.set_physics_process(false)
@@ -257,3 +258,6 @@ func _freeze_enemies():
 
 	for dog in get_tree().get_nodes_in_group("enemy"):
 		dog.set_physics_process(true)
+
+func is_ability_active() -> bool:
+	return teleport_return_timer.time_left > 0
