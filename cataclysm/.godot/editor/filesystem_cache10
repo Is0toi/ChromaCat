@@ -1,6 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ::res://::1754109102
 box.tscn::PackedScene/PackedScene::6556345606048016204::1754108590::0::1::::<><><>0<>0<><>::uid://cgbsuyiw2aary::::res://Assets/pixil-frame-0 (14).png
 dog.gd::GDScript/GDScript::1445342569508037258::1754108590::0::1::::<>CharacterBody2D<><>0<>0<><>::
@@ -14,6 +15,20 @@ README.md::TextFile/TextFile::-1::1754025699::0::1::::<><><>0<>0<><>::
 Test.tscn::PackedScene/PackedScene::8099162704508995467::1754078915::0::1::::<><><>0<>0<><>::uid://ocqr4kaowgws::::res://icon.svg
 wakatime_logo.jpg::CompressedTexture2D/CompressedTexture2D::5799924920301101447::1754025699::1754025699::1::::<><><>0<>0<>c2eb997917a99440146547c5332fed89<>res://.godot/imported/wakatime_logo.jpg-a50f628e445fd6bef17dff1651d611bc.ctex::
 water.tscn::PackedScene/PackedScene::47570202870456813::1754103917::0::1::::<><><>0<>0<><>::uid://b52wfcumtmp5d::::res://Scripts/water.gd<>uid://cgbsuyiw2aary::::res://Assets/pixil-frame-0 (14).png
+=======
+::res://::1754108408
+dog.gd::GDScript/GDScript::1445342569508037258::1754089555::0::1::::<>CharacterBody2D<><>0<>0<><>::
+dog.tscn::PackedScene::7068373239825383999::1754108386::0::1::::<><><>0<>0<><>::uid://4p0rirfjewtr::::res://Assets/pixil-frame-0 (15).png<>uid://uuet0t047ary::::res://dog.gd
+door.tscn::PackedScene/PackedScene::2323927398933923612::1754081719::0::1::::<><><>0<>0<><>::uid://cd4p044srixju::::res://Scripts/door.gd
+icon.png::CompressedTexture2D/CompressedTexture2D::3733296356309817567::1754025699::1754025699::1::::<><><>0<>0<>3b9946cab232cc1e6f481b58c6d140fe<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
+icon.svg::CompressedTexture2D/CompressedTexture2D::987775935465999014::1754078851::1754078915::1::::<><><>0<>0<>7bbc5c00968ba77a17cb00475a3f2499<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+mainchar.gd::GDScript::833118995921228644::1754108386::0::1::::PlatformerController2D<>CharacterBody2D<><>0<>0<><>::
+mainchar.tscn::PackedScene::3639588896200688554::1754108386::0::1::::<><><>0<>0<><>::uid://4p0rirfjewtr::::res://Assets/pixil-frame-0 (15).png<>uid://l4tl3pnrjrku::::res://mainchar.gd
+README.md::TextFile/TextFile::-1::1754025699::0::1::::<><><>0<>0<><>::
+Test.tscn::PackedScene/PackedScene::8099162704508995467::1754078915::0::1::::<><><>0<>0<><>::uid://ocqr4kaowgws::::res://icon.svg
+wakatime_logo.jpg::CompressedTexture2D/CompressedTexture2D::5799924920301101447::1754025699::1754025699::1::::<><><>0<>0<>c2eb997917a99440146547c5332fed89<>res://.godot/imported/wakatime_logo.jpg-a50f628e445fd6bef17dff1651d611bc.ctex::
+water.tscn::PackedScene::47570202870456813::1754103917::0::1::::<><><>0<>0<><>::uid://b52wfcumtmp5d::::res://Scripts/water.gd<>uid://cgbsuyiw2aary::::res://Assets/pixil-frame-0 (14).png
+>>>>>>> Stashed changes
 =======
 ::res://::1754108408
 dog.gd::GDScript/GDScript::1445342569508037258::1754089555::0::1::::<>CharacterBody2D<><>0<>0<><>::
@@ -135,6 +150,7 @@ godotwaka.png::CompressedTexture2D/CompressedTexture2D::5138541672068609768::175
 icon.jpg::CompressedTexture2D/CompressedTexture2D::5308080678894289288::1754078851::1754078915::1::::<><><>0<>0<>9cc756ab6ffa927cae60e9618eb6dc7c<>res://.godot/imported/icon.jpg-64f68b30ea939aa8019167e67dffb2db.ctex::
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ::res://Interactables/::1754108609
 box.gd::GDScript/GDScript::1931252000414686282::1754108590::0::1::::<>RigidBody2D<><>0<>0<><>::
 box.tscn::PackedScene/PackedScene::6051079457732791075::1754108590::0::1::::<><><>0<>0<><>::uid://2rro5wphai0i::::res://Interactables/box.gd<>uid://cgbsuyiw2aary::::res://Assets/pixil-frame-0 (14).png
@@ -152,6 +168,8 @@ main_menu.tscn::PackedScene::2329340190534341297::1754108915::0::1::::<><><>0<>0
 ::res://Scripts/::1754108601
 box2.tscn::PackedScene/PackedScene::8402368362012724052::1754108590::0::1::::<><><>0<>0<><>::
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 ::res://Interactables/::1754108386
