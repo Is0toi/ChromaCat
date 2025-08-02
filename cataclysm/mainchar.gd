@@ -173,9 +173,6 @@ func _physics_process(delta):
 		
 	if Input.is_action_just_pressed("freeze_enemies") and not freeze_cooldown:
 		_freeze_enemies()
-		
-	if Input.is_action_just_pressed("debug"):
-		print("ability active?", is_ability_active())
 
 func _teleport_to_cursor():
 	if teleport_cooldown:
