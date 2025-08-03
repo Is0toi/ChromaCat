@@ -5,13 +5,10 @@ class_name PlatformerController2D
 @export var PlayerCollider: CollisionShape2D
 
 @onready var ladder_ray_cast: RayCast2D= $LadderRayCast
-<<<<<<< HEAD
 
 #SFX
 @onready var jump: AudioStreamPlayer = $jump
 @onready var glitch: AudioStreamPlayer = $glitch
-=======
->>>>>>> f82c96952b414b99b404be4ae61d287b4c9f65af
 
 @export_category("Movement")
 @export_range(50, 500) var maxSpeed: float = 200.0
@@ -183,10 +180,7 @@ func _movement(delta):
 		
 	if Input.is_action_just_pressed("freeze_enemies") and not freeze_cooldown:
 		_freeze_enemies()
-<<<<<<< HEAD
 		glitch.play()
-=======
->>>>>>> f82c96952b414b99b404be4ae61d287b4c9f65af
 
 func _teleport_to_cursor():
 	if teleport_cooldown:

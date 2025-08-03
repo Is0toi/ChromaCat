@@ -1,11 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://bsevm1juniak0"]
 
-<<<<<<< HEAD
 [ext_resource type="Script" uid="uid://dfc1l8xj0m8kg" path="res://npc.gd" id="1_sh8jd"]
-=======
-[ext_resource type="Script" path="res://npc.gd" id="1_sh8jd"]
-[ext_resource type="Resource" uid="uid://bjfqkx4xw37k3" path="res://test.dialogue" id="2_gqia6"]
->>>>>>> f82c96952b414b99b404be4ae61d287b4c9f65af
 [ext_resource type="Texture2D" uid="uid://dreejws5oxrpi" path="res://Assets/pixil-frame-0 (18).png" id="3_h6b4q"]
 
 [sub_resource type="Resource" id="Resource_3m7qt"]
@@ -32,7 +27,7 @@ radius = 20.025
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xxsvc"]
 size = Vector2(6, 17.25)
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="CharacterBody2D2" type="CharacterBody2D"]
 script = ExtResource("1_sh8jd")
 dialogue_resource = SubResource("Resource_3m7qt")
 

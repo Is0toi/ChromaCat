@@ -12,3 +12,4 @@ res://background_sfx.tscn
 res://ladder.tscn
 res://Scenes/Levels/level4.tscn
 res://Interactables/npc.tscn
+res://Scripts/box2.tscn
