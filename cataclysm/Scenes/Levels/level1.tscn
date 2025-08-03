@@ -1,13 +1,15 @@
 [gd_scene load_steps=13 format=4 uid="uid://dkhk3u27s0tg7"]
 
 [ext_resource type="PackedScene" uid="uid://mbud7nxommyt" path="res://mainchar.tscn" id="1_7u4ml"]
+[ext_resource type="PackedScene" uid="uid://cqon3iiwbmx0p" path="res://mainchar.tscn" id="1_7u4ml"]
+[ext_resource type="Script" uid="uid://4vg2rytcf6e1" path="res://Scenes/Levels/level_1.gd" id="1_hkfpk"]
 [ext_resource type="Texture2D" uid="uid://cgbsuyiw2aary" path="res://Assets/pixil-frame-0 (14).png" id="2_16p8j"]
 [ext_resource type="PackedScene" uid="uid://xbqejsm8wvd" path="res://water.tscn" id="3_1ukdm"]
 [ext_resource type="PackedScene" uid="uid://8dy0k55bp50k" path="res://Interactables/door.tscn" id="4_0xrym"]
 [ext_resource type="Texture2D" uid="uid://b0wud3pjajnja" path="res://Assets/8bit-pixel-graphic-blue-sky-background-with-clouds-vector.jpg" id="5_c0r4e"]
 [ext_resource type="PackedScene" uid="uid://c7x8csgodlbdn" path="res://Interactables/dog.tscn" id="6_m0h5h"]
 [ext_resource type="FontFile" uid="uid://b5uckawjsg8m3" path="res://Assets/Fonts/editundo.ttf" id="7_20uw2"]
-[ext_resource type="PackedScene" uid="uid://bsevm1juniak0" path="res://Interactables/npc.tscn" id="8_i36j2"]
+[ext_resource type="PackedScene" uid="uid://hce4c6yug1wa" path="res://Interactables/sign1.tscn" id="8_i36j2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_16p8j"]
 texture = ExtResource("2_16p8j")
@@ -66,10 +68,8 @@ physics_layer_1/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_16p8j")
 sources/2 = SubResource("TileSetScenesCollectionSource_16p8j")
 
-[sub_resource type="Resource" id="Resource_ir7pk"]
-metadata/__load_path__ = "res://test.dialogue"
-
 [node name="Level1" type="Node2D"]
+script = ExtResource("1_hkfpk")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 scale = Vector2(1, 0.991956)
@@ -82,9 +82,8 @@ position = Vector2(-454, -16)
 [node name="Camera2D" type="Camera2D" parent="Cat"]
 position = Vector2(0, 1)
 zoom = Vector2(3, 3)
-limit_left = -500
-limit_right = 500
-limit_smoothed = true
+limit_left = -1000
+limit_right = 1000
 position_smoothing_enabled = true
 
 [node name="Area2D" parent="." instance=ExtResource("4_0xrym")]
@@ -178,5 +177,10 @@ scale = Vector2(0.58125, 0.748958)
 texture = ExtResource("5_c0r4e")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("8_i36j2")]
+<<<<<<< HEAD
 position = Vector2(-298, -11)
 dialogue_resource = SubResource("Resource_ir7pk")
+=======
+position = Vector2(-256, -16)
+script = null
+>>>>>>> 3a5f52f52ff406b7036813bfc634385319f9a24d

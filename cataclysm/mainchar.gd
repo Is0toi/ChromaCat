@@ -172,7 +172,7 @@ func _movement(delta):
 	else:
 		PlayerSprite.play("glitch_jump" if glitch_mode else "jump")
 	
-	if Input.is_action_just_pressed("phase") and not is_phasing:
+	if Input.is_action_just_pressed("phase") and not is_phasing and not teleport_cooldown:
 		_start_phasing()
 	
 	if Input.is_action_just_pressed("teleport") and not teleport_cooldown:
@@ -181,6 +181,11 @@ func _movement(delta):
 	if Input.is_action_just_pressed("freeze_enemies") and not freeze_cooldown:
 		_freeze_enemies()
 		glitch.play()
+	
+	if Input.is_action_just_pressed("reset"):
+		Global.score = Global._initial_score
+		get_tree().reload_current_scene()
+
 
 func _teleport_to_cursor():
 	if teleport_cooldown:

@@ -1,8 +1,10 @@
-[gd_scene load_steps=12 format=4 uid="uid://dnous7181ormu"]
+[gd_scene load_steps=13 format=4 uid="uid://dnous7181ormu"]
 
-[ext_resource type="PackedScene" uid="uid://mbud7nxommyt" path="res://mainchar.tscn" id="1_5j5u1"]
+[ext_resource type="PackedScene" uid="uid://cqon3iiwbmx0p" path="res://mainchar.tscn" id="1_5j5u1"]
+[ext_resource type="Script" uid="uid://cxs3paum1nosl" path="res://Scenes/Levels/level_2.gd" id="1_16px4"]
 [ext_resource type="FontFile" uid="uid://b5uckawjsg8m3" path="res://Assets/Fonts/editundo.ttf" id="2_tnuy3"]
 [ext_resource type="PackedScene" uid="uid://8dy0k55bp50k" path="res://Interactables/door.tscn" id="3_d15yg"]
+[ext_resource type="Script" uid="uid://bbb2bame4cplu" path="res://Scenes/Levels/score.gd" id="3_hrj3c"]
 [ext_resource type="Texture2D" uid="uid://cgbsuyiw2aary" path="res://Assets/pixil-frame-0 (14).png" id="4_hrj3c"]
 [ext_resource type="PackedScene" uid="uid://xbqejsm8wvd" path="res://water.tscn" id="5_16px4"]
 [ext_resource type="PackedScene" uid="uid://c0n7b3x0tfpgm" path="res://Interactables/box.tscn" id="6_hrj3c"]
@@ -72,6 +74,7 @@ sources/0 = SubResource("TileSetAtlasSource_tnuy3")
 sources/2 = SubResource("TileSetScenesCollectionSource_d15yg")
 
 [node name="Level2" type="Node2D"]
+script = ExtResource("1_16px4")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_5j5u1")]
 position = Vector2(-479, -15)
@@ -81,8 +84,18 @@ position = Vector2(0, 1)
 zoom = Vector2(3, 3)
 limit_left = -500
 limit_right = 500
-limit_smoothed = true
-position_smoothing_enabled = true
+
+[node name="Score" type="Label" parent="CharacterBody2D"]
+unique_name_in_owner = true
+z_index = 1
+offset_left = 90.0
+offset_top = 80.0
+offset_right = 138.0
+offset_bottom = 103.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_tnuy3")
+text = "Score:"
+script = ExtResource("3_hrj3c")
 
 [node name="Instructions" type="Label" parent="."]
 z_index = -1
