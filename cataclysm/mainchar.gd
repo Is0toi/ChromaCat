@@ -177,6 +177,7 @@ func _movement(delta):
 		_freeze_enemies()
 	
 	if Input.is_action_just_pressed("reset"):
+		Global.score = Global._initial_score
 		get_tree().reload_current_scene()
 		
 
