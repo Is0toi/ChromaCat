@@ -20,6 +20,9 @@ class_name PlatformerController2D
 @export_range(0, 0.5) var coyoteTime: float = 0.2
 @export_range(0, 0.5) var jumpBuffering: float = 0.2
 
+@export_category("Climbing")
+@export var climb_speed: float = 100.0
+
 var acceleration: float
 var deceleration: float
 var jumpMagnitude: float
@@ -29,6 +32,7 @@ var appliedGravity: float
 var coyoteActive: bool = false
 var jumpWasPressed: bool = false
 var jumpBufferTimerRunning: bool = false
+var is_on_ladder = false
 
 var leftHold: bool
 var rightHold: bool
@@ -100,8 +104,12 @@ func _physics_process(delta):
 	rightHold = Input.is_action_pressed("right")
 	jumpTap = Input.is_action_just_pressed("jump")
 	jumpRelease = Input.is_action_just_released("jump")
+	
+	var input_x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
+	leftHold = input_x < -0.1  # Left key pressed
+	rightHold = input_x > 0.1  # Right key pressed
 
-	# Horizontal movement
+# Then keep the second movement system as-is:
 	if rightHold and !leftHold:
 		velocity.x += acceleration * delta
 		velocity.x = min(velocity.x, maxSpeed)
@@ -112,11 +120,17 @@ func _physics_process(delta):
 		velocity.x = move_toward(velocity.x, 0, -deceleration * delta)
 
 	# Gravity
-	appliedGravity = gravityScale if velocity.y <= 0 else gravityScale
-	if velocity.y < terminalVelocity:
-		velocity.y += appliedGravity
+	if is_on_ladder:
+		var climb_input = Input.get_action_strength("ui_up") - Input.get_action_strength("ui_down")
+		var move_input = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
+		velocity.y = climb_input * climb_speed  
+		velocity.x = move_input * climb_speed * 0.3
 	else:
-		velocity.y = terminalVelocity
+		appliedGravity = gravityScale if velocity.y <= 0 else gravityScale
+		if velocity.y < terminalVelocity:
+			velocity.y += appliedGravity
+		else:
+			velocity.y = terminalVelocity
 
 	# Variable jump height
 	if shortHop and jumpRelease and velocity.y < 0:
@@ -277,7 +291,20 @@ func _on_area_2d_body_exited(body):
 
 func is_ability_active() -> bool:
 	return teleport_return_timer.time_left > 0
+<<<<<<< HEAD
 
 
 func _on_body_exited(body: Node2D) -> void:
 	pass # Replace with function body.
+=======
+	
+	
+func _on_ladder_body_entered(body):
+	if body == self:
+		is_on_ladder = true
+		velocity.y = 0  
+
+func _on_ladder_body_exited(body):
+	if body == self:
+		is_on_ladder = false
+>>>>>>> 8adac05104f203c4bab34aac78a565f3d736368e
