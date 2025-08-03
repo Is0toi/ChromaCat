@@ -174,9 +174,11 @@ func _movement(delta):
 	
 	if Input.is_action_just_pressed("phase") and not is_phasing and not teleport_cooldown:
 		_start_phasing()
+		glitch.play()
 	
 	if Input.is_action_just_pressed("teleport") and not teleport_cooldown:
 		_teleport_to_cursor()
+		glitch.play()
 		
 	if Input.is_action_just_pressed("freeze_enemies") and not freeze_cooldown:
 		_freeze_enemies()
