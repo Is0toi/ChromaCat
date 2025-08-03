@@ -4,10 +4,14 @@ class_name PlatformerController2D
 @export var PlayerSprite: AnimatedSprite2D
 @export var PlayerCollider: CollisionShape2D
 
+<<<<<<< HEAD
 #audio
 @onready var jump: AudioStreamPlayer = $Jump
 @onready var glitch: AudioStreamPlayer = $Glitch
 @onready var splash: AudioStreamPlayer = $Splash
+=======
+@onready var ladder_ray_cast: RayCast2D= $LadderRayCast
+>>>>>>> fc8a12403920b32a401935c1f0ec47f64eaa0f5c
 
 @export_category("Movement")
 @export_range(50, 500) var maxSpeed: float = 200.0
@@ -25,9 +29,8 @@ class_name PlatformerController2D
 @export_range(0, 0.5) var coyoteTime: float = 0.2
 @export_range(0, 0.5) var jumpBuffering: float = 0.2
 
-@export_category("Climbing")
-@export var climb_speed: float = 100.0
-
+const SPEED = 100.0
+var gravity: float = ProjectSettings.get_setting("physics/2d/default_gravity")
 var acceleration: float
 var deceleration: float
 var jumpMagnitude: float
@@ -37,33 +40,24 @@ var appliedGravity: float
 var coyoteActive: bool = false
 var jumpWasPressed: bool = false
 var jumpBufferTimerRunning: bool = false
-var is_on_ladder = false
 
 var leftHold: bool
 var rightHold: bool
 var jumpTap: bool
 var jumpRelease: bool
 
-# For noclip
 var is_phasing: bool = false
 var phase_timer: Timer
-
-# For teleporting
 var teleport_origin: Vector2
 var teleport_return_timer: Timer
 var teleport_cooldown := false
 var teleport_cooldown_timer: Timer
-
-# For freezing enemies
 var freeze_cooldown := false
 var freeze_cooldown_timer: Timer
-
 var push_force = 40.0
-
-func _on_teleport_cooldown_timeout():
-	teleport_cooldown = false
-# Glitch mode (plays glitched animations when abilities are active)
 var glitch_mode := false
+
+var on_ladder: bool = false
 
 func _ready():
 	_update_data()
@@ -98,23 +92,34 @@ func _update_data():
 	deceleration = -maxSpeed / max(timeToReachZeroSpeed, 0.01)
 	jumpMagnitude = (10.0 * jumpHeight) * gravityScale
 	jumpCount = jumps
-
 	if jumps > 1:
 		jumpBuffering = 0
 		coyoteTime = 0
-
+		
 func _physics_process(delta):
-	# Input state
+	var ladder_collider = ladder_ray_cast.get_collider()
+	
+	if ladder_collider:
+		PlayerSprite.play("climb")
+		_ladder_climb(delta)
+	else: _movement(delta)
+	
+	move_and_slide()
+	
+func _ladder_climb(delta):
+	var direction := Vector2.ZERO
+	direction.x = Input.get_axis("left", "right")
+	direction.y = Input.get_axis("climb_up", "climb_down")
+	
+	if direction: velocity = direction * SPEED / 2
+	else: velocity = Vector2.ZERO
+	
+func _movement(delta):
 	leftHold = Input.is_action_pressed("left")
 	rightHold = Input.is_action_pressed("right")
 	jumpTap = Input.is_action_just_pressed("jump")
 	jumpRelease = Input.is_action_just_released("jump")
-	
-	var input_x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
-	leftHold = input_x < -0.1  # Left key pressed
-	rightHold = input_x > 0.1  # Right key pressed
 
-# Then keep the second movement system as-is:
 	if rightHold and !leftHold:
 		velocity.x += acceleration * delta
 		velocity.x = min(velocity.x, maxSpeed)
@@ -124,6 +129,7 @@ func _physics_process(delta):
 	else:
 		velocity.x = move_toward(velocity.x, 0, -deceleration * delta)
 
+<<<<<<< HEAD
 	# Gravity
 	if is_on_ladder:
 		var climb_input = Input.get_action_strength("ui_up") - Input.get_action_strength("ui_down")
@@ -134,12 +140,17 @@ func _physics_process(delta):
 			velocity.y += appliedGravity
 		else:
 			velocity.y = terminalVelocity
+=======
+	if not is_on_floor():
+		velocity.y += gravity * delta
+	
+	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+		velocity.y = jumpMagnitude
+>>>>>>> fc8a12403920b32a401935c1f0ec47f64eaa0f5c
 
-	# Variable jump height
 	if shortHop and jumpRelease and velocity.y < 0:
 		velocity.y /= jumpVariable
 
-	# Coyote time
 	if !is_on_floor() and coyoteTime > 0 and !coyoteActive:
 		coyoteActive = true
 		_start_coyote_timer()
@@ -147,7 +158,6 @@ func _physics_process(delta):
 		coyoteActive = false
 		jumpCount = jumps
 
-	# Jump buffering
 	if jumpTap:
 		if is_on_floor() or coyoteActive:
 			_jump()
@@ -157,23 +167,19 @@ func _physics_process(delta):
 			if !jumpBufferTimerRunning:
 				_start_jump_buffer_timer()
 
-	# Execute buffered jump
 	if is_on_floor() and jumpWasPressed:
 		_jump()
-
-	move_and_slide()
+	
 	for i in get_slide_collision_count():
 		var c = get_slide_collision(i)
 		if c.get_collider() is RigidBody2D:
 			c.get_collider().apply_central_impulse(-c.get_normal() * push_force)
 
-	# Flip the sprite
 	if velocity.x > 0:
 		PlayerSprite.flip_h = false
 	elif velocity.x < 0:
 		PlayerSprite.flip_h = true
 
-	# Play animations (checks glitch_mode)
 	if is_on_floor():
 		if velocity.x == 0:
 			PlayerSprite.play("glitch_idle" if glitch_mode else "idle")
@@ -182,8 +188,12 @@ func _physics_process(delta):
 	else:
 		PlayerSprite.play("glitch_jump" if glitch_mode else "jump")
 	
+<<<<<<< HEAD
 	# Ability inputs
 	if Input.is_action_just_pressed("phase") and not is_phasing and not teleport_cooldown:
+=======
+	if Input.is_action_just_pressed("phase") and not is_phasing:
+>>>>>>> fc8a12403920b32a401935c1f0ec47f64eaa0f5c
 		_start_phasing()
 		glitch.play()
 	
@@ -207,10 +217,9 @@ func _teleport_to_cursor():
 	var target_position = get_global_mouse_position()
 	var original_position = global_position
 
-	# Test if destination is valid 
 	global_position = target_position
 	if test_move(global_transform, Vector2.ZERO):
-		global_position = original_position  # Revert if blocked
+		global_position = original_position
 		print("Teleport blocked: destination inside wall")
 		return
 
@@ -220,17 +229,19 @@ func _teleport_to_cursor():
 	teleport_cooldown = true
 	teleport_cooldown_timer.start()
 
-	# Enable glitch mode during teleport
 	glitch_mode = true
 	await teleport_return_timer.timeout
 	glitch_mode = false
 
+func _on_teleport_cooldown_timeout():
+	teleport_cooldown = false
+
 func _on_teleport_return_timeout():
-	global_position = teleport_origin  # Return to saved position
+	global_position = teleport_origin
 
 func _start_phasing():
 	is_phasing = true
-	glitch_mode = true  # Enable glitch animations
+	glitch_mode = true
 	collision_mask = 1 << 1  
 	PlayerSprite.modulate.a = 0.5 
 	phase_timer.start()
@@ -238,13 +249,13 @@ func _start_phasing():
 
 func _on_phase_timeout():
 	is_phasing = false
-	glitch_mode = false  # Disable glitch animations
+	glitch_mode = false
 	collision_mask = 0xFFFFFFFF
 	PlayerSprite.modulate.a = 1.0 
 	print("Phasing ended")
 
 func _freeze_enemies():
-	glitch_mode = true  # Enable glitch animations
+	glitch_mode = true
 	for dog in get_tree().get_nodes_in_group("enemy"):
 		dog.set_physics_process(false)
 		
@@ -256,7 +267,7 @@ func _freeze_enemies():
 	for dog in get_tree().get_nodes_in_group("enemy"):
 		dog.set_physics_process(true)
 	
-	glitch_mode = false  # Disable glitch animations
+	glitch_mode = false
 
 func _jump():
 	if jumpCount > 0:
@@ -277,7 +288,6 @@ func _start_jump_buffer_timer():
 func _on_freeze_cooldown_timeout():
 	freeze_cooldown = false	
 
-# Box collisions
 func _on_area_2d_body_entered(body):
 	if body.is_in_group("RigidBody"):
 		print("cat on box")
@@ -289,15 +299,8 @@ func _on_area_2d_body_exited(body):
 		body.collision_layer = 3  
 		body.collision_mask = 3 
 
-	freeze_cooldown = true
-	freeze_cooldown_timer.start()
-			
-	await get_tree().create_timer(3.0).timeout
-
-	for dog in get_tree().get_nodes_in_group("enemy"):
-		dog.set_physics_process(true)
-
 func is_ability_active() -> bool:
+<<<<<<< HEAD
 	return teleport_return_timer.time_left > 0
 
 
@@ -313,3 +316,7 @@ func _on_ladder_body_entered(body):
 func _on_ladder_body_exited(body):
 	if body == self:
 		is_on_ladder = false
+=======
+		return teleport_return_timer.time_left > 0 
+		
+>>>>>>> fc8a12403920b32a401935c1f0ec47f64eaa0f5c

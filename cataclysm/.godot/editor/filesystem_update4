@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 res://dog.tscn
 res://Interactables/button.tscn
 res://water.tscn
@@ -5,13 +6,28 @@ res://Interactables/box.tscn
 res://music.tscn
 res://Interactables/door.tscn
 res://ladder.tscn
+=======
+res://Scenes/MainMenu/main_menu.tscn
+res://Scenes/game.tscn
+res://Interactables/box.tscn
+res://mainchar.tscn
+res://Scenes/Levels/level3.tscn
+res://Interactables/dog.tscn
+>>>>>>> fc8a12403920b32a401935c1f0ec47f64eaa0f5c
 res://Scenes/Levels/level2.tscn
 res://Scenes/Levels/level4.tscn
 res://Scenes/Levels/level1.tscn
 res://mainchar.tscn
 res://mainchar.gd
 res://Interactables/npc.tscn
+<<<<<<< HEAD
 res://dog.gd
 res://Interactables/button.gd
 res://Scripts/water.gd
 res://background_sfx.tscn
+=======
+res://Scenes/Levels/level1.tscn
+res://Scenes/Levels/level4.tscn
+res://ladder.tscn
+res://mainchar.gd
+>>>>>>> fc8a12403920b32a401935c1f0ec47f64eaa0f5c

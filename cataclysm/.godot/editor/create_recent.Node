@@ -1,12 +1,22 @@
+<<<<<<< HEAD
 AudioStreamPlayer
 StaticBody2D
 Node2D
 RigidBody2D
 CharacterBody2D
+=======
+RayCast2D
+CollisionShape2D
+>>>>>>> fc8a12403920b32a401935c1f0ec47f64eaa0f5c
 AnimatedSprite2D
 CollisionShape2D
 Area2D
 TileMapLayer
 Label
 AudioStreamPlayer2D
+<<<<<<< HEAD
+=======
+CharacterBody2D
+CharacterBody2D
+>>>>>>> fc8a12403920b32a401935c1f0ec47f64eaa0f5c
 AnimatableBody2D
