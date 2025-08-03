@@ -1,8 +1,9 @@
-[gd_scene load_steps=11 format=4 uid="uid://dnous7181ormu"]
+[gd_scene load_steps=12 format=4 uid="uid://dnous7181ormu"]
 
 [ext_resource type="PackedScene" uid="uid://cqon3iiwbmx0p" path="res://mainchar.tscn" id="1_5j5u1"]
 [ext_resource type="FontFile" uid="uid://b5uckawjsg8m3" path="res://Assets/Fonts/editundo.ttf" id="2_tnuy3"]
 [ext_resource type="PackedScene" uid="uid://8dy0k55bp50k" path="res://Interactables/door.tscn" id="3_d15yg"]
+[ext_resource type="Script" path="res://Scenes/Levels/score.gd" id="3_hrj3c"]
 [ext_resource type="Texture2D" uid="uid://cgbsuyiw2aary" path="res://Assets/pixil-frame-0 (14).png" id="4_hrj3c"]
 [ext_resource type="PackedScene" uid="uid://xbqejsm8wvd" path="res://water.tscn" id="5_16px4"]
 [ext_resource type="Texture2D" uid="uid://b0wud3pjajnja" path="res://Assets/8bit-pixel-graphic-blue-sky-background-with-clouds-vector.jpg" id="6_tnuy3"]
@@ -76,9 +77,20 @@ position = Vector2(-240, -11)
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 position = Vector2(0, 1)
 zoom = Vector2(3, 3)
-limit_left = -1000
-limit_right = 1000
-position_smoothing_enabled = true
+limit_left = -500
+limit_right = 500
+
+[node name="Score" type="Label" parent="CharacterBody2D"]
+unique_name_in_owner = true
+z_index = 1
+offset_left = 90.0
+offset_top = 80.0
+offset_right = 138.0
+offset_bottom = 103.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_tnuy3")
+text = "Score:"
+script = ExtResource("3_hrj3c")
 
 [node name="Instructions" type="Label" parent="."]
 z_index = -1

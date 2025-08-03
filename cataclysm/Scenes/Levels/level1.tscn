@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://b0wud3pjajnja" path="res://Assets/8bit-pixel-graphic-blue-sky-background-with-clouds-vector.jpg" id="5_c0r4e"]
 [ext_resource type="PackedScene" uid="uid://c7x8csgodlbdn" path="res://Interactables/dog.tscn" id="6_m0h5h"]
 [ext_resource type="FontFile" uid="uid://b5uckawjsg8m3" path="res://Assets/Fonts/editundo.ttf" id="7_20uw2"]
+[ext_resource type="PackedScene" uid="uid://hce4c6yug1wa" path="res://Interactables/sign1.tscn" id="8_i36j2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_16p8j"]
 texture = ExtResource("2_16p8j")
@@ -62,9 +63,6 @@ physics_layer_0/collision_mask = 6
 physics_layer_1/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_16p8j")
 sources/2 = SubResource("TileSetScenesCollectionSource_16p8j")
-
-[sub_resource type="Resource" id="Resource_ir7pk"]
-metadata/__load_path__ = "res://test.dialogue"
 
 [node name="Level1" type="Node2D"]
 
@@ -145,16 +143,9 @@ position = Vector2(1072, -144)
 scale = Vector2(0.58125, 0.748958)
 texture = ExtResource("5_c0r4e")
 
-[node name="CharacterBody2D" parent="."]
-_import_path = NodePath("")
-unique_name_in_owner = false
-process_mode = 0
-process_priority = 0
-process_physics_priority = 0
-process_thread_group = 0
-physics_interpolation_mode = 0
-auto_translate_mode = 0
-editor_description = ""
-position = Vector2(-298, -11)
-dialogue_resource = SubResource("Resource_ir7pk")
-script = null
+[node name="CharacterBody2D" parent="." instance=ExtResource("8_i36j2")]
+position = Vector2(-256, -16)
+
+[connection signal="body_entered" from="TileMapLayer/Area2D" to="TileMapLayer/Area2D" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@24830" to="TileMapLayer/@Area2D@24830" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@24831" to="TileMapLayer/@Area2D@24831" method="_on_body_entered"]

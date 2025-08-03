@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://hce4c6yug1wa"]
+
+[ext_resource type="Script" path="res://Interactables/sign_1.gd" id="1_cs5xf"]
+[ext_resource type="Texture2D" uid="uid://dreejws5oxrpi" path="res://Assets/pixil-frame-0 (18).png" id="1_wfi1o"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_72cvf"]
+radius = 24.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cs5xf"]
+atlas = ExtResource("1_wfi1o")
+region = Rect2(224, 64, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_72cvf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cs5xf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_cs5xf")
+
+[node name="InteractionZone" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionZone"]
+light_mask = 5
+visibility_layer = 5
+shape = SubResource("CircleShape2D_72cvf")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_72cvf")

@@ -170,7 +170,7 @@ func _movement(delta):
 	if Input.is_action_just_pressed("phase") and not is_phasing and not teleport_cooldown:
 		_start_phasing()
 	
-	if Input.is_action_just_pressed("teleport") and not teleport_cooldown and not is_phasing:
+	if Input.is_action_just_pressed("teleport") and not teleport_cooldown:
 		_teleport_to_cursor()
 		
 	if Input.is_action_just_pressed("freeze_enemies") and not freeze_cooldown:
