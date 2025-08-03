@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=4 uid="uid://dxf0q631g26h4"]
+[gd_scene load_steps=16 format=4 uid="uid://biiwfcvnf7e"]
 
 [ext_resource type="Script" uid="uid://dbcq0ewbj3cd3" path="res://Scenes/Levels/level_5.gd" id="1_ykvih"]
 [ext_resource type="PackedScene" uid="uid://mbud7nxommyt" path="res://mainchar.tscn" id="2_rp22a"]
@@ -133,11 +133,3 @@ z_index = -2
 position = Vector2(-64, -264)
 scale = Vector2(0.8125, 0.917187)
 texture = ExtResource("12_aba7e")
-
-[connection signal="body_entered" from="TileMapLayer/Area2D" to="TileMapLayer/Area2D" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@37588" to="TileMapLayer/@Area2D@37588" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@37589" to="TileMapLayer/@Area2D@37589" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@37590" to="TileMapLayer/@Area2D@37590" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@37591" to="TileMapLayer/@Area2D@37591" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@37592" to="TileMapLayer/@Area2D@37592" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@37593" to="TileMapLayer/@Area2D@37593" method="_on_body_entered"]

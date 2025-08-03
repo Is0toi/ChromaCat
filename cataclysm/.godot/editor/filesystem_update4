@@ -1,5 +1,4 @@
-res://Scenes/Levels/level7.tscn
-res://Scenes/Levels/level_7.gd
+res://Scenes/Levels/level3.tscn
 res://dog.tscn
 res://Interactables/button.tscn
 res://water.tscn
@@ -9,15 +8,13 @@ res://Scenes/hidden_block.tscn
 res://Scenes/Levels/level1.tscn
 res://mainchar.tscn
 res://Scenes/Levels/level2.tscn
-res://Scenes/Levels/level3.tscn
 res://Interactables/sign1.tscn
+res://Scenes/Levels/level7.tscn
+res://Scripts/cloud.tscn
 res://Scenes/Levels/level4.tscn
 res://Scenes/Levels/level5.tscn
-res://Scenes/Levels/level_6.tscn
-res://Scenes/Levels/level_6.gd
-res://Scripts/cloud.tscn
-res://Scenes/Levels/level_5.gd
 res://Scenes/Levels/level6.tscn
-res://mainchar.gd
+res://Interactables/npc2.tscn
 res://Interactables/npc.tscn
+res://Interactables/feather.tscn
 res://Scripts/cloud.gd
