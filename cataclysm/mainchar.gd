@@ -124,7 +124,6 @@ func _physics_process(delta):
 		var climb_input = Input.get_action_strength("ui_up") - Input.get_action_strength("ui_down")
 		var move_input = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
 		velocity.y = climb_input * climb_speed  
-		velocity.x = move_input * climb_speed * 0.3
 	else:
 		appliedGravity = gravityScale if velocity.y <= 0 else gravityScale
 		if velocity.y < terminalVelocity:
