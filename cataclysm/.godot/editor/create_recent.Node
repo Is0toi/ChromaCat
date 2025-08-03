@@ -1,6 +1,8 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 >>>>>>> 3a5f52f52ff406b7036813bfc634385319f9a24d
 <<<<<<< HEAD
 =======
@@ -12,19 +14,28 @@ RayCast2D
 <<<<<<< HEAD
 >>>>>>> 2b47aa19709211a2545ebe610fa0d822c080e79f
 =======
+>>>>>>> 27277445c5868e8147a94d047ba11dbe6155d961
 Label
 Control
 SubViewport
 CollisionShape2D
 RayCast2D
+<<<<<<< HEAD
+=======
 >>>>>>> 4d9ad51c4f08884c73f22e0c50d8d12717c10a3a
 >>>>>>> 3a5f52f52ff406b7036813bfc634385319f9a24d
+>>>>>>> 27277445c5868e8147a94d047ba11dbe6155d961
 AudioStreamPlayer
 Label
 StaticBody2D
 Node2D
 RigidBody2D
 CharacterBody2D
+<<<<<<< HEAD
+RayCast2D
+CollisionShape2D
+AnimatedSprite2D
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 RayCast2D
@@ -56,3 +67,4 @@ AnimatableBody2D
 =======
 >>>>>>> 4d9ad51c4f08884c73f22e0c50d8d12717c10a3a
 >>>>>>> 3a5f52f52ff406b7036813bfc634385319f9a24d
+>>>>>>> 27277445c5868e8147a94d047ba11dbe6155d961

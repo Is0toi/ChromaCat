@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://bsevm1juniak0"]
+[gd_scene load_steps=8 format=3 uid="uid://dhuwjekx81o02"]
 
-[ext_resource type="Script" uid="uid://dgtbjk6eeajv7" path="res://npc.gd" id="1_sh8jd"]
+[ext_resource type="Script" uid="uid://cmcaj2bt5ji6c" path="res://npc.gd" id="1_sh8jd"]
 [ext_resource type="Texture2D" uid="uid://dreejws5oxrpi" path="res://Assets/pixil-frame-0 (18).png" id="3_h6b4q"]
+[ext_resource type="FontFile" uid="uid://b5uckawjsg8m3" path="res://Assets/Fonts/editundo.ttf" id="3_sh8jd"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_h1ryf"]
 atlas = ExtResource("3_h6b4q")
@@ -41,3 +42,12 @@ shape = SubResource("CircleShape2D_h1ryf")
 position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_xxsvc")
 disabled = true
+
+[node name="TalkLabel" type="Label" parent="."]
+offset_left = -104.0
+offset_top = -40.0
+offset_right = 127.0
+offset_bottom = -17.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_sh8jd")
+text = "Read me if you ever get stuck"
