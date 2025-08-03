@@ -1,6 +1,5 @@
-[gd_scene load_steps=6 format=3 uid="uid://hce4c6yug1wa"]
+[gd_scene load_steps=5 format=3 uid="uid://hce4c6yug1wa"]
 
-[ext_resource type="Script" path="res://Interactables/sign_1.gd" id="1_cs5xf"]
 [ext_resource type="Texture2D" uid="uid://dreejws5oxrpi" path="res://Assets/pixil-frame-0 (18).png" id="1_wfi1o"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_72cvf"]
@@ -22,7 +21,6 @@ animations = [{
 }]
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
-script = ExtResource("1_cs5xf")
 
 [node name="InteractionZone" type="Area2D" parent="."]
 
