@@ -55,7 +55,10 @@ texture_region_size = Vector2i(32, 32)
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_16p8j"]
 scenes/1/scene = ExtResource("3_1ukdm")
+<<<<<<< HEAD
 scenes/3/scene = ExtResource("8_i36j2")
+=======
+>>>>>>> f82c96952b414b99b404be4ae61d287b4c9f65af
 
 [sub_resource type="TileSet" id="TileSet_1ukdm"]
 tile_size = Vector2i(32, 32)
@@ -81,8 +84,9 @@ position = Vector2(-178, -16)
 [node name="Camera2D" type="Camera2D" parent="Cat"]
 position = Vector2(0, 1)
 zoom = Vector2(3, 3)
-limit_left = -1000
-limit_right = 1000
+limit_left = -500
+limit_right = 500
+limit_smoothed = true
 position_smoothing_enabled = true
 
 [node name="Area2D" parent="." instance=ExtResource("4_0xrym")]
@@ -150,3 +154,10 @@ texture = ExtResource("5_c0r4e")
 [node name="CharacterBody2D" parent="." instance=ExtResource("8_i36j2")]
 position = Vector2(-298, -11)
 dialogue_resource = SubResource("Resource_ir7pk")
+<<<<<<< HEAD
+=======
+
+[connection signal="body_entered" from="TileMapLayer/Area2D" to="TileMapLayer/Area2D" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@49929" to="TileMapLayer/@Area2D@49929" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@49930" to="TileMapLayer/@Area2D@49930" method="_on_body_entered"]
+>>>>>>> f82c96952b414b99b404be4ae61d287b4c9f65af

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 [gd_scene load_steps=25 format=3 uid="uid://cqon3iiwbmx0p"]
+=======
+[gd_scene load_steps=23 format=3 uid="uid://cqon3iiwbmx0p"]
+>>>>>>> f82c96952b414b99b404be4ae61d287b4c9f65af
 
 [ext_resource type="Texture2D" uid="uid://4p0rirfjewtr" path="res://Assets/pixil-frame-0 (15).png" id="1_s4adt"]
 [ext_resource type="Script" uid="uid://l4tl3pnrjrku" path="res://mainchar.gd" id="1_ubb7a"]
@@ -193,6 +197,7 @@ shape = SubResource("RectangleShape2D_ikggu")
 target_position = Vector2(0, -10)
 collision_mask = 16
 hit_from_inside = true
+<<<<<<< HEAD
 
 [node name="jump" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_ikggu")
@@ -201,3 +206,5 @@ volume_db = -20.0
 [node name="glitch" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_jo4fy")
 volume_db = -20.0
+=======
+>>>>>>> f82c96952b414b99b404be4ae61d287b4c9f65af
