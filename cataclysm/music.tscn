@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://lqob2ji325f2"]
+
+[ext_resource type="AudioStream" uid="uid://cmbvplf5g0wur" path="res://Assets/game-8-bit-on-278083.mp3" id="1_3h6ak"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_3h6ak")
+volume_db = -39.665
+autoplay = true
