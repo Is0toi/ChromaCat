@@ -20,3 +20,6 @@ res://Scenes/Levels/level6.tscn
 res://Scenes/Levels/level_6.gd
 res://Scripts/cloud.tscn
 res://Scenes/Levels/level8.tscn
+res://Scenes/MainMenu/main_menu.tscn
+res://mainchar.gd
+res://Scenes/Levels/level9.tscn
