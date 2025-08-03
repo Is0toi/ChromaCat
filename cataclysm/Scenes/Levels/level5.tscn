@@ -1,20 +1,20 @@
-[gd_scene load_steps=16 format=4 uid="uid://cgo22ro3inyql"]
+[gd_scene load_steps=16 format=4 uid="uid://biiwfcvnf7e"]
 
-[ext_resource type="Script" uid="uid://co3u0amyv48d5" path="res://Scenes/Levels/level_4.gd" id="1_lmqgw"]
-[ext_resource type="PackedScene" uid="uid://mbud7nxommyt" path="res://mainchar.tscn" id="1_lpiby"]
-[ext_resource type="FontFile" uid="uid://b5uckawjsg8m3" path="res://Assets/Fonts/editundo.ttf" id="2_6xlxm"]
-[ext_resource type="PackedScene" uid="uid://8dy0k55bp50k" path="res://Interactables/door.tscn" id="3_7npjx"]
-[ext_resource type="Script" uid="uid://bbb2bame4cplu" path="res://Scenes/Levels/score.gd" id="3_kee65"]
-[ext_resource type="Texture2D" uid="uid://cgbsuyiw2aary" path="res://Assets/pixil-frame-0 (14).png" id="4_kee65"]
-[ext_resource type="PackedScene" uid="uid://xbqejsm8wvd" path="res://water.tscn" id="5_lmqgw"]
-[ext_resource type="PackedScene" uid="uid://c0n7b3x0tfpgm" path="res://Interactables/box.tscn" id="6_c346c"]
-[ext_resource type="PackedScene" uid="uid://c7x8csgodlbdn" path="res://Interactables/dog.tscn" id="7_6xlxm"]
-[ext_resource type="PackedScene" uid="uid://csdrp302b0dxw" path="res://Interactables/feather.tscn" id="7_46s4o"]
-[ext_resource type="PackedScene" uid="uid://d173ubawqf2we" path="res://ladder.tscn" id="8_7npjx"]
-[ext_resource type="Texture2D" uid="uid://b0wud3pjajnja" path="res://Assets/8bit-pixel-graphic-blue-sky-background-with-clouds-vector.jpg" id="8_ndqic"]
+[ext_resource type="Script" uid="uid://co3u0amyv48d5" path="res://Scenes/Levels/level_4.gd" id="1_ykvih"]
+[ext_resource type="PackedScene" uid="uid://mbud7nxommyt" path="res://mainchar.tscn" id="2_rp22a"]
+[ext_resource type="FontFile" uid="uid://b5uckawjsg8m3" path="res://Assets/Fonts/editundo.ttf" id="3_cow3m"]
+[ext_resource type="Script" uid="uid://bbb2bame4cplu" path="res://Scenes/Levels/score.gd" id="4_36ddn"]
+[ext_resource type="PackedScene" uid="uid://8dy0k55bp50k" path="res://Interactables/door.tscn" id="5_x3xif"]
+[ext_resource type="Texture2D" uid="uid://cgbsuyiw2aary" path="res://Assets/pixil-frame-0 (14).png" id="6_1sss4"]
+[ext_resource type="PackedScene" uid="uid://xbqejsm8wvd" path="res://water.tscn" id="7_agagt"]
+[ext_resource type="PackedScene" uid="uid://c0n7b3x0tfpgm" path="res://Interactables/box.tscn" id="8_qauki"]
+[ext_resource type="PackedScene" uid="uid://c7x8csgodlbdn" path="res://Interactables/dog.tscn" id="9_580di"]
+[ext_resource type="PackedScene" uid="uid://d173ubawqf2we" path="res://ladder.tscn" id="10_vsdsk"]
+[ext_resource type="PackedScene" uid="uid://csdrp302b0dxw" path="res://Interactables/feather.tscn" id="11_6de43"]
+[ext_resource type="Texture2D" uid="uid://b0wud3pjajnja" path="res://Assets/8bit-pixel-graphic-blue-sky-background-with-clouds-vector.jpg" id="12_aba7e"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vqlhw"]
-texture = ExtResource("4_kee65")
+texture = ExtResource("6_1sss4")
 texture_region_size = Vector2i(32, 32)
 1:0/0 = 0
 2:0/0 = 0
@@ -70,11 +70,11 @@ texture_region_size = Vector2i(32, 32)
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_la4le"]
-scenes/1/scene = ExtResource("5_lmqgw")
-scenes/2/scene = ExtResource("6_c346c")
-scenes/3/scene = ExtResource("7_6xlxm")
-scenes/4/scene = ExtResource("8_7npjx")
-scenes/5/scene = ExtResource("7_46s4o")
+scenes/1/scene = ExtResource("7_agagt")
+scenes/2/scene = ExtResource("8_qauki")
+scenes/3/scene = ExtResource("9_580di")
+scenes/4/scene = ExtResource("10_vsdsk")
+scenes/5/scene = ExtResource("11_6de43")
 
 [sub_resource type="TileSet" id="TileSet_opn2v"]
 tile_size = Vector2i(32, 32)
@@ -86,11 +86,11 @@ sources/0 = SubResource("TileSetAtlasSource_vqlhw")
 sources/2 = SubResource("TileSetScenesCollectionSource_la4le")
 
 [node name="Level4" type="Node2D"]
-script = ExtResource("1_lmqgw")
+script = ExtResource("1_ykvih")
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("1_lpiby")]
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_rp22a")]
 unique_name_in_owner = true
-position = Vector2(-240, -11)
+position = Vector2(-479, -14)
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 unique_name_in_owner = true
@@ -106,9 +106,9 @@ offset_top = 80.0
 offset_right = 138.0
 offset_bottom = 103.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("2_6xlxm")
+theme_override_fonts/font = ExtResource("3_cow3m")
 text = "Score:"
-script = ExtResource("3_kee65")
+script = ExtResource("4_36ddn")
 
 [node name="Label" type="Label" parent="."]
 unique_name_in_owner = true
@@ -118,11 +118,11 @@ offset_top = -88.0
 offset_right = 29.0
 offset_bottom = -65.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("2_6xlxm")
+theme_override_fonts/font = ExtResource("3_cow3m")
 text = "You're on your own now! Good Luck"
 metadata/_edit_use_anchors_ = true
 
-[node name="Area2D" parent="." instance=ExtResource("3_7npjx")]
+[node name="Area2D" parent="." instance=ExtResource("5_x3xif")]
 unique_name_in_owner = true
 position = Vector2(204, -13)
 collision_layer = 1
@@ -142,4 +142,12 @@ unique_name_in_owner = true
 z_index = -2
 position = Vector2(-64, -264)
 scale = Vector2(0.8125, 0.917187)
-texture = ExtResource("8_ndqic")
+texture = ExtResource("12_aba7e")
+
+[connection signal="body_entered" from="TileMapLayer/Area2D" to="TileMapLayer/Area2D" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@35895" to="TileMapLayer/@Area2D@35895" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@35896" to="TileMapLayer/@Area2D@35896" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@35897" to="TileMapLayer/@Area2D@35897" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@35898" to="TileMapLayer/@Area2D@35898" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@35899" to="TileMapLayer/@Area2D@35899" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@35900" to="TileMapLayer/@Area2D@35900" method="_on_body_entered"]

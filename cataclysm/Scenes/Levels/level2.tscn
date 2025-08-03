@@ -1,6 +1,6 @@
-[gd_scene load_steps=13 format=4 uid="uid://dnous7181ormu"]
+[gd_scene load_steps=14 format=4 uid="uid://dnous7181ormu"]
 
-[ext_resource type="PackedScene" uid="uid://cqon3iiwbmx0p" path="res://mainchar.tscn" id="1_5j5u1"]
+[ext_resource type="PackedScene" uid="uid://mbud7nxommyt" path="res://mainchar.tscn" id="1_5j5u1"]
 [ext_resource type="Script" uid="uid://cxs3paum1nosl" path="res://Scenes/Levels/level_2.gd" id="1_16px4"]
 [ext_resource type="FontFile" uid="uid://b5uckawjsg8m3" path="res://Assets/Fonts/editundo.ttf" id="2_tnuy3"]
 [ext_resource type="PackedScene" uid="uid://8dy0k55bp50k" path="res://Interactables/door.tscn" id="3_d15yg"]

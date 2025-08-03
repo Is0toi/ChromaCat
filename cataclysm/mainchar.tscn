@@ -190,7 +190,7 @@ position = Vector2(1.5, 2)
 shape = SubResource("RectangleShape2D_ikggu")
 
 [node name="LadderRayCast" type="RayCast2D" parent="."]
-target_position = Vector2(0, -10)
+target_position = Vector2(0, 10)
 collision_mask = 16
 hit_from_inside = true
 
