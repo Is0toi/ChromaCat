@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=4 uid="uid://cgo22ro3inyql"]
+[gd_scene load_steps=16 format=4 uid="uid://cgo22ro3inyql"]
 
 [ext_resource type="PackedScene" uid="uid://cqon3iiwbmx0p" path="res://mainchar.tscn" id="1_lpiby"]
 [ext_resource type="FontFile" uid="uid://b5uckawjsg8m3" path="res://Assets/Fonts/editundo.ttf" id="2_6xlxm"]
@@ -10,6 +10,8 @@
 [ext_resource type="PackedScene" uid="uid://csdrp302b0dxw" path="res://Interactables/feather.tscn" id="7_46s4o"]
 [ext_resource type="PackedScene" uid="uid://d173ubawqf2we" path="res://ladder.tscn" id="8_7npjx"]
 [ext_resource type="Texture2D" uid="uid://b0wud3pjajnja" path="res://Assets/8bit-pixel-graphic-blue-sky-background-with-clouds-vector.jpg" id="8_ndqic"]
+[ext_resource type="PackedScene" uid="uid://drcy17ympen1j" path="res://Interactables/button.tscn" id="10_kee65"]
+[ext_resource type="PackedScene" uid="uid://byeeiye6lonfu" path="res://Scenes/hidden_block.tscn" id="11_lmqgw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vqlhw"]
 texture = ExtResource("4_kee65")
@@ -130,3 +132,22 @@ z_index = -2
 position = Vector2(-87, -225)
 scale = Vector2(0.58125, 0.748958)
 texture = ExtResource("8_ndqic")
+
+[node name="Area2D2" parent="." node_paths=PackedStringArray("platform") instance=ExtResource("10_kee65")]
+position = Vector2(-352, -16)
+platform = NodePath("../StaticBody2D")
+
+[node name="StaticBody2D" parent="." instance=ExtResource("11_lmqgw")]
+position = Vector2(-280, -40)
+
+[node name="RigidBody2D" parent="." instance=ExtResource("6_c346c")]
+position = Vector2(-392, -16)
+collision_layer = 5
+collision_mask = 5
+
+[connection signal="body_entered" from="TileMapLayer/Area2D" to="TileMapLayer/Area2D" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@30616" to="TileMapLayer/@Area2D@30616" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@30617" to="TileMapLayer/@Area2D@30617" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@30618" to="TileMapLayer/@Area2D@30618" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@30619" to="TileMapLayer/@Area2D@30619" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@30620" to="TileMapLayer/@Area2D@30620" method="_on_body_entered"]
