@@ -1,3 +1,6 @@
+Label
+Control
+SubViewport
 CollisionShape2D
 RayCast2D
 AudioStreamPlayer
@@ -8,6 +11,4 @@ CharacterBody2D
 AnimatedSprite2D
 Area2D
 TileMapLayer
-Label
 AudioStreamPlayer2D
-CharacterBody2D

@@ -9,3 +9,7 @@ res://Scenes/Levels/level1.tscn
 res://ladder.tscn
 res://Scenes/Levels/level4.tscn
 res://mainchar.gd
+res://Scripts/feather.gd
+res://global.gd
+res://Scenes/Levels/score.gd
+res://Interactables/feather.tscn

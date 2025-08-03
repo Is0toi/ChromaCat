@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=4 uid="uid://dkhk3u27s0tg7"]
+[gd_scene load_steps=12 format=4 uid="uid://dkhk3u27s0tg7"]
 
 [ext_resource type="PackedScene" uid="uid://cqon3iiwbmx0p" path="res://mainchar.tscn" id="1_7u4ml"]
 [ext_resource type="Texture2D" uid="uid://cgbsuyiw2aary" path="res://Assets/pixil-frame-0 (14).png" id="2_16p8j"]
@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://b0wud3pjajnja" path="res://Assets/8bit-pixel-graphic-blue-sky-background-with-clouds-vector.jpg" id="5_c0r4e"]
 [ext_resource type="PackedScene" uid="uid://c7x8csgodlbdn" path="res://Interactables/dog.tscn" id="6_m0h5h"]
 [ext_resource type="FontFile" uid="uid://b5uckawjsg8m3" path="res://Assets/Fonts/editundo.ttf" id="7_20uw2"]
-[ext_resource type="PackedScene" uid="uid://bsevm1juniak0" path="res://Interactables/npc.tscn" id="8_i36j2"]
+[ext_resource type="Script" uid="uid://bbb2bame4cplu" path="res://Scenes/Levels/score.gd" id="8_i36j2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_16p8j"]
 texture = ExtResource("2_16p8j")
@@ -64,9 +64,6 @@ physics_layer_1/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_16p8j")
 sources/2 = SubResource("TileSetScenesCollectionSource_16p8j")
 
-[sub_resource type="Resource" id="Resource_ir7pk"]
-metadata/__load_path__ = "res://test.dialogue"
-
 [node name="Level1" type="Node2D"]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
@@ -77,13 +74,21 @@ tile_set = SubResource("TileSet_1ukdm")
 [node name="Cat" parent="." instance=ExtResource("1_7u4ml")]
 position = Vector2(-178, -16)
 
+[node name="Score" type="Label" parent="Cat"]
+offset_left = 90.0
+offset_top = 80.0
+offset_right = 138.0
+offset_bottom = 103.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_20uw2")
+text = "Score:"
+script = ExtResource("8_i36j2")
+
 [node name="Camera2D" type="Camera2D" parent="Cat"]
 position = Vector2(0, 1)
 zoom = Vector2(3, 3)
 limit_left = -500
 limit_right = 500
-limit_smoothed = true
-position_smoothing_enabled = true
 
 [node name="Area2D" parent="." instance=ExtResource("4_0xrym")]
 position = Vector2(360, 0)
@@ -146,11 +151,3 @@ z_index = -2
 position = Vector2(1072, -144)
 scale = Vector2(0.58125, 0.748958)
 texture = ExtResource("5_c0r4e")
-
-[node name="CharacterBody2D" parent="." instance=ExtResource("8_i36j2")]
-position = Vector2(-298, -11)
-dialogue_resource = SubResource("Resource_ir7pk")
-
-[connection signal="body_entered" from="TileMapLayer/Area2D" to="TileMapLayer/Area2D" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@49929" to="TileMapLayer/@Area2D@49929" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@49930" to="TileMapLayer/@Area2D@49930" method="_on_body_entered"]
