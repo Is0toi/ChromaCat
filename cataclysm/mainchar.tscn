@@ -1,8 +1,17 @@
-[gd_scene load_steps=20 format=3 uid="uid://br4bq57vhiakg"]
+[gd_scene load_steps=23 format=3 uid="uid://br4bq57vhiakg"]
 
 [ext_resource type="Texture2D" uid="uid://4p0rirfjewtr" path="res://Assets/pixil-frame-0 (15).png" id="1_s4adt"]
 [ext_resource type="Script" uid="uid://l4tl3pnrjrku" path="res://mainchar.gd" id="1_ubb7a"]
 [ext_resource type="Texture2D" uid="uid://bmhdarn3axfe3" path="res://Assets/pixil-frame-0 (16).png" id="2_3sqm7"]
+[ext_resource type="Texture2D" uid="uid://nhkmpel2dpps" path="res://Assets/pixil-frame-0 (19).png" id="2_o8ovp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_chlff"]
+atlas = ExtResource("2_o8ovp")
+region = Rect2(128, 192, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_67gxr"]
+atlas = ExtResource("2_o8ovp")
+region = Rect2(160, 192, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8eeux"]
 atlas = ExtResource("2_3sqm7")
@@ -62,6 +71,17 @@ region = Rect2(160, 160, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_br20p"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_chlff")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_67gxr")
+}],
+"loop": true,
+"name": &"climb",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_8eeux")
@@ -158,10 +178,16 @@ PlayerSprite = NodePath("AnimatedSprite2D")
 PlayerCollider = NodePath("CollisionShape2D")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+z_index = 5
 sprite_frames = SubResource("SpriteFrames_br20p")
-animation = &"glitch_idle"
-frame_progress = 0.394575
+animation = &"climb"
+frame_progress = 0.949402
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1.5, 2)
 shape = SubResource("RectangleShape2D_ikggu")
+
+[node name="LadderRayCast" type="RayCast2D" parent="."]
+target_position = Vector2(0, -10)
+collision_mask = 16
+hit_from_inside = true
