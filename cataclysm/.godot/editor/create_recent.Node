@@ -1,11 +1,8 @@
-<<<<<<< HEAD
 AudioStreamPlayer
-=======
 StaticBody2D
 Node2D
 RigidBody2D
 CharacterBody2D
->>>>>>> ab14ac360cd9b42e3c94fad4b6c8064d6245ae73
 AnimatedSprite2D
 CollisionShape2D
 Area2D

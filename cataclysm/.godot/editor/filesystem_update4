@@ -13,3 +13,4 @@ res://mainchar.gd
 res://Interactables/npc.tscn
 res://dog.gd
 res://Interactables/button.gd
+res://Scripts/water.gd

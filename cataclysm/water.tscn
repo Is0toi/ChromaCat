@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://xbqejsm8wvd"]
+[gd_scene load_steps=7 format=3 uid="uid://xbqejsm8wvd"]
 
 [ext_resource type="Script" uid="uid://b52wfcumtmp5d" path="res://Scripts/water.gd" id="1_7wcun"]
 [ext_resource type="Texture2D" uid="uid://cgbsuyiw2aary" path="res://Assets/pixil-frame-0 (14).png" id="1_qi1wl"]
+[ext_resource type="AudioStream" uid="uid://buekx2lgoobyu" path="res://Assets/splash.mp3" id="3_dcmoc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7wcun"]
 size = Vector2(32, 21.5)
@@ -33,5 +34,9 @@ shape = SubResource("RectangleShape2D_7wcun")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_qmoj4")
 autoplay = "default"
+
+[node name="Splash" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_dcmoc")
+volume_db = -20.0
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
