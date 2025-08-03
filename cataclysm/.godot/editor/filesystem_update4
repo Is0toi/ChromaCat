@@ -16,3 +16,4 @@ res://Interactables/button.gd
 res://Scripts/water.gd
 res://background_sfx.tscn
 res://Scenes/Levels/level3.tscn
+res://ladder.gd
