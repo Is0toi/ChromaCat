@@ -158,13 +158,14 @@ script = ExtResource("3_kee65")
 [node name="Label" type="Label" parent="."]
 unique_name_in_owner = true
 z_index = -1
-offset_left = -232.0
-offset_top = -88.0
-offset_right = 29.0
-offset_bottom = -65.0
+offset_left = -410.0
+offset_top = -107.0
+offset_right = -149.0
+offset_bottom = -74.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_6xlxm")
-text = "You're on your own now! Good Luck"
+text = "You're on your own now!
+Press R to reset levels"
 metadata/_edit_use_anchors_ = true
 
 [node name="Area2D" parent="." instance=ExtResource("3_7npjx")]
