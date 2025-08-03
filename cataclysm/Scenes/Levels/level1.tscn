@@ -112,34 +112,14 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("7_20uw2")
 text = "Hold (Space) to jump over water"
 
-[node name="Instructions2" type="Label" parent="."]
-offset_left = -463.0
-offset_top = -98.0
-offset_right = -215.0
-offset_bottom = -75.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("7_20uw2")
-text = "WElcome to Cataclysm"
-
 [node name="Instructions3" type="Label" parent="."]
-offset_left = -357.0
-offset_top = -54.0
-offset_right = -109.0
-offset_bottom = -31.0
+offset_left = -360.0
+offset_top = -64.0
+offset_right = -112.0
+offset_bottom = -41.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("7_20uw2")
 text = "Press E to read"
-
-[node name="Warning" type="Label" parent="."]
-offset_left = 117.0
-offset_top = -123.0
-offset_right = 319.0
-offset_bottom = -72.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("7_20uw2")
-text = "Watch out for the dog!
-He will set you back but, 
-you can jump ontop of it"
 
 [node name="Warning2" type="Label" parent="."]
 offset_left = 118.0
@@ -148,8 +128,7 @@ offset_right = 320.0
 offset_bottom = -16.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("7_20uw2")
-text = "You can also press P to 
-Freeze all enemies"
+text = "Press (p) to freeze enemies"
 
 [node name="Sky2" type="Sprite2D" parent="."]
 z_index = -2
