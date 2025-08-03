@@ -170,8 +170,8 @@ shape = SubResource("RectangleShape2D_ikggu")
 
 [node name="Jump" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_o8ovp")
-volume_db = -20.0
+volume_db = -37.952
 
 [node name="Glitch" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_br20p")
-volume_db = -20.0
+volume_db = -37.952

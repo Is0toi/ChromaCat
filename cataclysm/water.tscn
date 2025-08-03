@@ -37,6 +37,6 @@ autoplay = "default"
 
 [node name="Splash" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_dcmoc")
-volume_db = -20.0
+volume_db = -31.142
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

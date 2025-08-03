@@ -1,24 +1,24 @@
 afef6734802ee6c19677a3e11de0f0e6
-::res://::1754184288
+::res://::1754184704
 balloon.gd::GDScript/GDScript::9129846927359823158::1754165329::0::1::::<>CanvasLayer<><>0<>0<><>::
 balloon.tscn::PackedScene/PackedScene::7331862310751680635::1754165334::0::1::::<><><>0<>0<><>::uid://b81ec560rd1hv::::res:///balloon.gd<>uid://ckvgyvclnwggo::::res://addons/dialogue_manager/dialogue_label.tscn<>uid://bb52rsfwhkxbn::::res://addons/dialogue_manager/dialogue_responses_menu.gd
 button.gd::GDScript/GDScript::1164403661980606245::1754166741::0::1::::<>Area2D<><>0<>0<><>::
 dog.gd::GDScript/GDScript::1445342569508037258::1754183550::0::1::::<>CharacterBody2D<><>0<>0<><>::
-dog.tscn::PackedScene/PackedScene::5852543045463399397::1754184110::0::1::::<><><>0<>0<><>::uid://4p0rirfjewtr::::res://Assets/pixil-frame-0 (15).png<>uid://uuet0t047ary::::res://dog.gd
+dog.tscn::PackedScene/PackedScene::5852543045463399397::1754184475::0::1::::<><><>0<>0<><>::uid://4p0rirfjewtr::::res://Assets/pixil-frame-0 (15).png<>uid://uuet0t047ary::::res://dog.gd
 ladder.gd::GDScript/GDScript::6646207360957271793::1754181070::0::1::::<>Area2D<><>0<>0<><>::
-ladder.tscn::PackedScene/PackedScene::9051967919018156228::1754184110::0::1::::<><><>0<>0<><>::uid://dreejws5oxrpi::::res://Assets/pixil-frame-0 (18).png<>uid://c1xqcgh1x0hmf::::res://ladder.gd
+ladder.tscn::PackedScene/PackedScene::9051967919018156228::1754184475::0::1::::<><><>0<>0<><>::uid://dreejws5oxrpi::::res://Assets/pixil-frame-0 (18).png<>uid://c1xqcgh1x0hmf::::res://ladder.gd
 lvl_2_hints.dialogue::Resource/Resource::5369053719576097924::1754172010::1754182931::1::::<><><>0<>0<>74c9ec67ba30957b8b129fb219303f4c<>res://.godot/imported/lvl_2_hints.dialogue-de7b0c0b0318216c0815e0bdb572d5ff.tres::uid://dbs4435dsf3ry::::res://addons/dialogue_manager/dialogue_resource.gd
 lvl_3_hints.dialogue::Resource/Resource::1350739234635721159::1754172010::1754182931::1::::<><><>0<>0<>0c535aea34ec6ea8ea2519bd30669810<>res://.godot/imported/lvl_3_hints.dialogue-76ea37bd27300fac986d88c604df5888.tres::uid://dbs4435dsf3ry::::res://addons/dialogue_manager/dialogue_resource.gd
 main.dialogue::Resource/Resource::1086079457313010144::1754096123::1754169929::1::::<><><>0<>0<>7a669611b3653f821bd09b367840f7e1<>res://.godot/imported/main.dialogue-988eadfaf2647f90e4f9e66fdf16fcb0.tres::uid://dbs4435dsf3ry::::res://addons/dialogue_manager/dialogue_resource.gd
-mainchar.gd::GDScript/GDScript::833118995921228644::1754184110::0::1::::PlatformerController2D<>CharacterBody2D<><>0<>0<><>::
-mainchar.tscn::PackedScene/PackedScene::3639588896200688554::1754184110::0::1::::<><><>0<>0<><>::uid://4p0rirfjewtr::::res://Assets/pixil-frame-0 (15).png<>uid://l4tl3pnrjrku::::res://mainchar.gd<>uid://bmhdarn3axfe3::::res://Assets/pixil-frame-0 (16).png<>uid://bl6wlhvcjunxq::::res://Assets/jump.mp3<>uid://bxp814n08qocx::::res://Assets/glitch.mp3
-music.tscn::PackedScene/PackedScene::805960580211638549::1754184110::0::1::::<><><>0<>0<><>::uid://cmbvplf5g0wur::::res://Assets/background.mp3
+mainchar.gd::GDScript/GDScript::833118995921228644::1754184385::0::1::::PlatformerController2D<>CharacterBody2D<><>0<>0<><>::
+mainchar.tscn::PackedScene/PackedScene::3639588896200688554::1754184476::0::1::::<><><>0<>0<><>::uid://4p0rirfjewtr::::res://Assets/pixil-frame-0 (15).png<>uid://l4tl3pnrjrku::::res://mainchar.gd<>uid://bmhdarn3axfe3::::res://Assets/pixil-frame-0 (16).png<>uid://bl6wlhvcjunxq::::res://Assets/jump.mp3<>uid://bxp814n08qocx::::res://Assets/glitch.mp3
+music.tscn::PackedScene::805960580211638549::1754184704::0::1::::<><><>0<>0<><>::uid://cmbvplf5g0wur::::res://Assets/background.mp3
 npc.gd::GDScript/GDScript::7515935079566360238::1754182647::0::1::::<>CharacterBody2D<><>0<>0<><>::
 README.md::TextFile/TextFile::-1::1754000806::0::1::::<><><>0<>0<><>::
 test.dialogue::Resource/Resource::3029432748940937168::1754182647::1754180793::1::::<><><>0<>0<>84b124af58037dc2ed6b2bed037f20ec<>res://.godot/imported/test.dialogue-c753d1c1c091aac077788a0b087c8b29.tres::uid://dbs4435dsf3ry::::res://addons/dialogue_manager/dialogue_resource.gd
 Test.tscn::PackedScene/PackedScene::8099162704508995467::1754174398::0::1::::<><><>0<>0<><>::uid://ocqr4kaowgws::::res://icon.svg
 wakatime_logo.jpg::CompressedTexture2D/CompressedTexture2D::5799924920301101447::1754000806::1754000806::1::::<><><>0<>0<>c2eb997917a99440146547c5332fed89<>res://.godot/imported/wakatime_logo.jpg-a50f628e445fd6bef17dff1651d611bc.ctex::
-water.tscn::PackedScene/PackedScene::47570202870456813::1754184110::0::1::::<><><>0<>0<><>::uid://b52wfcumtmp5d::::res://Scripts/water.gd<>uid://cgbsuyiw2aary::::res://Assets/pixil-frame-0 (14).png
+water.tscn::PackedScene/PackedScene::47570202870456813::1754184475::0::1::::<><><>0<>0<><>::uid://b52wfcumtmp5d::::res://Scripts/water.gd<>uid://cgbsuyiw2aary::::res://Assets/pixil-frame-0 (14).png<>uid://buekx2lgoobyu::::res://Assets/splash.mp3
 ::res://addons/::1754174545
 ::res://addons/dialogue_manager/::1754024964
 constants.gd::GDScript/GDScript::4240262336831424009::1754024964::0::1::::DMConstants<>RefCounted<><>0<>0<><>::
@@ -95,9 +95,9 @@ dialogue_cache.gd::GDScript/GDScript::9130733358047983146::1754024964::0::1::::D
 ::res://addons/dialogue_manager/views/::1754024964
 main_view.gd::GDScript/GDScript::5365867961863611872::1754024964::0::1::::<>Control<><>0<>1<><>::
 main_view.tscn::PackedScene/PackedScene::4884668666408697448::1754024964::0::1::::<><><>0<>0<><>::uid://cipjcc7bkh1pc::::res://addons/dialogue_manager/views/main_view.gd<>uid://civ6shmka5e8u::::res://addons/dialogue_manager/components/code_edit.tscn<>uid://dnufpcdrreva3::::res://addons/dialogue_manager/components/files_list.tscn<>uid://ctns6ouwwd68i::::res://addons/dialogue_manager/components/title_list.tscn<>uid://co8yl23idiwbi::::res://addons/dialogue_manager/components/update_button.tscn<>uid://gr8nakpbrhby::::res://addons/dialogue_manager/components/search_and_replace.tscn<>uid://cs8pwrxr5vxix::::res://addons/dialogue_manager/components/errors_panel.tscn<>uid://klpiq4tk3t7a::::res://addons/dialogue_manager/components/code_edit_syntax_highlighter.gd<>uid://cnm67htuohhlo::::res://addons/dialogue_manager/assets/banner.png<>uid://0n7hwviyyly4::::res://addons/dialogue_manager/components/find_in_files.tscn
-::res://Assets/::1754184288
+::res://Assets/::1754184704
 8bit-pixel-graphic-blue-sky-background-with-clouds-vector.jpg::CompressedTexture2D/CompressedTexture2D::4187779276705427854::1754096123::1754096128::1::::<><><>0<>0<>a5fe07e71fc2d3e2efb74969efccf261<>res://.godot/imported/8bit-pixel-graphic-blue-sky-background-with-clouds-vector.jpg-54a49cbdfe3568bbc981e3e7c72285f3.ctex::
-background.mp3::AudioStreamMP3/AudioStreamMP3::5618474299406282809::1754170684::1754183945::1::::<><><>0<>0<>116d03eb9627c178b1558a21700ae338<>res://.godot/imported/background.mp3-7248433333e280e4eaad56b4e2b026a8.mp3str::
+background.mp3::AudioStreamMP3::5618474299406282809::1754170684::1754184704::1::::<><><>0<>0<>116d03eb9627c178b1558a21700ae338<>res://.godot/imported/background.mp3-7248433333e280e4eaad56b4e2b026a8.mp3str::
 balloon.gd::GDScript/GDScript::716912511279491886::1754182647::0::1::::<>CanvasLayer<><>0<>0<><>::
 balloon.tscn::PackedScene/PackedScene::1514528666491680632::1754182653::0::1::::<><><>0<>0<><>::uid://khjpdvq4pvny::::res://Assets/balloon.gd<>uid://ckvgyvclnwggo::::res://addons/dialogue_manager/dialogue_label.tscn<>uid://b5uckawjsg8m3::::res://Assets/Fonts/editundo.ttf
 fieldpixelart.png::CompressedTexture2D/CompressedTexture2D::6152931508749096038::1754011111::1754011111::1::::<><><>0<>0<>ef58a9ae52f3e271c89e1030da0be556<>res://.godot/imported/fieldpixelart.png-359367fe0e80efceb87b0443b895286c.ctex::
@@ -107,33 +107,33 @@ pixil-frame-0 (14).png::CompressedTexture2D/CompressedTexture2D::519716870267085
 pixil-frame-0 (15).png::CompressedTexture2D/CompressedTexture2D::2067990861817244287::1754075351::1754170515::1::::<><><>0<>0<>1b75f52776abb2efe2bcf18437fd87cf<>res://.godot/imported/pixil-frame-0 (15).png-e8076c993d1abb242589105f97b9011d.ctex::
 pixil-frame-0 (16).png::CompressedTexture2D/CompressedTexture2D::3243320516858719152::1754165329::1754165334::1::::<><><>0<>0<>1fe1f69fa3acd51777d601401ba133bc<>res://.godot/imported/pixil-frame-0 (16).png-6d93426b80efdfcd7bed90207e129fd1.ctex::
 pixil-frame-0 (18).png::CompressedTexture2D/CompressedTexture2D::8360990028761180962::1754174121::1754174125::1::::<><><>0<>0<>b003c102699cf4f88ebdd6efdfc696a8<>res://.godot/imported/pixil-frame-0 (18).png-7d20c9425810101ef7b9200c72ae6c1f.ctex::
-splash.mp3::AudioStreamMP3::3799104746072641048::1754184281::1754184288::1::::<><><>0<>0<>78162a634b12671ac1af06377c472dda<>res://.godot/imported/splash.mp3-a6e16fece325baf4c7cfe01c70895fba.mp3str::
+splash.mp3::AudioStreamMP3/AudioStreamMP3::3799104746072641048::1754184281::1754184288::1::::<><><>0<>0<>78162a634b12671ac1af06377c472dda<>res://.godot/imported/splash.mp3-a6e16fece325baf4c7cfe01c70895fba.mp3str::
 ::res://Assets/Fonts/::1754096128
 editundo.ttf::FontFile/FontFile::4533512874258794408::1754096123::1754096128::1::::<><><>0<>0<>e07ad811d46b46141822dab37fb4e9fe<>res://.godot/imported/editundo.ttf-6b24612bdd10a8677a6f2696f70d4011.fontdata::
 ::res://fine_tuning_gpt2/::1754077905
-::res://Interactables/::1754184110
-box.tscn::PackedScene/PackedScene::6556345606048016204::1754184110::0::1::::<><><>0<>0<><>::uid://cgbsuyiw2aary::::res://Assets/pixil-frame-0 (14).png
+::res://Interactables/::1754184476
+box.tscn::PackedScene/PackedScene::6556345606048016204::1754184475::0::1::::<><><>0<>0<><>::uid://cgbsuyiw2aary::::res://Assets/pixil-frame-0 (14).png
 button.gd::GDScript/GDScript::5057940972087505182::1754183550::0::1::::<>Area2D<><>0<>0<><>::
-button.tscn::PackedScene/PackedScene::8358106505289849537::1754184110::0::1::::<><><>0<>0<><>::uid://cecdswppd4oug::::res://Interactables/button.gd<>uid://cgbsuyiw2aary::::res://Assets/pixil-frame-0 (14).png
+button.tscn::PackedScene/PackedScene::8358106505289849537::1754184475::0::1::::<><><>0<>0<><>::uid://cecdswppd4oug::::res://Interactables/button.gd<>uid://cgbsuyiw2aary::::res://Assets/pixil-frame-0 (14).png
 dog.tscn::PackedScene/PackedScene::7068373239825383999::1754165334::0::1::::<><><>0<>0<><>::uid://4p0rirfjewtr::::res://Assets/pixil-frame-0 (15).png<>uid://uuet0t047ary::::res://dog.gd
-door.tscn::PackedScene/PackedScene::2323927398933923612::1754184110::0::1::::<><><>0<>0<><>::uid://cd4p044srixju::::res://Scripts/door.gd
+door.tscn::PackedScene/PackedScene::2323927398933923612::1754184475::0::1::::<><><>0<>0<><>::uid://cd4p044srixju::::res://Scripts/door.gd
 feather.tscn::PackedScene/PackedScene::6043494172421561768::1754165334::0::1::::<><><>0<>0<><>::uid://d2k8v8vn05g3p::::res://Scripts/feather.gd<>uid://bmhdarn3axfe3::::res://Assets/pixil-frame-0 (16).png
-npc.tscn::PackedScene/PackedScene::3659375247005616701::1754184110::0::1::::<><><>0<>0<><>::uid://dfc1l8xj0m8kg::::res://npc.gd<>uid://bjfqkx4xw37k3::::res://test.dialogue<>uid://dreejws5oxrpi::::res://Assets/pixil-frame-0 (18).png
+npc.tscn::PackedScene/PackedScene::3659375247005616701::1754184476::0::1::::<><><>0<>0<><>::uid://dfc1l8xj0m8kg::::res://npc.gd<>uid://bjfqkx4xw37k3::::res://test.dialogue<>uid://dreejws5oxrpi::::res://Assets/pixil-frame-0 (18).png
 ::res://Scenes/::1754183554
 game.tscn::PackedScene/PackedScene::3600260958706979164::1754165329::0::1::::<><><>0<>0<><>::
 hidden_block.tscn::PackedScene/PackedScene::-1::1754183554::0::1::::<><><>0<>0<><>::
 lvl1helper.tscn::PackedScene/PackedScene::1901730018339831873::1754172051::0::1::::<><><>0<>0<><>::uid://dg820uvq61gdk::::res://Scenes/lvl_1_helper.gd<>uid://ciq2sbcg5a6g3::::res://lvl_2_hints.dialogue<>uid://c5gn8bhhua74o::::res://Assets/pixil-frame-0 (13).png
 lvl_1_helper.gd::GDScript/GDScript::7650204666121104776::1754172010::0::1::::<>CharacterBody2D<><>0<>0<><>::
-::res://Scenes/Levels/::1754184110
+::res://Scenes/Levels/::1754184476
 camera_2d.gd::GDScript/GDScript::6220078531785412284::1754096123::0::1::::<>RefCounted<><>0<>0<><>::
-level1.tscn::PackedScene/PackedScene::7876259397550761696::1754184110::0::1::::<><><>0<>0<><>::uid://br4bq57vhiakg::::res://mainchar.tscn<>uid://cgbsuyiw2aary::::res://Assets/pixil-frame-0 (14).png<>uid://xbqejsm8wvd::::res://water.tscn<>uid://bsevm1juniak0::::res://Interactables/npc.tscn<>uid://8dy0k55bp50k::::res://Interactables/door.tscn<>uid://b0wud3pjajnja::::res://Assets/8bit-pixel-graphic-blue-sky-background-with-clouds-vector.jpg<>uid://c7x8csgodlbdn::::res://Interactables/dog.tscn<>uid://b5uckawjsg8m3::::res://Assets/Fonts/editundo.ttf
-level2.tscn::PackedScene/PackedScene::8101866513522981920::1754184110::0::1::::<><><>0<>0<><>::uid://br4bq57vhiakg::::res://mainchar.tscn<>uid://b5uckawjsg8m3::::res://Assets/Fonts/editundo.ttf<>uid://8dy0k55bp50k::::res://Interactables/door.tscn<>uid://cgbsuyiw2aary::::res://Assets/pixil-frame-0 (14).png<>uid://xbqejsm8wvd::::res://water.tscn<>uid://b0wud3pjajnja::::res://Assets/8bit-pixel-graphic-blue-sky-background-with-clouds-vector.jpg<>uid://c88gmo5o554ff::::res://Scripts/cloud.tscn
+level1.tscn::PackedScene/PackedScene::7876259397550761696::1754184476::0::1::::<><><>0<>0<><>::uid://br4bq57vhiakg::::res://mainchar.tscn<>uid://cgbsuyiw2aary::::res://Assets/pixil-frame-0 (14).png<>uid://xbqejsm8wvd::::res://water.tscn<>uid://bsevm1juniak0::::res://Interactables/npc.tscn<>uid://8dy0k55bp50k::::res://Interactables/door.tscn<>uid://b0wud3pjajnja::::res://Assets/8bit-pixel-graphic-blue-sky-background-with-clouds-vector.jpg<>uid://c7x8csgodlbdn::::res://Interactables/dog.tscn<>uid://b5uckawjsg8m3::::res://Assets/Fonts/editundo.ttf
+level2.tscn::PackedScene/PackedScene::8101866513522981920::1754184476::0::1::::<><><>0<>0<><>::uid://br4bq57vhiakg::::res://mainchar.tscn<>uid://b5uckawjsg8m3::::res://Assets/Fonts/editundo.ttf<>uid://8dy0k55bp50k::::res://Interactables/door.tscn<>uid://cgbsuyiw2aary::::res://Assets/pixil-frame-0 (14).png<>uid://xbqejsm8wvd::::res://water.tscn<>uid://b0wud3pjajnja::::res://Assets/8bit-pixel-graphic-blue-sky-background-with-clouds-vector.jpg<>uid://c88gmo5o554ff::::res://Scripts/cloud.tscn
 level3.tscn::PackedScene/PackedScene::2061253455854346389::1754174398::0::1::::<><><>0<>0<><>::uid://br4bq57vhiakg::::res://mainchar.tscn<>uid://b5uckawjsg8m3::::res://Assets/Fonts/editundo.ttf<>uid://8dy0k55bp50k::::res://Interactables/door.tscn<>uid://cgbsuyiw2aary::::res://Assets/pixil-frame-0 (14).png<>uid://xbqejsm8wvd::::res://water.tscn<>uid://b0wud3pjajnja::::res://Assets/8bit-pixel-graphic-blue-sky-background-with-clouds-vector.jpg<>uid://csdrp302b0dxw::::res://Interactables/feather.tscn<>uid://c0n7b3x0tfpgm::::res://Interactables/box.tscn
 level4.tscn::PackedScene/PackedScene::5224564208818996083::1754183683::0::1::::<><><>0<>0<><>::uid://br4bq57vhiakg::::res://mainchar.tscn<>uid://b5uckawjsg8m3::::res://Assets/Fonts/editundo.ttf<>uid://8dy0k55bp50k::::res://Interactables/door.tscn<>uid://cgbsuyiw2aary::::res://Assets/pixil-frame-0 (14).png<>uid://xbqejsm8wvd::::res://water.tscn<>uid://c0n7b3x0tfpgm::::res://Interactables/box.tscn<>uid://c7x8csgodlbdn::::res://Interactables/dog.tscn<>uid://csdrp302b0dxw::::res://Interactables/feather.tscn<>uid://d173ubawqf2we::::res://ladder.tscn<>uid://b0wud3pjajnja::::res://Assets/8bit-pixel-graphic-blue-sky-background-with-clouds-vector.jpg
 ::res://Scenes/MainMenu/::1754165329
 main_menu.gd::GDScript/GDScript::2345471794370611077::1754096092::0::1::::MainMenu<>Control<><>0<>0<><>::
 main_menu.tscn::PackedScene/PackedScene::2329340190534341297::1754165329::0::1::::<><><>0<>0<><>::uid://ctwr5a0hn67s1::::res://Assets/fieldpixelart.png<>uid://8oftv55j3d3r::::res://Scenes/MainMenu/main_menu.gd
-::res://Scripts/::1754182647
+::res://Scripts/::1754184475
 box2.tscn::PackedScene/PackedScene::8402368362012724052::1754105437::0::1::::<><><>0<>0<><>::
 box.gd::GDScript/GDScript::3570857248229420958::1754182647::0::1::::<>RigidBody2D<><>0<>0<><>::
 character.gd::GDScript/GDScript::5318535796325004940::1754170515::0::1::::Character<>CharacterBody2D<><>0<>0<><>::
@@ -144,6 +144,6 @@ feather.gd::GDScript/GDScript::9077047535616774847::1754165329::0::1::::<>Area2D
 npc.tscn::PackedScene/PackedScene::6963058845362404532::1754165334::0::1::::<><><>0<>0<><>::
 npc_static.gd::GDScript/GDScript::4294709970714171179::1754170515::0::1::::<>Area2D<><>0<>0<><>::
 star.gd::GDScript/GDScript::2455965546681090223::1754170515::0::1::::<>Area2D<><>0<>0<><>::
-water.gd::GDScript/GDScript::4549169031517967307::1754165329::0::1::::<>Area2D<><>0<>0<><>::
+water.gd::GDScript/GDScript::4549169031517967307::1754184475::0::1::::<>Area2D<><>0<>0<><>::
 ::res://Scripts/Characters/::1754170515
 ::res://Scripts/MainMenu/::1754077448
