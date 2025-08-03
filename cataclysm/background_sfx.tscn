@@ -4,5 +4,5 @@
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer"]
 stream = ExtResource("1_bshum")
-volume_db = -50.904
+volume_db = -26.075
 autoplay = true

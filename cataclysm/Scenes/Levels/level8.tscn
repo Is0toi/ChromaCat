@@ -1,10 +1,9 @@
-[gd_scene load_steps=18 format=4 uid="uid://yd7mdadyhnoq"]
+[gd_scene load_steps=17 format=4 uid="uid://yd7mdadyhnoq"]
 
 [ext_resource type="Script" uid="uid://co3u0amyv48d5" path="res://Scenes/Levels/level_4.gd" id="1_pauqr"]
 [ext_resource type="PackedScene" uid="uid://mbud7nxommyt" path="res://mainchar.tscn" id="2_rpa7h"]
 [ext_resource type="FontFile" uid="uid://b5uckawjsg8m3" path="res://Assets/Fonts/editundo.ttf" id="3_anmoa"]
 [ext_resource type="Script" uid="uid://bbb2bame4cplu" path="res://Scenes/Levels/score.gd" id="4_66qk7"]
-[ext_resource type="PackedScene" uid="uid://8dy0k55bp50k" path="res://Interactables/door.tscn" id="5_31qqh"]
 [ext_resource type="Texture2D" uid="uid://cgbsuyiw2aary" path="res://Assets/pixil-frame-0 (14).png" id="6_ocjag"]
 [ext_resource type="PackedScene" uid="uid://xbqejsm8wvd" path="res://water.tscn" id="7_nf0ak"]
 [ext_resource type="PackedScene" uid="uid://c0n7b3x0tfpgm" path="res://Interactables/box.tscn" id="8_wylik"]
@@ -114,11 +113,6 @@ theme_override_fonts/font = ExtResource("3_anmoa")
 text = "Score:"
 script = ExtResource("4_66qk7")
 
-[node name="Area2D" parent="." instance=ExtResource("5_31qqh")]
-unique_name_in_owner = true
-position = Vector2(245, -176)
-collision_layer = 1
-
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 unique_name_in_owner = true
 scale = Vector2(1, 0.991956)
@@ -143,7 +137,7 @@ position = Vector2(-97, -15)
 position = Vector2(19, -17)
 
 [node name="Area2D3" parent="." node_paths=PackedStringArray("platform") instance=ExtResource("13_anmoa")]
-position = Vector2(339, -17)
+position = Vector2(340, -17)
 platform = NodePath("../StaticBody2D")
 
 [node name="StaticBody2D" parent="." instance=ExtResource("14_66qk7")]
@@ -151,3 +145,21 @@ position = Vector2(88, -137)
 
 [node name="RigidBody2D" parent="." instance=ExtResource("8_wylik")]
 position = Vector2(250, -17)
+
+[node name="Label" type="Label" parent="."]
+unique_name_in_owner = true
+z_index = 1
+anchors_preset = -1
+anchor_left = -0.0109375
+anchor_top = 0.000475454
+anchor_right = -0.0109375
+anchor_bottom = 0.0181838
+offset_left = 197.0
+offset_top = -233.0
+offset_right = 458.0
+offset_bottom = -200.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_anmoa")
+text = "That's all for now!
+Thanks so much for playing <3"
+metadata/_edit_use_anchors_ = true

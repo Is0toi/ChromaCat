@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=4 uid="uid://dkhk3u27s0tg7"]
+[gd_scene load_steps=12 format=4 uid="uid://dkhk3u27s0tg7"]
 
 [ext_resource type="PackedScene" uid="uid://mbud7nxommyt" path="res://mainchar.tscn" id="1_7u4ml"]
 [ext_resource type="Texture2D" uid="uid://cgbsuyiw2aary" path="res://Assets/pixil-frame-0 (14).png" id="2_16p8j"]
@@ -8,7 +8,6 @@
 [ext_resource type="PackedScene" uid="uid://c7x8csgodlbdn" path="res://Interactables/dog.tscn" id="6_m0h5h"]
 [ext_resource type="FontFile" uid="uid://b5uckawjsg8m3" path="res://Assets/Fonts/editundo.ttf" id="7_20uw2"]
 [ext_resource type="PackedScene" uid="uid://hce4c6yug1wa" path="res://Interactables/sign1.tscn" id="8_i36j2"]
-[ext_resource type="PackedScene" uid="uid://dhuwjekx81o02" path="res://Interactables/npc.tscn" id="9_hkfpk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_16p8j"]
 texture = ExtResource("2_16p8j")
@@ -112,15 +111,6 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("7_20uw2")
 text = "Hold (Space) to jump over water"
 
-[node name="Instructions3" type="Label" parent="."]
-offset_left = -360.0
-offset_top = -64.0
-offset_right = -112.0
-offset_bottom = -41.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("7_20uw2")
-text = "Press E to read"
-
 [node name="Warning2" type="Label" parent="."]
 offset_left = 118.0
 offset_top = -67.0
@@ -153,6 +143,3 @@ z_index = -2
 position = Vector2(1072, -144)
 scale = Vector2(0.58125, 0.748958)
 texture = ExtResource("5_c0r4e")
-
-[node name="CharacterBody2D" parent="." instance=ExtResource("9_hkfpk")]
-position = Vector2(-304, -16)

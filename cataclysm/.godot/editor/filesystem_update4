@@ -16,3 +16,9 @@ res://Scenes/Levels/level7.tscn
 res://mainchar.gd
 res://Scenes/Levels/level10.tscn
 res://Scenes/Levels/level9.tscn
+res://Scripts/cloud.gd
+res://Scenes/Levels/level8.tscn
+res://Scenes/Levels/level6.tscn
+res://Scenes/Levels/level5.tscn
+res://Interactables/npc2.tscn
+res://background_sfx.tscn

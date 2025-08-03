@@ -16,6 +16,21 @@ grow_vertical = 2
 script = ExtResource("1_v763k")
 metadata/_edit_use_anchors_ = true
 
+[node name="Label2" type="Label" parent="."]
+z_index = 1
+layout_mode = 2
+offset_left = 546.0
+offset_top = 63.0
+offset_right = 626.0
+offset_bottom = 239.0
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_qgdf6")
+theme_override_font_sizes/font_size = 200
+text = "Cataclysm"
+horizontal_alignment = 1
+autowrap_mode = 2
+
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
 offset_right = 40.0
@@ -36,16 +51,6 @@ offset_right = -248.0
 offset_bottom = -14.0
 grow_horizontal = 2
 theme_override_constants/separation = 60
-
-[node name="Label2" type="Label" parent="Fieldpixelart/VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 1
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_qgdf6")
-theme_override_font_sizes/font_size = 64
-text = "Cataclysm"
-horizontal_alignment = 1
-autowrap_mode = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Fieldpixelart"]
 anchors_preset = -1
