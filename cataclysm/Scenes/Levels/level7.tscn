@@ -144,13 +144,3 @@ position = Vector2(-126, -238)
 
 [node name="StaticBody2D" parent="." instance=ExtResource("14_qd174")]
 position = Vector2(93, -3)
-
-[connection signal="body_entered" from="TileMapLayer/@Area2D@32881" to="TileMapLayer/@Area2D@32881" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@32882" to="TileMapLayer/@Area2D@32882" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@32883" to="TileMapLayer/@Area2D@32883" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@32884" to="TileMapLayer/@Area2D@32884" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@32885" to="TileMapLayer/@Area2D@32885" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@32886" to="TileMapLayer/@Area2D@32886" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@32887" to="TileMapLayer/@Area2D@32887" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@32888" to="TileMapLayer/@Area2D@32888" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@32889" to="TileMapLayer/@Area2D@32889" method="_on_body_entered"]

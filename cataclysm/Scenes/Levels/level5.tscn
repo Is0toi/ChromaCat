@@ -1,6 +1,6 @@
 [gd_scene load_steps=16 format=4 uid="uid://biiwfcvnf7e"]
 
-[ext_resource type="Script" uid="uid://co3u0amyv48d5" path="res://Scenes/Levels/level_4.gd" id="1_ykvih"]
+[ext_resource type="Script" uid="uid://dbcq0ewbj3cd3" path="res://Scenes/Levels/level_5.gd" id="1_ykvih"]
 [ext_resource type="PackedScene" uid="uid://mbud7nxommyt" path="res://mainchar.tscn" id="2_rp22a"]
 [ext_resource type="FontFile" uid="uid://b5uckawjsg8m3" path="res://Assets/Fonts/editundo.ttf" id="3_cow3m"]
 [ext_resource type="Script" uid="uid://bbb2bame4cplu" path="res://Scenes/Levels/score.gd" id="4_36ddn"]
@@ -85,7 +85,7 @@ physics_layer_1/collision_mask = 5
 sources/0 = SubResource("TileSetAtlasSource_vqlhw")
 sources/2 = SubResource("TileSetScenesCollectionSource_la4le")
 
-[node name="Level4" type="Node2D"]
+[node name="Level5" type="Node2D"]
 script = ExtResource("1_ykvih")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_rp22a")]
@@ -143,3 +143,11 @@ z_index = -2
 position = Vector2(-64, -264)
 scale = Vector2(0.8125, 0.917187)
 texture = ExtResource("12_aba7e")
+
+[connection signal="body_entered" from="TileMapLayer/Area2D" to="TileMapLayer/Area2D" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@47181" to="TileMapLayer/@Area2D@47181" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@47182" to="TileMapLayer/@Area2D@47182" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@47183" to="TileMapLayer/@Area2D@47183" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@47184" to="TileMapLayer/@Area2D@47184" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@47185" to="TileMapLayer/@Area2D@47185" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@47186" to="TileMapLayer/@Area2D@47186" method="_on_body_entered"]
