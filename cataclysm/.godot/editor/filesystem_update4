@@ -18,3 +18,4 @@ res://Interactables/npc2.tscn
 res://Interactables/npc.tscn
 res://Interactables/feather.tscn
 res://Scripts/cloud.gd
+res://mainchar.gd

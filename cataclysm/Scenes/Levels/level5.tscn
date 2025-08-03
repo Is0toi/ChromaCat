@@ -1,6 +1,6 @@
 [gd_scene load_steps=16 format=4 uid="uid://biiwfcvnf7e"]
 
-[ext_resource type="Script" uid="uid://dbcq0ewbj3cd3" path="res://Scenes/Levels/level_5.gd" id="1_ykvih"]
+[ext_resource type="Script" path="res://Scenes/Levels/level_5.gd" id="1_ykvih"]
 [ext_resource type="PackedScene" uid="uid://mbud7nxommyt" path="res://mainchar.tscn" id="2_rp22a"]
 [ext_resource type="FontFile" uid="uid://b5uckawjsg8m3" path="res://Assets/Fonts/editundo.ttf" id="3_cow3m"]
 [ext_resource type="Script" uid="uid://bbb2bame4cplu" path="res://Scenes/Levels/score.gd" id="4_36ddn"]

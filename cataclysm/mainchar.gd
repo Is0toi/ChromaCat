@@ -145,6 +145,7 @@ func _movement(delta):
 	if jumpTap:
 		if is_on_floor() or coyoteActive:
 			_jump()
+			jump.play()
 		elif jumpBuffering > 0:
 			jumpWasPressed = true
 			if !jumpBufferTimerRunning:
