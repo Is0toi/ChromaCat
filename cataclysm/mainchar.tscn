@@ -1,16 +1,8 @@
-<<<<<<< HEAD
-[gd_scene load_steps=22 format=3 uid="uid://br4bq57vhiakg"]
-=======
-[gd_scene load_steps=23 format=3 uid="uid://br4bq57vhiakg"]
->>>>>>> fc8a12403920b32a401935c1f0ec47f64eaa0f5c
+[gd_scene load_steps=23 format=3 uid="uid://cqon3iiwbmx0p"]
 
 [ext_resource type="Texture2D" uid="uid://4p0rirfjewtr" path="res://Assets/pixil-frame-0 (15).png" id="1_s4adt"]
 [ext_resource type="Script" uid="uid://l4tl3pnrjrku" path="res://mainchar.gd" id="1_ubb7a"]
 [ext_resource type="Texture2D" uid="uid://bmhdarn3axfe3" path="res://Assets/pixil-frame-0 (16).png" id="2_3sqm7"]
-<<<<<<< HEAD
-[ext_resource type="AudioStream" uid="uid://bl6wlhvcjunxq" path="res://Assets/jump.mp3" id="4_o8ovp"]
-[ext_resource type="AudioStream" uid="uid://bxp814n08qocx" path="res://Assets/glitch.mp3" id="5_br20p"]
-=======
 [ext_resource type="Texture2D" uid="uid://nhkmpel2dpps" path="res://Assets/pixil-frame-0 (19).png" id="2_o8ovp"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_chlff"]
@@ -20,7 +12,6 @@ region = Rect2(128, 192, 32, 32)
 [sub_resource type="AtlasTexture" id="AtlasTexture_67gxr"]
 atlas = ExtResource("2_o8ovp")
 region = Rect2(160, 192, 32, 32)
->>>>>>> fc8a12403920b32a401935c1f0ec47f64eaa0f5c
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8eeux"]
 atlas = ExtResource("2_3sqm7")
@@ -196,17 +187,7 @@ frame_progress = 0.949402
 position = Vector2(1.5, 2)
 shape = SubResource("RectangleShape2D_ikggu")
 
-<<<<<<< HEAD
-[node name="Jump" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("4_o8ovp")
-volume_db = -37.952
-
-[node name="Glitch" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("5_br20p")
-volume_db = -37.952
-=======
 [node name="LadderRayCast" type="RayCast2D" parent="."]
 target_position = Vector2(0, -10)
 collision_mask = 16
 hit_from_inside = true
->>>>>>> fc8a12403920b32a401935c1f0ec47f64eaa0f5c

@@ -4,14 +4,7 @@ class_name PlatformerController2D
 @export var PlayerSprite: AnimatedSprite2D
 @export var PlayerCollider: CollisionShape2D
 
-<<<<<<< HEAD
-#audio
-@onready var jump: AudioStreamPlayer = $Jump
-@onready var glitch: AudioStreamPlayer = $Glitch
-@onready var splash: AudioStreamPlayer = $Splash
-=======
 @onready var ladder_ray_cast: RayCast2D= $LadderRayCast
->>>>>>> fc8a12403920b32a401935c1f0ec47f64eaa0f5c
 
 @export_category("Movement")
 @export_range(50, 500) var maxSpeed: float = 200.0
@@ -54,7 +47,7 @@ var teleport_cooldown := false
 var teleport_cooldown_timer: Timer
 var freeze_cooldown := false
 var freeze_cooldown_timer: Timer
-var push_force = 40.0
+var push_force = 120.0
 var glitch_mode := false
 
 var on_ladder: bool = false
@@ -111,7 +104,7 @@ func _ladder_climb(delta):
 	direction.x = Input.get_axis("left", "right")
 	direction.y = Input.get_axis("climb_up", "climb_down")
 	
-	if direction: velocity = direction * SPEED / 2
+	if direction: velocity = direction * maxSpeed / 2
 	else: velocity = Vector2.ZERO
 	
 func _movement(delta):
@@ -129,24 +122,11 @@ func _movement(delta):
 	else:
 		velocity.x = move_toward(velocity.x, 0, -deceleration * delta)
 
-<<<<<<< HEAD
-	# Gravity
-	if is_on_ladder:
-		var climb_input = Input.get_action_strength("ui_up") - Input.get_action_strength("ui_down")
-		velocity.y = climb_input * climb_speed  
-	else:
-		appliedGravity = gravityScale if velocity.y <= 0 else gravityScale
-		if velocity.y < terminalVelocity:
-			velocity.y += appliedGravity
-		else:
-			velocity.y = terminalVelocity
-=======
 	if not is_on_floor():
 		velocity.y += gravity * delta
 	
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		velocity.y = jumpMagnitude
->>>>>>> fc8a12403920b32a401935c1f0ec47f64eaa0f5c
 
 	if shortHop and jumpRelease and velocity.y < 0:
 		velocity.y /= jumpVariable
@@ -161,7 +141,6 @@ func _movement(delta):
 	if jumpTap:
 		if is_on_floor() or coyoteActive:
 			_jump()
-			jump.play()
 		elif jumpBuffering > 0:
 			jumpWasPressed = true
 			if !jumpBufferTimerRunning:
@@ -188,26 +167,14 @@ func _movement(delta):
 	else:
 		PlayerSprite.play("glitch_jump" if glitch_mode else "jump")
 	
-<<<<<<< HEAD
-	# Ability inputs
-	if Input.is_action_just_pressed("phase") and not is_phasing and not teleport_cooldown:
-=======
 	if Input.is_action_just_pressed("phase") and not is_phasing:
->>>>>>> fc8a12403920b32a401935c1f0ec47f64eaa0f5c
 		_start_phasing()
-		glitch.play()
 	
-	if Input.is_action_just_pressed("teleport") and not teleport_cooldown and not is_phasing:
+	if Input.is_action_just_pressed("teleport") and not teleport_cooldown:
 		_teleport_to_cursor()
-		glitch.play()
 		
 	if Input.is_action_just_pressed("freeze_enemies") and not freeze_cooldown:
 		_freeze_enemies()
-		glitch.play()
-	
-	if Input.is_action_just_pressed("reset"):
-		get_tree().reload_current_scene()
-		glitch.play()
 
 func _teleport_to_cursor():
 	if teleport_cooldown:
@@ -300,23 +267,4 @@ func _on_area_2d_body_exited(body):
 		body.collision_mask = 3 
 
 func is_ability_active() -> bool:
-<<<<<<< HEAD
-	return teleport_return_timer.time_left > 0
-
-
-func _on_body_exited(body: Node2D) -> void:
-	pass # Replace with function body.
-	
-	
-func _on_ladder_body_entered(body):
-	if body == self:
-		is_on_ladder = true
-		velocity.y = 0  
-
-func _on_ladder_body_exited(body):
-	if body == self:
-		is_on_ladder = false
-=======
-		return teleport_return_timer.time_left > 0 
-		
->>>>>>> fc8a12403920b32a401935c1f0ec47f64eaa0f5c
+		return teleport_return_timer.time_left > 0

@@ -33,7 +33,7 @@ physics_material_override = SubResource("PhysicsMaterial_g2tbl")
 can_sleep = false
 lock_rotation = true
 linear_damp_mode = 1
-linear_damp = 6.651
+linear_damp = 3.59
 angular_damp = 3.06
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["RigidBody"]]
