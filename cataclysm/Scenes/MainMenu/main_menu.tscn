@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://8gl5l4os0usv"]
+[gd_scene load_steps=4 format=3 uid="uid://8gl5l4os0usv"]
 
 [ext_resource type="Texture2D" uid="uid://ctwr5a0hn67s1" path="res://Assets/fieldpixelart.png" id="1_uqdog"]
 [ext_resource type="Script" uid="uid://8oftv55j3d3r" path="res://Scenes/MainMenu/main_menu.gd" id="1_v763k"]
+[ext_resource type="FontFile" uid="uid://b5uckawjsg8m3" path="res://Assets/Fonts/editundo.ttf" id="3_qgdf6"]
 
 [node name="Main_Menu" type="Control"]
 layout_mode = 3
@@ -38,15 +39,13 @@ theme_override_constants/separation = 60
 
 [node name="Label2" type="Label" parent="Fieldpixelart/VBoxContainer"]
 layout_mode = 2
+size_flags_vertical = 1
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_shadow_color = Color(0, 0.648447, 7.70092e-07, 1)
+theme_override_fonts/font = ExtResource("3_qgdf6")
 theme_override_font_sizes/font_size = 64
 text = "Cataclysm"
 horizontal_alignment = 1
 autowrap_mode = 2
-
-[node name="Seperator" type="Control" parent="Fieldpixelart/VBoxContainer"]
-layout_mode = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Fieldpixelart"]
 anchors_preset = -1
