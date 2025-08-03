@@ -11,3 +11,5 @@ res://dog.gd
 res://mainchar.gd
 res://Scenes/hidden_block.tscn
 res://Interactables/button.gd
+res://mainchar.tscn
+res://Interactables/door.tscn
