@@ -196,7 +196,7 @@ hit_from_inside = true
 
 [node name="jump" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_ikggu")
-volume_db = -20.0
+volume_db = -28.048
 
 [node name="glitch" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_jo4fy")

@@ -1,6 +1,6 @@
 #CATACLYSM
 
-**Cataclysm** is a 2D platformer game where you're a cat. On your 3rd birthday you realize that you were glitchy. You're a **loop**hole and a fraud to your cat parents. You proceed to live life, but realize that maybe your powers aren't that bad.
+**Cataclysm** is a 2D Puzzle platformer game where you're a cat. On your 3rd birthday you realize that you were glitchy. You're a **loop**hole and a fraud to your cat parents. You proceed to live life, but realize that maybe your powers aren't that bad.
 
 Built with [Godot Engine](https://godotengine.org/)
 

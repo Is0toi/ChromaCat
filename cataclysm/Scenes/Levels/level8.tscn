@@ -151,3 +151,5 @@ position = Vector2(88, -137)
 
 [node name="RigidBody2D" parent="." instance=ExtResource("8_wylik")]
 position = Vector2(250, -17)
+
+[connection signal="body_entered" from="TileMapLayer/Area2D" to="TileMapLayer/Area2D" method="_on_body_entered"]

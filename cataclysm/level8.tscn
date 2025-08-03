@@ -1,22 +1,22 @@
-[gd_scene load_steps=18 format=4 uid="uid://kk8g486xbjdg"]
+[gd_scene load_steps=18 format=4 uid="uid://dn1fy26qghqpg"]
 
-[ext_resource type="Script" uid="uid://co3u0amyv48d5" path="res://Scenes/Levels/level_4.gd" id="1_q43bc"]
-[ext_resource type="PackedScene" uid="uid://mbud7nxommyt" path="res://mainchar.tscn" id="2_j3ve6"]
-[ext_resource type="FontFile" uid="uid://b5uckawjsg8m3" path="res://Assets/Fonts/editundo.ttf" id="3_wthyv"]
-[ext_resource type="Script" uid="uid://bbb2bame4cplu" path="res://Scenes/Levels/score.gd" id="4_nfixl"]
-[ext_resource type="PackedScene" uid="uid://8dy0k55bp50k" path="res://Interactables/door.tscn" id="5_u8nxk"]
-[ext_resource type="Texture2D" uid="uid://cgbsuyiw2aary" path="res://Assets/pixil-frame-0 (14).png" id="6_og617"]
-[ext_resource type="PackedScene" uid="uid://xbqejsm8wvd" path="res://water.tscn" id="7_go7ri"]
-[ext_resource type="PackedScene" uid="uid://c0n7b3x0tfpgm" path="res://Interactables/box.tscn" id="8_jq2td"]
-[ext_resource type="PackedScene" uid="uid://c7x8csgodlbdn" path="res://Interactables/dog.tscn" id="9_cq8dh"]
-[ext_resource type="PackedScene" uid="uid://d173ubawqf2we" path="res://ladder.tscn" id="10_4hv6u"]
-[ext_resource type="PackedScene" uid="uid://csdrp302b0dxw" path="res://Interactables/feather.tscn" id="11_fsoql"]
-[ext_resource type="Texture2D" uid="uid://b0wud3pjajnja" path="res://Assets/8bit-pixel-graphic-blue-sky-background-with-clouds-vector.jpg" id="12_jlbav"]
-[ext_resource type="PackedScene" uid="uid://drcy17ympen1j" path="res://Interactables/button.tscn" id="13_1ykej"]
-[ext_resource type="PackedScene" uid="uid://byeeiye6lonfu" path="res://Scenes/hidden_block.tscn" id="14_7xod1"]
+[ext_resource type="Script" uid="uid://co3u0amyv48d5" path="res://Scenes/Levels/level_4.gd" id="1_4dnr4"]
+[ext_resource type="PackedScene" uid="uid://mbud7nxommyt" path="res://mainchar.tscn" id="2_kb82b"]
+[ext_resource type="FontFile" uid="uid://b5uckawjsg8m3" path="res://Assets/Fonts/editundo.ttf" id="3_bjcmt"]
+[ext_resource type="Script" uid="uid://bbb2bame4cplu" path="res://Scenes/Levels/score.gd" id="4_v1sto"]
+[ext_resource type="PackedScene" uid="uid://8dy0k55bp50k" path="res://Interactables/door.tscn" id="5_50po6"]
+[ext_resource type="Texture2D" uid="uid://cgbsuyiw2aary" path="res://Assets/pixil-frame-0 (14).png" id="6_vqq8x"]
+[ext_resource type="PackedScene" uid="uid://xbqejsm8wvd" path="res://water.tscn" id="7_add58"]
+[ext_resource type="PackedScene" uid="uid://c0n7b3x0tfpgm" path="res://Interactables/box.tscn" id="8_o2t1i"]
+[ext_resource type="PackedScene" uid="uid://c7x8csgodlbdn" path="res://Interactables/dog.tscn" id="9_gs2yl"]
+[ext_resource type="PackedScene" uid="uid://d173ubawqf2we" path="res://ladder.tscn" id="10_ppk07"]
+[ext_resource type="PackedScene" uid="uid://csdrp302b0dxw" path="res://Interactables/feather.tscn" id="11_j2x0d"]
+[ext_resource type="Texture2D" uid="uid://b0wud3pjajnja" path="res://Assets/8bit-pixel-graphic-blue-sky-background-with-clouds-vector.jpg" id="12_s0shk"]
+[ext_resource type="PackedScene" uid="uid://drcy17ympen1j" path="res://Interactables/button.tscn" id="13_bjcmt"]
+[ext_resource type="PackedScene" uid="uid://byeeiye6lonfu" path="res://Scenes/hidden_block.tscn" id="14_v1sto"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vqlhw"]
-texture = ExtResource("6_og617")
+texture = ExtResource("6_vqq8x")
 texture_region_size = Vector2i(32, 32)
 1:0/0 = 0
 2:0/0 = 0
@@ -74,11 +74,11 @@ texture_region_size = Vector2i(32, 32)
 4:5/0 = 0
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_la4le"]
-scenes/1/scene = ExtResource("7_go7ri")
-scenes/2/scene = ExtResource("8_jq2td")
-scenes/3/scene = ExtResource("9_cq8dh")
-scenes/4/scene = ExtResource("10_4hv6u")
-scenes/5/scene = ExtResource("11_fsoql")
+scenes/1/scene = ExtResource("7_add58")
+scenes/2/scene = ExtResource("8_o2t1i")
+scenes/3/scene = ExtResource("9_gs2yl")
+scenes/4/scene = ExtResource("10_ppk07")
+scenes/5/scene = ExtResource("11_j2x0d")
 
 [sub_resource type="TileSet" id="TileSet_opn2v"]
 tile_size = Vector2i(32, 32)
@@ -90,9 +90,9 @@ sources/0 = SubResource("TileSetAtlasSource_vqlhw")
 sources/2 = SubResource("TileSetScenesCollectionSource_la4le")
 
 [node name="Level 8" type="Node2D"]
-script = ExtResource("1_q43bc")
+script = ExtResource("1_4dnr4")
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("2_j3ve6")]
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_kb82b")]
 unique_name_in_owner = true
 position = Vector2(-240, -11)
 
@@ -110,11 +110,11 @@ offset_top = 80.0
 offset_right = 138.0
 offset_bottom = 103.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_wthyv")
+theme_override_fonts/font = ExtResource("3_bjcmt")
 text = "Score:"
-script = ExtResource("4_nfixl")
+script = ExtResource("4_v1sto")
 
-[node name="Area2D" parent="." instance=ExtResource("5_u8nxk")]
+[node name="Area2D" parent="." instance=ExtResource("5_50po6")]
 unique_name_in_owner = true
 position = Vector2(245, -176)
 collision_layer = 1
@@ -134,20 +134,20 @@ unique_name_in_owner = true
 z_index = -2
 position = Vector2(-64, -264)
 scale = Vector2(0.8125, 0.917187)
-texture = ExtResource("12_jlbav")
+texture = ExtResource("12_s0shk")
 
-[node name="CharacterBody2D2" parent="." instance=ExtResource("9_cq8dh")]
+[node name="CharacterBody2D2" parent="." instance=ExtResource("9_gs2yl")]
 position = Vector2(-97, -15)
 
-[node name="CharacterBody2D3" parent="." instance=ExtResource("9_cq8dh")]
+[node name="CharacterBody2D3" parent="." instance=ExtResource("9_gs2yl")]
 position = Vector2(19, -17)
 
-[node name="Area2D3" parent="." node_paths=PackedStringArray("platform") instance=ExtResource("13_1ykej")]
+[node name="Area2D3" parent="." node_paths=PackedStringArray("platform") instance=ExtResource("13_bjcmt")]
 position = Vector2(339, -17)
 platform = NodePath("../StaticBody2D")
 
-[node name="StaticBody2D" parent="." instance=ExtResource("14_7xod1")]
+[node name="StaticBody2D" parent="." instance=ExtResource("14_v1sto")]
 position = Vector2(88, -137)
 
-[node name="RigidBody2D" parent="." instance=ExtResource("8_jq2td")]
+[node name="RigidBody2D" parent="." instance=ExtResource("8_o2t1i")]
 position = Vector2(250, -17)
