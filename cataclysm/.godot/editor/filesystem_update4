@@ -1,12 +1,11 @@
 res://Scenes/MainMenu/main_menu.tscn
 res://Scenes/game.tscn
 res://Interactables/box.tscn
-res://mainchar.tscn
 res://Scenes/Levels/level3.tscn
 res://Interactables/dog.tscn
 res://Scenes/Levels/level2.tscn
-res://Interactables/npc.tscn
+res://mainchar.tscn
 res://Scenes/Levels/level1.tscn
-res://Scenes/Levels/level4.tscn
 res://ladder.tscn
+res://Scenes/Levels/level4.tscn
 res://mainchar.gd

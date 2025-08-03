@@ -47,7 +47,7 @@ var teleport_cooldown := false
 var teleport_cooldown_timer: Timer
 var freeze_cooldown := false
 var freeze_cooldown_timer: Timer
-var push_force = 40.0
+var push_force = 120.0
 var glitch_mode := false
 
 var on_ladder: bool = false
@@ -104,7 +104,7 @@ func _ladder_climb(delta):
 	direction.x = Input.get_axis("left", "right")
 	direction.y = Input.get_axis("climb_up", "climb_down")
 	
-	if direction: velocity = direction * SPEED / 2
+	if direction: velocity = direction * maxSpeed / 2
 	else: velocity = Vector2.ZERO
 	
 func _movement(delta):
@@ -267,5 +267,4 @@ func _on_area_2d_body_exited(body):
 		body.collision_mask = 3 
 
 func is_ability_active() -> bool:
-		return teleport_return_timer.time_left > 0 
-		
+		return teleport_return_timer.time_left > 0

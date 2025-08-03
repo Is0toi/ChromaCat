@@ -18,6 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
+BackgroundSfx="*res://background_sfx.tscn"
 
 [dialogue_manager]
 
@@ -95,7 +96,7 @@ climb_down={
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://main.dialogue", "res://test.dialogue", "res://lvl_3_hints.dialogue", "res://lvl_2_hints.dialogue")
+locale/translations_pot_files=PackedStringArray("res://main.dialogue", "res://test.dialogue")
 
 [rendering]
 
