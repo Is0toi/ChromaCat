@@ -68,6 +68,8 @@ texture_region_size = Vector2i(32, 32)
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 9:0/0 = 0
 9:0/0/physics_layer_1/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+9:1/0 = 0
+9:1/0/physics_layer_1/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_la4le"]
 scenes/1/scene = ExtResource("7_agagt")
@@ -131,3 +133,11 @@ z_index = -2
 position = Vector2(-64, -264)
 scale = Vector2(0.8125, 0.917187)
 texture = ExtResource("12_aba7e")
+
+[connection signal="body_entered" from="TileMapLayer/Area2D" to="TileMapLayer/Area2D" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@37588" to="TileMapLayer/@Area2D@37588" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@37589" to="TileMapLayer/@Area2D@37589" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@37590" to="TileMapLayer/@Area2D@37590" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@37591" to="TileMapLayer/@Area2D@37591" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@37592" to="TileMapLayer/@Area2D@37592" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@37593" to="TileMapLayer/@Area2D@37593" method="_on_body_entered"]
