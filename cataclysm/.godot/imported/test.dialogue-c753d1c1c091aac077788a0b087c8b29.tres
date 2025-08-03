@@ -6,9 +6,10 @@
 script = ExtResource("1_yt80u")
 using_states = PackedStringArray()
 titles = {
+"explain": "4",
 "start": "1"
 }
-character_names = PackedStringArray("Sign")
+character_names = PackedStringArray("Nate")
 first_title = "0"
 lines = {
 "0": {
@@ -17,42 +18,67 @@ lines = {
 &"type": "title"
 },
 "1": {
-&"character": "Sign",
+&"character": "Nate",
 &"id": "1",
 &"next_id": "2",
-&"text": "I give hints to help you pass levels.",
+&"text": "[[Hi!|Hello!|Howdy!|Salutations!|Yo!]]",
 &"type": "dialogue"
 },
-"2": {
-&"character": "Sign",
-&"id": "2",
-&"next_id": "3",
-&"text": "Read me if you get stuck at any point!",
-&"type": "dialogue"
-},
-"3": {
-&"id": "3",
-&"next_id": "4",
-&"responses": PackedStringArray("3"),
-&"text": "Okay!",
-&"type": "response"
-},
-"4": {
-&"character": "Sign",
-&"id": "4",
-&"next_id": "5",
-&"text": "Good Luck!",
-&"type": "dialogue"
-},
-"5": {
-&"id": "5",
+"10": {
+&"id": "10",
 &"is_snippet": false,
 &"next_id": "end",
 &"next_id_after": "",
 &"type": "goto"
 },
+"2": {
+&"id": "2",
+&"next_id": "3",
+&"responses": PackedStringArray("2"),
+&"text": "Who are you?",
+&"type": "response"
+},
+"3": {
+&"id": "3",
+&"next_id": "4",
+&"type": "title"
+},
+"4": {
+&"character": "Nate",
+&"id": "4",
+&"next_id": "5",
+&"text": "I give hints to help you pass levels.",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Nate",
+&"id": "5",
+&"next_id": "6",
+&"text": "Talk to me if you get stuck at any point!",
+&"type": "dialogue"
+},
 "6": {
 &"id": "6",
+&"next_id": "4",
+&"responses": PackedStringArray("6", "7"),
+&"text": "What?",
+&"type": "response"
+},
+"7": {
+&"id": "7",
+&"next_id": "8",
+&"text": "Okay!",
+&"type": "response"
+},
+"8": {
+&"character": "Nate",
+&"id": "8",
+&"next_id": "9",
+&"text": "Good Luck!",
+&"type": "dialogue"
+},
+"9": {
+&"id": "9",
 &"is_snippet": false,
 &"next_id": "end",
 &"next_id_after": "",
@@ -60,9 +86,13 @@ lines = {
 }
 }
 raw_text = "~ start
-Sign: I give hints to help you pass levels.
-Sign: Read me if you get stuck at any point!
+Nate: [[Hi!|Hello!|Howdy!|Salutations!|Yo!]]  
+- Who are you?
+	~ explain
+	Nate: I give hints to help you pass levels.
+Nate: Talk to me if you get stuck at any point!
+- What? => explain
 - Okay!
-	Sign: Good Luck!
+	Nate: Good Luck!
 => END"
 metadata/dialogue_manager_version = "3.7.1"
