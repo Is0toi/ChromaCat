@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=4 uid="uid://biiwfcvnf7e"]
+[gd_scene load_steps=16 format=4 uid="uid://dxf0q631g26h4"]
 
 [ext_resource type="Script" uid="uid://dbcq0ewbj3cd3" path="res://Scenes/Levels/level_5.gd" id="1_ykvih"]
 [ext_resource type="PackedScene" uid="uid://mbud7nxommyt" path="res://mainchar.tscn" id="2_rp22a"]
@@ -68,6 +68,8 @@ texture_region_size = Vector2i(32, 32)
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 9:0/0 = 0
 9:0/0/physics_layer_1/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+9:1/0 = 0
+9:1/0/physics_layer_1/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_la4le"]
 scenes/1/scene = ExtResource("7_agagt")
@@ -90,7 +92,7 @@ script = ExtResource("1_ykvih")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_rp22a")]
 unique_name_in_owner = true
-position = Vector2(-479, -14)
+position = Vector2(-240, -11)
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 unique_name_in_owner = true
@@ -109,18 +111,6 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_cow3m")
 text = "Score:"
 script = ExtResource("4_36ddn")
-
-[node name="Label" type="Label" parent="."]
-unique_name_in_owner = true
-z_index = -1
-offset_left = -232.0
-offset_top = -88.0
-offset_right = 29.0
-offset_bottom = -65.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_cow3m")
-text = "You're on your own now! Good Luck"
-metadata/_edit_use_anchors_ = true
 
 [node name="Area2D" parent="." instance=ExtResource("5_x3xif")]
 unique_name_in_owner = true
@@ -145,9 +135,9 @@ scale = Vector2(0.8125, 0.917187)
 texture = ExtResource("12_aba7e")
 
 [connection signal="body_entered" from="TileMapLayer/Area2D" to="TileMapLayer/Area2D" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@47181" to="TileMapLayer/@Area2D@47181" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@47182" to="TileMapLayer/@Area2D@47182" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@47183" to="TileMapLayer/@Area2D@47183" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@47184" to="TileMapLayer/@Area2D@47184" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@47185" to="TileMapLayer/@Area2D@47185" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@47186" to="TileMapLayer/@Area2D@47186" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@37588" to="TileMapLayer/@Area2D@37588" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@37589" to="TileMapLayer/@Area2D@37589" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@37590" to="TileMapLayer/@Area2D@37590" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@37591" to="TileMapLayer/@Area2D@37591" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@37592" to="TileMapLayer/@Area2D@37592" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@37593" to="TileMapLayer/@Area2D@37593" method="_on_body_entered"]
