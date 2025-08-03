@@ -3,10 +3,11 @@ res://Interactables/button.tscn
 res://water.tscn
 res://Interactables/box.tscn
 res://music.tscn
-res://Scenes/Levels/level1.tscn
 res://Interactables/door.tscn
 res://ladder.tscn
 res://Scenes/Levels/level2.tscn
 res://Scenes/Levels/level4.tscn
-res://mainchar.gd
+res://Scenes/Levels/level1.tscn
 res://mainchar.tscn
+res://mainchar.gd
+res://Interactables/npc.tscn

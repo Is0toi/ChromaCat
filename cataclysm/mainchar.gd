@@ -4,6 +4,9 @@ class_name PlatformerController2D
 @export var PlayerSprite: AnimatedSprite2D
 @export var PlayerCollider: CollisionShape2D
 
+#audio
+@onready var jump: AudioStreamPlayer = $Jump
+
 @export_category("Movement")
 @export_range(50, 500) var maxSpeed: float = 200.0
 @export_range(0, 4) var timeToReachMaxSpeed: float = 0.1
@@ -122,7 +125,6 @@ func _physics_process(delta):
 	# Gravity
 	if is_on_ladder:
 		var climb_input = Input.get_action_strength("ui_up") - Input.get_action_strength("ui_down")
-		var move_input = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
 		velocity.y = climb_input * climb_speed  
 	else:
 		appliedGravity = gravityScale if velocity.y <= 0 else gravityScale
@@ -147,6 +149,7 @@ func _physics_process(delta):
 	if jumpTap:
 		if is_on_floor() or coyoteActive:
 			_jump()
+			jump.play()
 		elif jumpBuffering > 0:
 			jumpWasPressed = true
 			if !jumpBufferTimerRunning:

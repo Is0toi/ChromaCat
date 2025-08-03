@@ -1,8 +1,8 @@
+AudioStreamPlayer
 AnimatedSprite2D
 Area2D
 TileMapLayer
 Label
-AudioStreamPlayer
 AudioStreamPlayer2D
 CollisionShape2D
 CharacterBody2D
