@@ -1,10 +1,10 @@
 [gd_scene load_steps=16 format=4 uid="uid://cgo22ro3inyql"]
 
-[ext_resource type="Script" uid="uid://co3u0amyv48d5" path="res://Scenes/Levels/level_4.gd" id="1_lmqgw"]
+[ext_resource type="Script" path="res://Scenes/Levels/level_4.gd" id="1_lmqgw"]
 [ext_resource type="PackedScene" uid="uid://cqon3iiwbmx0p" path="res://mainchar.tscn" id="1_lpiby"]
 [ext_resource type="FontFile" uid="uid://b5uckawjsg8m3" path="res://Assets/Fonts/editundo.ttf" id="2_6xlxm"]
 [ext_resource type="PackedScene" uid="uid://8dy0k55bp50k" path="res://Interactables/door.tscn" id="3_7npjx"]
-[ext_resource type="Script" uid="uid://bbb2bame4cplu" path="res://Scenes/Levels/score.gd" id="3_kee65"]
+[ext_resource type="Script" path="res://Scenes/Levels/score.gd" id="3_kee65"]
 [ext_resource type="Texture2D" uid="uid://cgbsuyiw2aary" path="res://Assets/pixil-frame-0 (14).png" id="4_kee65"]
 [ext_resource type="PackedScene" uid="uid://xbqejsm8wvd" path="res://water.tscn" id="5_lmqgw"]
 [ext_resource type="PackedScene" uid="uid://c0n7b3x0tfpgm" path="res://Interactables/box.tscn" id="6_c346c"]
