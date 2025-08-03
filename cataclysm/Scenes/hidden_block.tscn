@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://byeeiye6lonfu"]
+
+[ext_resource type="Texture2D" uid="uid://cgbsuyiw2aary" path="res://Assets/pixil-frame-0 (14).png" id="1_yl247"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_me6ix"]
+size = Vector2(49, 7)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ca73e"]
+atlas = ExtResource("1_yl247")
+region = Rect2(0, 96, 96, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8foc3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ca73e")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="StaticBody2D" type="StaticBody2D"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+light_mask = 5
+visibility_layer = 5
+position = Vector2(0, 8)
+shape = SubResource("RectangleShape2D_me6ix")
+disabled = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -8)
+sprite_frames = SubResource("SpriteFrames_8foc3")

@@ -19,5 +19,6 @@ func _physics_process(delta):
 		$AnimatedSprite2D.flip_h = direction < 0
 
 func _on_area_2d_body_entered(body):
-		if body.is_in_group("player"):
-			get_tree().reload_current_scene()
+	if body.name == "mainchar" or body.is_in_group("player"):
+		body.global_position = Vector2(-240, -11)
+		body.velocity = Vector2.ZERO

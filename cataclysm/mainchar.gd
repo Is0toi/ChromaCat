@@ -181,14 +181,17 @@ func _physics_process(delta):
 		PlayerSprite.play("glitch_jump" if glitch_mode else "jump")
 	
 	# Ability inputs
-	if Input.is_action_just_pressed("phase") and not is_phasing:
+	if Input.is_action_just_pressed("phase") and not is_phasing and not teleport_cooldown:
 		_start_phasing()
 	
-	if Input.is_action_just_pressed("teleport") and not teleport_cooldown:
+	if Input.is_action_just_pressed("teleport") and not teleport_cooldown and not is_phasing:
 		_teleport_to_cursor()
 		
 	if Input.is_action_just_pressed("freeze_enemies") and not freeze_cooldown:
 		_freeze_enemies()
+	
+	if Input.is_action_just_pressed("reset"):
+		get_tree().reload_current_scene()
 
 func _teleport_to_cursor():
 	if teleport_cooldown:
@@ -290,6 +293,12 @@ func _on_area_2d_body_exited(body):
 
 func is_ability_active() -> bool:
 	return teleport_return_timer.time_left > 0
+<<<<<<< HEAD
+
+
+func _on_body_exited(body: Node2D) -> void:
+	pass # Replace with function body.
+=======
 	
 	
 func _on_ladder_body_entered(body):
@@ -300,3 +309,4 @@ func _on_ladder_body_entered(body):
 func _on_ladder_body_exited(body):
 	if body == self:
 		is_on_ladder = false
+>>>>>>> 8adac05104f203c4bab34aac78a565f3d736368e
