@@ -175,6 +175,10 @@ func _movement(delta):
 		
 	if Input.is_action_just_pressed("freeze_enemies") and not freeze_cooldown:
 		_freeze_enemies()
+	
+	if Input.is_action_just_pressed("reset"):
+		get_tree().reload_current_scene()
+		
 
 func _teleport_to_cursor():
 	if teleport_cooldown:
