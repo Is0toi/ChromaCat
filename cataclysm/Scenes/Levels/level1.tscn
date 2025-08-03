@@ -55,6 +55,7 @@ texture_region_size = Vector2i(32, 32)
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_16p8j"]
 scenes/1/scene = ExtResource("3_1ukdm")
+scenes/3/scene = ExtResource("8_i36j2")
 
 [sub_resource type="TileSet" id="TileSet_1ukdm"]
 tile_size = Vector2i(32, 32)
@@ -149,7 +150,3 @@ texture = ExtResource("5_c0r4e")
 [node name="CharacterBody2D" parent="." instance=ExtResource("8_i36j2")]
 position = Vector2(-298, -11)
 dialogue_resource = SubResource("Resource_ir7pk")
-
-[connection signal="body_entered" from="TileMapLayer/Area2D" to="TileMapLayer/Area2D" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@38231" to="TileMapLayer/@Area2D@38231" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@38232" to="TileMapLayer/@Area2D@38232" method="_on_body_entered"]

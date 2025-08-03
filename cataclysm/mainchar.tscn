@@ -1,9 +1,11 @@
-[gd_scene load_steps=23 format=3 uid="uid://cqon3iiwbmx0p"]
+[gd_scene load_steps=25 format=3 uid="uid://cqon3iiwbmx0p"]
 
 [ext_resource type="Texture2D" uid="uid://4p0rirfjewtr" path="res://Assets/pixil-frame-0 (15).png" id="1_s4adt"]
 [ext_resource type="Script" uid="uid://l4tl3pnrjrku" path="res://mainchar.gd" id="1_ubb7a"]
 [ext_resource type="Texture2D" uid="uid://bmhdarn3axfe3" path="res://Assets/pixil-frame-0 (16).png" id="2_3sqm7"]
 [ext_resource type="Texture2D" uid="uid://nhkmpel2dpps" path="res://Assets/pixil-frame-0 (19).png" id="2_o8ovp"]
+[ext_resource type="AudioStream" uid="uid://bl6wlhvcjunxq" path="res://Assets/jump.mp3" id="5_ikggu"]
+[ext_resource type="AudioStream" uid="uid://bxp814n08qocx" path="res://Assets/glitch.mp3" id="6_jo4fy"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_chlff"]
 atlas = ExtResource("2_o8ovp")
@@ -191,3 +193,11 @@ shape = SubResource("RectangleShape2D_ikggu")
 target_position = Vector2(0, -10)
 collision_mask = 16
 hit_from_inside = true
+
+[node name="jump" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_ikggu")
+volume_db = -20.0
+
+[node name="glitch" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_jo4fy")
+volume_db = -20.0
