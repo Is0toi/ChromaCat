@@ -1,0 +1,55 @@
+[gd_scene load_steps=8 format=3 uid="uid://bngh7qtibsrvp"]
+
+[ext_resource type="Texture2D" uid="uid://dreejws5oxrpi" path="res://Assets/pixil-frame-0 (18).png" id="1_67w6c"]
+[ext_resource type="Script" uid="uid://eu6dnqjk371v" path="res://Interactables/sign_2.gd" id="1_wfwit"]
+[ext_resource type="FontFile" uid="uid://b5uckawjsg8m3" path="res://Assets/Fonts/editundo.ttf" id="2_mf2wy"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h1ryf"]
+atlas = ExtResource("1_67w6c")
+region = Rect2(224, 64, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mf2wy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h1ryf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wfwit"]
+radius = 20.025
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dyrhe"]
+size = Vector2(6, 17.25)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_wfwit")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, 1)
+sprite_frames = SubResource("SpriteFrames_mf2wy")
+speed_scale = 0.5
+
+[node name="InteractionZone" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionZone"]
+shape = SubResource("CircleShape2D_wfwit")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_dyrhe")
+disabled = true
+
+[node name="Label" type="Label" parent="."]
+offset_left = -109.0
+offset_top = -72.0
+offset_right = 124.0
+offset_bottom = -21.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_mf2wy")
+text = "Use Q to teleport across the 
+water to allow you to jump  
+           across"

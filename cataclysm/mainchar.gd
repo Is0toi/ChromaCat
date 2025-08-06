@@ -55,8 +55,13 @@ var push_force = 120.0
 var glitch_mode := false
 
 var on_ladder: bool = false
+var dead = false
+
+var max_health = 1
+var health
 
 func _ready():
+	health = max_health
 	_update_data()
 	add_to_group("player")
 	
@@ -282,3 +287,13 @@ func _on_area_2d_body_exited(body):
 
 func is_ability_active() -> bool:
 		return teleport_return_timer.time_left > 0
+		
+func take_damage(damage_amount):
+	health -= damage_amount
+	
+	if health <= 0:
+		global_position = Vector2(-240, -11)
+		velocity = Vector2.ZERO
+		health = max_health
+		PlayerSprite.play("idle")
+		

@@ -26,6 +26,19 @@ position = Vector2(572.5, 327.5)
 scale = Vector2(2.05035, 2.15123)
 texture = ExtResource("1_uqdog")
 
+[node name="Label2" type="Label" parent="Fieldpixelart"]
+offset_left = -40.7248
+offset_top = -117.84
+offset_right = 39.2752
+offset_bottom = -60.8396
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_qgdf6")
+theme_override_font_sizes/font_size = 64
+text = "Cataclysm"
+horizontal_alignment = 1
+autowrap_mode = 2
+
 [node name="VBoxContainer" type="VBoxContainer" parent="Fieldpixelart"]
 anchors_preset = 5
 anchor_left = 0.5
@@ -36,16 +49,6 @@ offset_right = -248.0
 offset_bottom = -14.0
 grow_horizontal = 2
 theme_override_constants/separation = 60
-
-[node name="Label2" type="Label" parent="Fieldpixelart/VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 1
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_qgdf6")
-theme_override_font_sizes/font_size = 64
-text = "Cataclysm"
-horizontal_alignment = 1
-autowrap_mode = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Fieldpixelart"]
 anchors_preset = -1

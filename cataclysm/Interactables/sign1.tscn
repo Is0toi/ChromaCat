@@ -1,6 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://hce4c6yug1wa"]
+[gd_scene load_steps=7 format=3 uid="uid://hce4c6yug1wa"]
 
+[ext_resource type="Script" uid="uid://yty8uqi7c38" path="res://Interactables/sign_1.gd" id="1_72cvf"]
 [ext_resource type="Texture2D" uid="uid://dreejws5oxrpi" path="res://Assets/pixil-frame-0 (18).png" id="1_wfi1o"]
+[ext_resource type="FontFile" uid="uid://b5uckawjsg8m3" path="res://Assets/Fonts/editundo.ttf" id="2_cs5xf"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_72cvf"]
 radius = 24.0
@@ -21,6 +23,7 @@ animations = [{
 }]
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_72cvf")
 
 [node name="InteractionZone" type="Area2D" parent="."]
 
@@ -31,3 +34,13 @@ shape = SubResource("CircleShape2D_72cvf")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_72cvf")
+
+[node name="Label" type="Label" parent="."]
+visible = false
+offset_left = -44.0
+offset_top = -40.0
+offset_right = 55.0
+offset_bottom = -17.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_cs5xf")
+text = "It's possible."

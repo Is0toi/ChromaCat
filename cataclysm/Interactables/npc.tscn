@@ -44,11 +44,11 @@ shape = SubResource("RectangleShape2D_xxsvc")
 disabled = true
 
 [node name="TalkLabel" type="Label" parent="."]
-offset_left = -104.0
-offset_top = -18.0
-offset_right = 127.0
-offset_bottom = 5.0
+offset_left = -53.0
+offset_top = -35.0
+offset_right = 178.0
+offset_bottom = -12.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_sh8jd")
-text = "Read me if you ever get stuck"
+text = "Hi! I'm your hint"
 metadata/_edit_use_anchors_ = true

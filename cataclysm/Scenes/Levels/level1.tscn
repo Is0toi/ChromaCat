@@ -79,7 +79,7 @@ position = Vector2(-454, -16)
 
 [node name="Camera2D" type="Camera2D" parent="Cat"]
 position = Vector2(0, 1)
-zoom = Vector2(3, 3)
+zoom = Vector2(2, 2)
 limit_left = -500
 limit_right = 500
 limit_smoothed = true
@@ -119,7 +119,7 @@ offset_right = -112.0
 offset_bottom = -41.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("7_20uw2")
-text = "Press E to read"
+text = "Press (tab) to read"
 
 [node name="Warning2" type="Label" parent="."]
 offset_left = 118.0
@@ -128,7 +128,7 @@ offset_right = 320.0
 offset_bottom = -16.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("7_20uw2")
-text = "Press (p) to freeze enemies"
+text = "Press (F) to freeze enemies"
 
 [node name="Sky2" type="Sprite2D" parent="."]
 z_index = -2
