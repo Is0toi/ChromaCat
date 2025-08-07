@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=4 uid="uid://bixdh5j08gd74"]
+[gd_scene load_steps=19 format=4 uid="uid://bixdh5j08gd74"]
 
 [ext_resource type="Script" uid="uid://co3u0amyv48d5" path="res://Scenes/Levels/level_4.gd" id="1_104vh"]
 [ext_resource type="PackedScene" uid="uid://mbud7nxommyt" path="res://mainchar.tscn" id="2_v2rp0"]
@@ -14,7 +14,6 @@
 [ext_resource type="PackedScene" uid="uid://drcy17ympen1j" path="res://Interactables/button.tscn" id="12_rwgiq"]
 [ext_resource type="Texture2D" uid="uid://b0wud3pjajnja" path="res://Assets/8bit-pixel-graphic-blue-sky-background-with-clouds-vector.jpg" id="13_hjmk5"]
 [ext_resource type="Texture2D" uid="uid://daees0oshva7b" path="res://Assets/pixilart-drawing (2).png" id="13_v2rp0"]
-[ext_resource type="PackedScene" uid="uid://bms4t1p8o8u0u" path="res://Interactables/cannon.tscn" id="15_104vh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vqlhw"]
 texture = ExtResource("6_flc4t")
@@ -145,17 +144,3 @@ z_index = -2
 position = Vector2(-64, -264)
 scale = Vector2(0.8125, 0.917187)
 texture = ExtResource("13_hjmk5")
-
-[node name="Cannon" parent="." instance=ExtResource("15_104vh")]
-position = Vector2(-131, -15)
-
-[connection signal="body_entered" from="TileMapLayer/Area2D" to="TileMapLayer/Area2D" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@116192" to="TileMapLayer/@Area2D@116192" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@116193" to="TileMapLayer/@Area2D@116193" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@116194" to="TileMapLayer/@Area2D@116194" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@116195" to="TileMapLayer/@Area2D@116195" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@116196" to="TileMapLayer/@Area2D@116196" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@116197" to="TileMapLayer/@Area2D@116197" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@116198" to="TileMapLayer/@Area2D@116198" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@116199" to="TileMapLayer/@Area2D@116199" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@116200" to="TileMapLayer/@Area2D@116200" method="_on_body_entered"]

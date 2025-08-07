@@ -13,7 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://csdrp302b0dxw" path="res://Interactables/feather.tscn" id="11_rmvx4"]
 [ext_resource type="Texture2D" uid="uid://b0wud3pjajnja" path="res://Assets/8bit-pixel-graphic-blue-sky-background-with-clouds-vector.jpg" id="12_h5mjn"]
 [ext_resource type="PackedScene" uid="uid://c88gmo5o554ff" path="res://Scripts/cloud.tscn" id="13_a6ycj"]
-[ext_resource type="PackedScene" uid="uid://hce4c6yug1wa" path="res://Interactables/sign1.tscn" id="14_ecwhh"]
+[ext_resource type="PackedScene" uid="uid://iai3xqrkkfij" path="res://Interactables/sign3.tscn" id="14_ecwhh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vqlhw"]
 texture = ExtResource("6_rcf42")
@@ -142,5 +142,5 @@ position = Vector2(-15, -169)
 [node name="CharacterBody2D2" parent="." instance=ExtResource("13_a6ycj")]
 position = Vector2(-9, -60)
 
-[node name="CharacterBody2D3" parent="." instance=ExtResource("14_ecwhh")]
-position = Vector2(-344, -17)
+[node name="CharacterBody2D4" parent="." instance=ExtResource("14_ecwhh")]
+position = Vector2(-335, -15)

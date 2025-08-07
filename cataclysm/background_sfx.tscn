@@ -1,8 +1,7 @@
 [gd_scene load_steps=2 format=3 uid="uid://i2min2tuxubx"]
 
-[ext_resource type="AudioStream" uid="uid://cmbvplf5g0wur" path="res://Assets/background.mp3" id="1_bshum"]
+[ext_resource type="AudioStream" uid="uid://cb0tiayd5ggp3" path="res://Assets/game-8-bit-on-278083 (2) (mp3cut.net).mp3" id="1_bshum"]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer"]
 stream = ExtResource("1_bshum")
-volume_db = -36.047
 autoplay = true

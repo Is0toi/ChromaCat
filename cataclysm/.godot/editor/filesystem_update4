@@ -24,3 +24,13 @@ res://Scenes/Levels/level5.tscn
 res://Interactables/sign1.tscn
 res://Interactables/cannon_ball.tscn
 res://water.tscn
+res://Scenes/MainMenu/main_menu.tscn
+res://Scenes/MainMenu/main_menu.gd
+res://default_bus_layout.tres
+res://Scenes/MainMenu/background_music.gd
+res://background_sfx.tscn
+res://volumeManager.gd
+res://Interactables/sign3.tscn
+res://mainchar.gd
+res://pause_menu.tscn
+res://Scenes/Levels/level_1.gd

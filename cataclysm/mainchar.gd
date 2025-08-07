@@ -297,3 +297,6 @@ func take_damage(damage_amount):
 		health = max_health
 		PlayerSprite.play("idle")
 		
+		
+
+	

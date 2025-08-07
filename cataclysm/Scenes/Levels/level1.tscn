@@ -1,6 +1,7 @@
-[gd_scene load_steps=13 format=4 uid="uid://dkhk3u27s0tg7"]
+[gd_scene load_steps=15 format=4 uid="uid://dkhk3u27s0tg7"]
 
 [ext_resource type="PackedScene" uid="uid://mbud7nxommyt" path="res://mainchar.tscn" id="1_7u4ml"]
+[ext_resource type="Script" uid="uid://4vg2rytcf6e1" path="res://Scenes/Levels/level_1.gd" id="1_ilsv2"]
 [ext_resource type="Texture2D" uid="uid://cgbsuyiw2aary" path="res://Assets/pixil-frame-0 (14).png" id="2_16p8j"]
 [ext_resource type="PackedScene" uid="uid://xbqejsm8wvd" path="res://water.tscn" id="3_1ukdm"]
 [ext_resource type="PackedScene" uid="uid://8dy0k55bp50k" path="res://Interactables/door.tscn" id="4_0xrym"]
@@ -9,6 +10,7 @@
 [ext_resource type="FontFile" uid="uid://b5uckawjsg8m3" path="res://Assets/Fonts/editundo.ttf" id="7_20uw2"]
 [ext_resource type="PackedScene" uid="uid://hce4c6yug1wa" path="res://Interactables/sign1.tscn" id="8_i36j2"]
 [ext_resource type="PackedScene" uid="uid://dhuwjekx81o02" path="res://Interactables/npc.tscn" id="9_hkfpk"]
+[ext_resource type="PackedScene" uid="uid://cenhty8ppl1x7" path="res://pause_menu.tscn" id="11_4f2fw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_16p8j"]
 texture = ExtResource("2_16p8j")
@@ -68,6 +70,7 @@ sources/0 = SubResource("TileSetAtlasSource_16p8j")
 sources/2 = SubResource("TileSetScenesCollectionSource_16p8j")
 
 [node name="Level1" type="Node2D"]
+script = ExtResource("1_ilsv2")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 scale = Vector2(1, 0.991956)
@@ -156,3 +159,8 @@ texture = ExtResource("5_c0r4e")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("9_hkfpk")]
 position = Vector2(-298, -11)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("11_4f2fw")]
+visible = false
