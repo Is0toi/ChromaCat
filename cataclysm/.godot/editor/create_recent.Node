@@ -1,8 +1,11 @@
+Timer
+RigidBody2D
+Node2D
+AnimatedSprite2D
 Label
 AnimationPlayer
 Marker2D
 Area2D
-AnimatedSprite2D
 StaticBody2D
 CollisionShape2D
 Sprite2D
@@ -10,5 +13,3 @@ RayCast2D
 Control
 SubViewport
 RayCast2D
-AudioStreamPlayer
-Node2D

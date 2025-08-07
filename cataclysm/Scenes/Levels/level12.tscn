@@ -99,7 +99,7 @@ sources/0 = SubResource("TileSetAtlasSource_vqlhw")
 sources/2 = SubResource("TileSetScenesCollectionSource_la4le")
 sources/3 = SubResource("TileSetAtlasSource_3ho51")
 
-[node name="Level 11" type="Node2D"]
+[node name="Level 12" type="Node2D"]
 script = ExtResource("1_104vh")
 
 [node name="Th" parent="." instance=ExtResource("2_v2rp0")]
@@ -148,6 +148,14 @@ texture = ExtResource("13_hjmk5")
 
 [node name="Cannon" parent="." instance=ExtResource("15_104vh")]
 position = Vector2(-131, -15)
-collision_layer = 8
-collision_mask = 8
-firepoint_path = NodePath("")
+
+[connection signal="body_entered" from="TileMapLayer/Area2D" to="TileMapLayer/Area2D" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@116192" to="TileMapLayer/@Area2D@116192" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@116193" to="TileMapLayer/@Area2D@116193" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@116194" to="TileMapLayer/@Area2D@116194" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@116195" to="TileMapLayer/@Area2D@116195" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@116196" to="TileMapLayer/@Area2D@116196" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@116197" to="TileMapLayer/@Area2D@116197" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@116198" to="TileMapLayer/@Area2D@116198" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@116199" to="TileMapLayer/@Area2D@116199" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@116200" to="TileMapLayer/@Area2D@116200" method="_on_body_entered"]
