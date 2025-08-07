@@ -34,3 +34,11 @@ res://Interactables/sign3.tscn
 res://mainchar.gd
 res://pause_menu.tscn
 res://Scenes/Levels/level_1.gd
+res://pause_menu.gd
+res://Scenes/Levels/level_2.gd
+res://Scenes/Levels/level_3.gd
+res://Scenes/Levels/level_4.gd
+res://Scenes/Levels/level_5.gd
+res://Scenes/Levels/level_6.gd
+res://Scenes/Levels/level_7.gd
+res://Interactables/signdog.tscn

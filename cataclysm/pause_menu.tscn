@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://cenhty8ppl1x7"]
+[gd_scene load_steps=2 format=3 uid="uid://cenhty8ppl1x7"]
+
+[ext_resource type="Script" uid="uid://ce1sy7u8fyhry" path="res://pause_menu.gd" id="1_hdmo1"]
 
 [node name="PauseMenu" type="Control"]
 layout_mode = 3
@@ -7,6 +9,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_hdmo1")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -14,9 +17,9 @@ anchors_preset = 14
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = 461.0
+offset_left = 115.0
 offset_top = -33.0
-offset_right = -352.0
+offset_right = -138.0
 offset_bottom = 33.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -32,3 +35,6 @@ text = "Resume
 [node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Quit"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]

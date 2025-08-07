@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=4 uid="uid://yd7mdadyhnoq"]
+[gd_scene load_steps=19 format=4 uid="uid://yd7mdadyhnoq"]
 
 [ext_resource type="Script" uid="uid://co3u0amyv48d5" path="res://Scenes/Levels/level_4.gd" id="1_pauqr"]
 [ext_resource type="PackedScene" uid="uid://mbud7nxommyt" path="res://mainchar.tscn" id="2_rpa7h"]
@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://b0wud3pjajnja" path="res://Assets/8bit-pixel-graphic-blue-sky-background-with-clouds-vector.jpg" id="12_doqs4"]
 [ext_resource type="PackedScene" uid="uid://drcy17ympen1j" path="res://Interactables/button.tscn" id="13_anmoa"]
 [ext_resource type="PackedScene" uid="uid://byeeiye6lonfu" path="res://Scenes/hidden_block.tscn" id="14_66qk7"]
+[ext_resource type="PackedScene" uid="uid://cenhty8ppl1x7" path="res://pause_menu.tscn" id="15_66qk7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vqlhw"]
 texture = ExtResource("6_ocjag")
@@ -152,3 +153,8 @@ position = Vector2(88, -137)
 
 [node name="RigidBody2D" parent="." instance=ExtResource("8_wylik")]
 position = Vector2(250, -17)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("15_66qk7")]
+visible = false

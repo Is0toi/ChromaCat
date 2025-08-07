@@ -1,8 +1,8 @@
+Label
 CanvasLayer
 Button
 VBoxContainer
 MarginContainer
-Label
 GridContainer
 ColorRect
 HSlider
@@ -12,4 +12,3 @@ RigidBody2D
 Node2D
 AnimatedSprite2D
 AnimationPlayer
-Marker2D

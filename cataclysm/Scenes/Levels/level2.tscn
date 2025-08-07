@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=4 uid="uid://dnous7181ormu"]
+[gd_scene load_steps=15 format=4 uid="uid://dnous7181ormu"]
 
 [ext_resource type="PackedScene" uid="uid://mbud7nxommyt" path="res://mainchar.tscn" id="1_5j5u1"]
 [ext_resource type="Script" uid="uid://cxs3paum1nosl" path="res://Scenes/Levels/level_2.gd" id="1_16px4"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://cgbsuyiw2aary" path="res://Assets/pixil-frame-0 (14).png" id="4_hrj3c"]
 [ext_resource type="PackedScene" uid="uid://xbqejsm8wvd" path="res://water.tscn" id="5_16px4"]
 [ext_resource type="PackedScene" uid="uid://c0n7b3x0tfpgm" path="res://Interactables/box.tscn" id="6_hrj3c"]
+[ext_resource type="PackedScene" uid="uid://cenhty8ppl1x7" path="res://pause_menu.tscn" id="6_pyd1a"]
 [ext_resource type="Texture2D" uid="uid://b0wud3pjajnja" path="res://Assets/8bit-pixel-graphic-blue-sky-background-with-clouds-vector.jpg" id="6_tnuy3"]
 [ext_resource type="PackedScene" uid="uid://drcy17ympen1j" path="res://Interactables/button.tscn" id="7_16px4"]
 
@@ -121,6 +122,11 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Area2D" parent="." instance=ExtResource("3_d15yg")]
 position = Vector2(204, -13)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("6_pyd1a")]
+visible = false
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 scale = Vector2(1, 0.991956)

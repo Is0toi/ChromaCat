@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://beel0vmhfomyo"]
+
+[ext_resource type="Script" uid="uid://yty8uqi7c38" path="res://Interactables/sign_1.gd" id="1_68y53"]
+[ext_resource type="Texture2D" uid="uid://dreejws5oxrpi" path="res://Assets/pixil-frame-0 (18).png" id="2_lqb1o"]
+[ext_resource type="FontFile" uid="uid://b5uckawjsg8m3" path="res://Assets/Fonts/editundo.ttf" id="3_f3ye6"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_72cvf"]
+radius = 24.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cs5xf"]
+atlas = ExtResource("2_lqb1o")
+region = Rect2(224, 64, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_72cvf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cs5xf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_68y53")
+
+[node name="InteractionZone" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionZone"]
+light_mask = 5
+visibility_layer = 5
+shape = SubResource("CircleShape2D_72cvf")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_72cvf")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -103.0
+offset_top = -42.0
+offset_right = 108.0
+offset_bottom = 9.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_f3ye6")
+text = "You can jump ontop of dogs"

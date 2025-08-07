@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=4 uid="uid://4mqsqaquvo42"]
+[gd_scene load_steps=18 format=4 uid="uid://4mqsqaquvo42"]
 
 [ext_resource type="Script" uid="uid://6b7gty0muqhk" path="res://Scenes/Levels/level_3.gd" id="1_i6bqf"]
 [ext_resource type="PackedScene" uid="uid://mbud7nxommyt" path="res://mainchar.tscn" id="1_ov3rk"]
@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://dreejws5oxrpi" path="res://Assets/pixil-frame-0 (18).png" id="7_nqbrd"]
 [ext_resource type="PackedScene" uid="uid://csdrp302b0dxw" path="res://Interactables/feather.tscn" id="7_vfl4p"]
 [ext_resource type="PackedScene" uid="uid://c0n7b3x0tfpgm" path="res://Interactables/box.tscn" id="7_x0tam"]
+[ext_resource type="PackedScene" uid="uid://cenhty8ppl1x7" path="res://pause_menu.tscn" id="13_nqbrd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q21to"]
 texture = ExtResource("4_wlbe4")
@@ -207,3 +208,8 @@ z_index = -2
 position = Vector2(-1200, -224)
 scale = Vector2(0.58125, 0.748958)
 texture = ExtResource("6_n80jh")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("13_nqbrd")]
+visible = false

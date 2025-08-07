@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=4 uid="uid://kk8g486xbjdg"]
+[gd_scene load_steps=18 format=4 uid="uid://kk8g486xbjdg"]
 
 [ext_resource type="Script" uid="uid://co3u0amyv48d5" path="res://Scenes/Levels/level_4.gd" id="1_q43bc"]
 [ext_resource type="PackedScene" uid="uid://mbud7nxommyt" path="res://mainchar.tscn" id="2_j3ve6"]
@@ -12,7 +12,8 @@
 [ext_resource type="PackedScene" uid="uid://d173ubawqf2we" path="res://ladder.tscn" id="10_4hv6u"]
 [ext_resource type="PackedScene" uid="uid://csdrp302b0dxw" path="res://Interactables/feather.tscn" id="11_fsoql"]
 [ext_resource type="Texture2D" uid="uid://b0wud3pjajnja" path="res://Assets/8bit-pixel-graphic-blue-sky-background-with-clouds-vector.jpg" id="12_jlbav"]
-[ext_resource type="PackedScene" uid="uid://hce4c6yug1wa" path="res://Interactables/sign1.tscn" id="13_mblgx"]
+[ext_resource type="PackedScene" uid="uid://beel0vmhfomyo" path="res://Interactables/signdog.tscn" id="13_q43bc"]
+[ext_resource type="PackedScene" uid="uid://cenhty8ppl1x7" path="res://pause_menu.tscn" id="14_q43bc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vqlhw"]
 texture = ExtResource("6_og617")
@@ -138,5 +139,21 @@ texture = ExtResource("12_jlbav")
 [node name="CharacterBody2D2" parent="." instance=ExtResource("9_cq8dh")]
 position = Vector2(1, -12)
 
-[node name="CharacterBody2D3" parent="." instance=ExtResource("13_mblgx")]
-position = Vector2(-334, -17)
+[node name="CharacterBody2D" parent="." instance=ExtResource("13_q43bc")]
+position = Vector2(-336, -16)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("14_q43bc")]
+visible = false
+
+[connection signal="body_entered" from="TileMapLayer/Area2D" to="TileMapLayer/Area2D" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@258326" to="TileMapLayer/@Area2D@258326" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@258327" to="TileMapLayer/@Area2D@258327" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@258328" to="TileMapLayer/@Area2D@258328" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@258329" to="TileMapLayer/@Area2D@258329" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@258330" to="TileMapLayer/@Area2D@258330" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@258331" to="TileMapLayer/@Area2D@258331" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@258332" to="TileMapLayer/@Area2D@258332" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@258333" to="TileMapLayer/@Area2D@258333" method="_on_body_entered"]
+[connection signal="body_entered" from="TileMapLayer/@Area2D@258334" to="TileMapLayer/@Area2D@258334" method="_on_body_entered"]
