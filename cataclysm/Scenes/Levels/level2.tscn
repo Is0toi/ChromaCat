@@ -9,11 +9,11 @@
 [ext_resource type="PackedScene" uid="uid://xbqejsm8wvd" path="res://water.tscn" id="5_16px4"]
 [ext_resource type="PackedScene" uid="uid://c0n7b3x0tfpgm" path="res://Interactables/box.tscn" id="6_hrj3c"]
 [ext_resource type="PackedScene" uid="uid://cenhty8ppl1x7" path="res://pause_menu.tscn" id="6_pyd1a"]
-[ext_resource type="Texture2D" uid="uid://b0wud3pjajnja" path="res://Assets/8bit-pixel-graphic-blue-sky-background-with-clouds-vector.jpg" id="6_tnuy3"]
 [ext_resource type="PackedScene" uid="uid://drcy17ympen1j" path="res://Interactables/button.tscn" id="7_16px4"]
 [ext_resource type="Texture2D" uid="uid://cw3wu73ukujnl" path="res://pixil-frame-0.png" id="11_0jhw5"]
 [ext_resource type="Texture2D" uid="uid://c4n6nncfhmmj3" path="res://pixil-frame-0 (2).png" id="12_eqosv"]
 [ext_resource type="Texture2D" uid="uid://cqkh5savjm484" path="res://c01388dcd3e4ed4ba025f923953a3adb_t (1).jpeg" id="13_6a7cf"]
+[ext_resource type="Texture2D" uid="uid://do1opm737rnvc" path="res://Assets/Screenshot 2025-08-10 at 11.26.34 PM.png" id="14_0jhw5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tnuy3"]
 texture = ExtResource("4_hrj3c")
@@ -163,14 +163,14 @@ tile_set = SubResource("TileSet_o7bax")
 position = Vector2(-2, -63)
 zoom = Vector2(2, 2)
 
+[node name="8Bit-pixel-graphic-blue-sky-background-with-clouds-vector2" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(-1814, -118)
+scale = Vector2(1.09831, 1.53608)
+texture = ExtResource("14_0jhw5")
+
 [node name="8Bit-pixel-graphic-blue-sky-background-with-clouds-vector" type="Sprite2D" parent="."]
 z_index = -2
-position = Vector2(-87, -225)
-scale = Vector2(0.58125, 0.748958)
-texture = ExtResource("6_tnuy3")
-
-[node name="8Bit-pixel-graphic-blue-sky-background-with-clouds-vector" type="Sprite2D" parent="8Bit-pixel-graphic-blue-sky-background-with-clouds-vector"]
-z_index = -2
-position = Vector2(-1517.42, 33.3797)
-scale = Vector2(0.58125, 0.748958)
-texture = ExtResource("6_tnuy3")
+position = Vector2(-54, -319.323)
+scale = Vector2(1.69214, 1.85956)
+texture = ExtResource("14_0jhw5")

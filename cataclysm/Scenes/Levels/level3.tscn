@@ -174,7 +174,7 @@ offset_left = -378.0
 offset_top = -109.0
 offset_right = -142.0
 offset_bottom = -58.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("2_x0tam")
 text = "Press (Q) to lagback"
 metadata/_edit_use_anchors_ = true
@@ -186,7 +186,7 @@ offset_left = -158.0
 offset_top = -216.0
 offset_right = 112.0
 offset_bottom = -165.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("2_x0tam")
 text = "Try collecting that feather!"
 metadata/_edit_use_anchors_ = true
@@ -225,5 +225,3 @@ texture = ExtResource("13_l8qla")
 
 [node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("13_nqbrd")]
 visible = false
-
-[connection signal="body_entered" from="TileMapLayer/Area2D" to="TileMapLayer/Area2D" method="_on_body_entered"]
