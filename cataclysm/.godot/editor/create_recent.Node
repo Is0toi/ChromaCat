@@ -1,3 +1,4 @@
+AnimatedSprite2D
 Label
 CanvasLayer
 Button
@@ -10,5 +11,4 @@ Panel
 Timer
 RigidBody2D
 Node2D
-AnimatedSprite2D
 AnimationPlayer

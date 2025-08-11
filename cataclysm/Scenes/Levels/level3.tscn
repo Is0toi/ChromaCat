@@ -140,7 +140,6 @@ sources/1 = SubResource("TileSetAtlasSource_nqbrd")
 sources/3 = SubResource("TileSetAtlasSource_du1gc")
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_du1gc"]
-load_path = "res://.godot/imported/Screenshot 2025-08-10 at 11.04.23 PM.png-aee0dd7814a91f45f54ae8e0282a4aba.ctex"
 
 [node name="Level3" type="Node2D"]
 script = ExtResource("1_i6bqf")
