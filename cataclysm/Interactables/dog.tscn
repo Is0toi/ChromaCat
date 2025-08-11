@@ -1,34 +1,13 @@
-[gd_scene load_steps=9 format=3 uid="uid://c7x8csgodlbdn"]
+[gd_scene load_steps=6 format=3 uid="uid://c7x8csgodlbdn"]
 
-[ext_resource type="Texture2D" uid="uid://4p0rirfjewtr" path="res://Assets/pixil-frame-0 (15).png" id="1_c5eso"]
 [ext_resource type="Script" uid="uid://uuet0t047ary" path="res://dog.gd" id="1_kb3ao"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_kb3ao"]
-atlas = ExtResource("1_c5eso")
-region = Rect2(0, 192, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ptela"]
-atlas = ExtResource("1_c5eso")
-region = Rect2(32, 192, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ngebd"]
-atlas = ExtResource("1_c5eso")
-region = Rect2(64, 192, 32, 32)
+[ext_resource type="Texture2D" uid="uid://dad8divu67o7b" path="res://toaster-removebg-preview.png" id="2_2enny"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_jurjn"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_kb3ao")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ptela")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ngebd")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ptela")
+"texture": ExtResource("2_2enny")
 }],
 "loop": true,
 "name": &"walk",
@@ -38,12 +17,13 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6vfhn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ptela"]
-size = Vector2(31, 15.5)
 
 [node name="CharacterBody2D" type="CharacterBody2D" groups=["enemy"]]
 script = ExtResource("1_kb3ao")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0.999999, -3)
+scale = Vector2(0.0517928, 0.0523139)
 sprite_frames = SubResource("SpriteFrames_jurjn")
 animation = &"walk"
 
@@ -54,7 +34,6 @@ shape = SubResource("RectangleShape2D_6vfhn")
 collision_mask = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(0.5, 0.5)
 shape = SubResource("RectangleShape2D_ptela")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
