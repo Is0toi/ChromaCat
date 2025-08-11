@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://c0n7b3x0tfpgm"]
 
-[ext_resource type="Texture2D" uid="uid://cgbsuyiw2aary" path="res://Assets/pixil-frame-0 (14).png" id="1_g2tbl"]
+[ext_resource type="Texture2D" uid="uid://b2w2372b5f3ls" path="res://poptart2-removebg-preview.png" id="1_ie20d"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_g2tbl"]
 friction = 0.02
@@ -9,15 +9,15 @@ bounce = 0.1
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oq5cr"]
 size = Vector2(30, 28.75)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_bqn3j"]
-atlas = ExtResource("1_g2tbl")
-region = Rect2(288, 64, 32, 32)
+[sub_resource type="AtlasTexture" id="AtlasTexture_5wfoe"]
+atlas = ExtResource("1_ie20d")
+region = Rect2(0, 0, 224, 280)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_3n43a"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_bqn3j")
+"texture": SubResource("AtlasTexture_5wfoe")
 }],
 "loop": true,
 "name": &"default",
@@ -41,5 +41,7 @@ position = Vector2(0, 1.625)
 shape = SubResource("RectangleShape2D_oq5cr")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-0.999998, 2)
+scale = Vector2(0.1875, 0.107143)
 sprite_frames = SubResource("SpriteFrames_3n43a")
 autoplay = "default"
