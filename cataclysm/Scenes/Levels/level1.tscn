@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=4 uid="uid://dkhk3u27s0tg7"]
+[gd_scene load_steps=19 format=4 uid="uid://dkhk3u27s0tg7"]
 
 [ext_resource type="PackedScene" uid="uid://mbud7nxommyt" path="res://mainchar.tscn" id="1_7u4ml"]
 [ext_resource type="Script" uid="uid://4vg2rytcf6e1" path="res://Scenes/Levels/level_1.gd" id="1_ilsv2"]
@@ -12,6 +12,7 @@
 [ext_resource type="FontFile" uid="uid://b5uckawjsg8m3" path="res://Assets/Fonts/editundo.ttf" id="7_20uw2"]
 [ext_resource type="PackedScene" uid="uid://hce4c6yug1wa" path="res://Interactables/sign1.tscn" id="8_i36j2"]
 [ext_resource type="PackedScene" uid="uid://dhuwjekx81o02" path="res://Interactables/npc.tscn" id="9_hkfpk"]
+[ext_resource type="Texture2D" uid="uid://dpbgwffsj7rpy" path="res://Screenshot 2025-08-11 at 9.00.23 AM.png" id="9_nqasx"]
 [ext_resource type="PackedScene" uid="uid://cenhty8ppl1x7" path="res://pause_menu.tscn" id="11_4f2fw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_16p8j"]
@@ -106,9 +107,9 @@ position = Vector2(360, 0)
 
 [node name="Sky" type="Sprite2D" parent="."]
 z_index = -2
-position = Vector2(-40, -144)
-scale = Vector2(0.58125, 0.748958)
-texture = ExtResource("5_c0r4e")
+position = Vector2(-24, -256)
+scale = Vector2(1.81818, 2.35398)
+texture = ExtResource("9_nqasx")
 
 [node name="Sky" type="Sprite2D" parent="Sky"]
 z_index = -2
@@ -148,7 +149,7 @@ text = "Press (F) to freeze enemies"
 
 [node name="Sky2" type="Sprite2D" parent="."]
 z_index = -2
-position = Vector2(-24, 560)
+position = Vector2(24, 1968)
 scale = Vector2(0.58125, 0.748958)
 texture = ExtResource("5_c0r4e")
 
@@ -160,13 +161,13 @@ texture = ExtResource("5_c0r4e")
 
 [node name="Sky2" type="Sprite2D" parent="Sky2"]
 z_index = -2
-position = Vector2(1806.16, 1.83569)
+position = Vector2(1637.85, 1196.33)
 scale = Vector2(0.885607, 0.997567)
 texture = ExtResource("5_c0r4e")
 
 [node name="Sky3" type="Sprite2D" parent="."]
 z_index = -2
-position = Vector2(1072, -144)
+position = Vector2(856, 1912)
 scale = Vector2(0.58125, 0.748958)
 texture = ExtResource("5_c0r4e")
 
@@ -177,7 +178,3 @@ position = Vector2(-298, -11)
 
 [node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("11_4f2fw")]
 visible = false
-
-[connection signal="body_entered" from="TileMapLayer/Area2D" to="TileMapLayer/Area2D" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@36038" to="TileMapLayer/@Area2D@36038" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@36039" to="TileMapLayer/@Area2D@36039" method="_on_body_entered"]
