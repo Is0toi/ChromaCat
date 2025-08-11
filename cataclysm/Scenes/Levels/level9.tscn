@@ -146,14 +146,3 @@ position = Vector2(-336, -16)
 
 [node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("14_q43bc")]
 visible = false
-
-[connection signal="body_entered" from="TileMapLayer/Area2D" to="TileMapLayer/Area2D" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@258326" to="TileMapLayer/@Area2D@258326" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@258327" to="TileMapLayer/@Area2D@258327" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@258328" to="TileMapLayer/@Area2D@258328" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@258329" to="TileMapLayer/@Area2D@258329" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@258330" to="TileMapLayer/@Area2D@258330" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@258331" to="TileMapLayer/@Area2D@258331" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@258332" to="TileMapLayer/@Area2D@258332" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@258333" to="TileMapLayer/@Area2D@258333" method="_on_body_entered"]
-[connection signal="body_entered" from="TileMapLayer/@Area2D@258334" to="TileMapLayer/@Area2D@258334" method="_on_body_entered"]
